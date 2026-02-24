@@ -1,454 +1,506 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Sophie Manzerolle — Courtier Immobilier Sutton | Shefford</title>
+    <title>Sabrina Lagassé</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,600,700,800,900|Playfair+Display:400,500,600,700,800,900&amp;subset=latin">
     
     <script src="https://cdn.tailwindcss.com"></script>
     
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"DM Sans"', 'sans-serif'],
+              serif: ['"Playfair Display"', 'serif'],
+            }
+          }
+        }
+      }
+    </script>
+    
     <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-tailwind.png">
 </head>
-<body class="antialiased bg-body text-body font-body">
-    <div class="">
-                
-<div class="relative min-h-screen bg-stone-950 overflow-hidden font-body">
-        
-  <div class="absolute inset-0">
-    <video autoplay loop muted playsinline class="w-full h-full object-cover">
-      <source src="./public/bannertemporaire.mov" type="video/mp4">
-      Votre navigateur ne supporte pas la balise vidéo.
-    </video>
-    <div class="absolute inset-0 bg-stone-950/50"></div>
-  </div>
 
-  <nav class="absolute top-0 w-full z-50 pt-8 px-6 lg:px-12">
-    <div class="max-w-7xl mx-auto flex items-center justify-between">
-      
-      <div class="flex-shrink-0 relative z-[60]">
-        <span class="text-xl md:text-2xl font-light tracking-widest text-white uppercase">
-          Sophie <span class="font-bold text-[#D30000]">Manzerolle</span>
-        </span>
-      </div>
-      
-      <div class="hidden md:flex items-center gap-10 text-[11px] uppercase tracking-[0.15em] text-white font-medium">
-        <a href="#" class="hover:text-[#D30000] transition-colors">Accueil</a>
-        <a href="#" class="hover:text-[#D30000] transition-colors">Propriétés</a>
-        <a href="#" class="hover:text-[#D30000] transition-colors">À propos</a>
-        <a href="#" class="hover:text-[#D30000] transition-colors">Contact</a>
-      </div>
+<body class="antialiased bg-[#1e1e1e] text-white font-sans">
 
-      <div class="hidden md:block flex-shrink-0">
-        <a href="tel:8190000000" class="flex items-center gap-3 border border-white/40 rounded-full px-6 py-2.5 text-white hover:bg-white/10 transition-colors">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-          </svg>
-          <span class="text-[11px] font-medium tracking-widest">819-XXX-XXXX</span>
-        </a>
-      </div>
+    <nav class="fixed w-full top-0 z-50 pt-6 px-4 md:px-8 transition-all duration-300">
+        <div class="max-w-7xl mx-auto bg-white/10 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] rounded-full px-6 py-4 flex justify-between items-center text-white relative z-50">
+            
+            <a href="index.html" class="font-serif italic text-2xl font-semibold tracking-wide flex items-center gap-2">
+                Sabrina Lagassé
+            </a>
 
-      <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none relative z-[60]">
-        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-      </button>
+            <div class="hidden lg:flex space-x-8 text-sm font-medium tracking-wide">
+                <a href="index.html" class="hover:text-gray-300 transition-colors">Accueil</a>
+                <a href="proprietes.html" class="hover:text-gray-300 transition-colors">Propriétés</a>
+                <a href="services.html" class="hover:text-gray-300 transition-colors">Services</a>
+                <a href="blog.html" class="hover:text-gray-300 transition-colors">Blog</a>
+                <a href="index.html#faq" class="hover:text-gray-300 transition-colors">FAQ</a>
+            </div>
 
-    </div>
-  </nav>
+            <div class="flex items-center gap-4">
+                <a href="tel:+18195551234" class="hidden sm:flex bg-white text-black px-6 py-2.5 rounded-full text-sm font-bold hover:bg-gray-200 hover:scale-105 transition-all items-center gap-2">
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                    (819) 555-1234
+                </a>
 
-  <div id="mobile-menu" class="fixed inset-0 bg-stone-950/95 backdrop-blur-md z-[55] hidden flex-col justify-center items-center opacity-0 transition-opacity duration-300">
-    <div class="flex flex-col items-center gap-8 text-sm uppercase tracking-[0.2em] text-white font-medium">
-      <a href="#" class="hover:text-[#D30000] transition-colors">Accueil</a>
-      <a href="#" class="hover:text-[#D30000] transition-colors">Propriétés</a>
-      <a href="#" class="hover:text-[#D30000] transition-colors">À propos</a>
-      <a href="#" class="hover:text-[#D30000] transition-colors">Contact</a>
-      <a href="tel:8190000000" class="mt-4 border border-[#D30000] text-[#D30000] rounded-full px-8 py-3 hover:bg-[#D30000] hover:text-white transition-colors">
-        819-XXX-XXXX
-      </a>
-    </div>
-  </div>
-
-  <section class="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 pt-32 pb-20 text-center">
-    
-   <h1 class="font-heading text-6xl md:text-8xl lg:text-[7.5rem] leading-[1.1] font-light text-white mb-8">
-      <span class="block">Concrétisez</span>
-      <span class="block text-[#D30000]">Votre Projet</span>
-      <span class="block">Immobilier</span>
-    </h1>
-    
-    <p class="text-white/90 text-sm md:text-base font-light tracking-wide max-w-2xl mx-auto mb-16">
-      Que ce soit pour l'achat de votre première maison ou la vente de votre propriété à Shefford et ses environs, profitez d'un accompagnement sur mesure, humain et transparent à chaque étape.
-    </p>
-
-    <div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 text-white">
-      <div class="text-center">
-        <span class="block text-3xl font-light mb-1">Sutton</span>
-        <span class="text-[10px] uppercase tracking-[0.15em] text-white/70">Groupe Immobilier</span>
-      </div>
-      <div class="text-center">
-        <span class="block text-3xl font-light mb-1">Shefford</span>
-        <span class="text-[10px] uppercase tracking-[0.15em] text-white/70">Secteur d'expertise</span>
-      </div>
-      <div class="text-center">
-        <span class="block text-3xl font-light mb-1">100%</span>
-        <span class="text-[10px] uppercase tracking-[0.15em] text-white/70">Dévouement</span>
-      </div>
-    </div>
-
-    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-white/60 hover:text-white cursor-pointer transition-colors">
-      <span class="text-[9px] uppercase tracking-[0.3em] mb-2">Explorer</span>
-      <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-      </svg>
-    </div>
-
-  </section>
-</div>
-
-<script>
-  const btn = document.getElementById('mobile-menu-btn');
-  const menu = document.getElementById('mobile-menu');
-  let isMenuOpen = false;
-
-  btn.addEventListener('click', () => {
-    isMenuOpen = !isMenuOpen;
-    
-    if (isMenuOpen) {
-      // Transformer l'icône en "X"
-      btn.innerHTML = `<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path></svg>`;
-      // Afficher le menu
-      menu.classList.remove('hidden');
-      menu.classList.add('flex');
-      // Petit délai pour l'animation d'opacité
-      setTimeout(() => {
-        menu.classList.remove('opacity-0');
-        menu.classList.add('opacity-100');
-      }, 10);
-      // Empêcher le défilement de la page
-      document.body.style.overflow = 'hidden';
-    } else {
-      // Remettre l'icône hamburger
-      btn.innerHTML = `<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path></svg>`;
-      // Cacher le menu avec animation
-      menu.classList.remove('opacity-100');
-      menu.classList.add('opacity-0');
-      setTimeout(() => {
-        menu.classList.remove('flex');
-        menu.classList.add('hidden');
-      }, 300); // Correspond à la durée de la transition CSS
-      // Réactiver le défilement
-      document.body.style.overflow = '';
-    }
-  });
-</script>
-                
-<section id="services" class="relative py-24 lg:py-32 overflow-hidden font-body">
-        
-        <div class="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1920&q=80" alt="Intérieur lumineux" class="w-full h-full object-cover opacity-60">
-          <div class="absolute inset-0 bg-stone-50/80 backdrop-blur-[2px]"></div>
+                <button id="mobile-menu-btn" class="lg:hidden p-1 text-white hover:text-gray-300 focus:outline-none transition-colors" aria-label="Ouvrir le menu">
+                    <svg id="icon-open" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                    <svg id="icon-close" class="w-7 h-7 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                </button>
+            </div>
         </div>
 
-        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
-          <div class="text-center mb-20">
-            <p class="text-[#D30000] uppercase tracking-[0.3em] text-[10px] md:text-xs mb-4 font-semibold">Ce que je propose</p>
-            <h2 class="font-heading text-4xl lg:text-5xl font-light text-stone-900 tracking-wide">Mes services</h2>
-            <div class="w-12 h-px bg-[#D30000] mx-auto mt-8 opacity-60"></div>
-          </div>
-
-          <div class="grid md:grid-cols-3 gap-8">
-            
-            <div class="group relative bg-white/40 backdrop-blur-md border border-white p-12 text-center rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(211,0,0,0.08)] hover:bg-white/60 transition-all duration-500">
-              <div class="w-16 h-16 mx-auto rounded-full bg-white border border-stone-200 flex items-center justify-center mb-8 shadow-sm group-hover:scale-110 group-hover:border-[#D30000]/30 transition-all duration-500">
-                <svg class="w-6 h-6 text-[#D30000]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                </svg>
-              </div>
-              <span class="block text-[#D30000] text-[10px] uppercase tracking-[0.2em] mb-3 font-semibold">01</span>
-              <h3 class="font-heading text-2xl text-stone-900 font-light mb-4 tracking-wide">Recherche personnalisée</h3>
-              <p class="text-stone-600 font-light leading-relaxed text-sm">
-                Je trouve la propriété idéale selon vos critères, budget et style de vie. Un accompagnement sur mesure pour votre projet à Shefford et ses environs.
-              </p>
-            </div>
-
-            <div class="group relative bg-white/40 backdrop-blur-md border border-white p-12 text-center rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(211,0,0,0.08)] hover:bg-white/60 transition-all duration-500">
-              <div class="w-16 h-16 mx-auto rounded-full bg-white border border-stone-200 flex items-center justify-center mb-8 shadow-sm group-hover:scale-110 group-hover:border-[#D30000]/30 transition-all duration-500">
-                <svg class="w-6 h-6 text-[#D30000]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-              </div>
-              <span class="block text-[#D30000] text-[10px] uppercase tracking-[0.2em] mb-3 font-semibold">02</span>
-              <h3 class="font-heading text-2xl text-stone-900 font-light mb-4 tracking-wide">Estimation gratuite</h3>
-              <p class="text-stone-600 font-light leading-relaxed text-sm">
-                Obtenez une évaluation précise de votre bien basée sur les données du marché actuel et mon expertise locale à Shefford et dans la région.
-              </p>
-            </div>
-
-            <div class="group relative bg-white/40 backdrop-blur-md border border-white p-12 text-center rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(211,0,0,0.08)] hover:bg-white/60 transition-all duration-500">
-              <div class="w-16 h-16 mx-auto rounded-full bg-white border border-stone-200 flex items-center justify-center mb-8 shadow-sm group-hover:scale-110 group-hover:border-[#D30000]/30 transition-all duration-500">
-                <svg class="w-6 h-6 text-[#D30000]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-                </svg>
-              </div>
-              <span class="block text-[#D30000] text-[10px] uppercase tracking-[0.2em] mb-3 font-semibold">03</span>
-              <h3 class="font-heading text-2xl text-stone-900 font-light mb-4 tracking-wide">Négociation experte</h3>
-              <p class="text-stone-600 font-light leading-relaxed text-sm">
-                Je défends vos intérêts avec détermination pour obtenir les meilleures conditions de vente ou d'achat au sein du réseau Sutton.
-              </p>
-            </div>
-
-          </div>
-        </div>
-      </section>
+        <div id="mobile-menu" class="fixed inset-0 bg-[#1e1e1e]/95 backdrop-blur-3xl z-40 opacity-0 pointer-events-none transition-all duration-500 flex flex-col justify-center items-center">
+            <div class="flex flex-col items-center space-y-8 text-3xl font-serif italic">
+                <a href="index.html" class="mobile-link text-white hover:text-gray-400 transition-colors transform translate-y-4 opacity-0 transition-all duration-300 delay-100">Accueil</a>
+                <a href="proprietes.html" class="mobile-link text-white hover:text-gray-400 transition-colors transform translate-y-4 opacity-0 transition-all duration-300 delay-150">Propriétés</a>
+                <a href="services.html" class="mobile-link text-white hover:text-gray-400 transition-colors transform translate-y-4 opacity-0 transition-all duration-300 delay-200">Services</a>
+                <a href="blog.html" class="mobile-link text-white hover:text-gray-400 transition-colors transform translate-y-4 opacity-0 transition-all duration-300 delay-250">Blog</a>
+                <a href="index.html#faq" class="mobile-link text-white hover:text-gray-400 transition-colors transform translate-y-4 opacity-0 transition-all duration-300 delay-300">FAQ</a>
                 
-<section class="bg-stone-950 py-24 lg:py-32 relative overflow-hidden font-body">
-        <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-white/[0.02] to-transparent pointer-events-none"></div>
-
-        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
-          <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-            
-            <div class="relative">
-              <div class="absolute -inset-4 border border-white/10 hidden md:block"></div>
-              
-              <div class="relative aspect-[4/5] bg-stone-900 overflow-hidden shadow-2xl">
-                <img src="./public/sophie.jpg" alt="Sophie Manzerolle, Courtier Immobilier Shefford" class="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-1000 ease-out">
-                <div class="absolute inset-0 bg-stone-950/20 mix-blend-multiply pointer-events-none"></div>
-              </div>
-              
-              <div class="absolute -bottom-8 -right-8 md:-bottom-12 md:-right-12 bg-[#D30000] p-8 md:p-10 shadow-[0_20px_50px_rgba(211,0,0,0.3)] flex flex-col items-center justify-center">
-                <p class="font-heading text-4xl text-white font-light mb-1">Sutton</p>
-                <p class="text-white/80 text-[10px] uppercase tracking-[0.2em] font-semibold">Shefford</p>
-              </div>
+                <a href="tel:+18195551234" class="mobile-link mt-8 bg-white text-black px-8 py-3 rounded-full text-lg font-sans font-bold not-italic hover:scale-105 transform translate-y-4 opacity-0 transition-all duration-300 delay-[400ms]">
+                    Appeler le (819) 555-1234
+                </a>
             </div>
+        </div>
+    </nav>
+
+<header class="relative w-full h-screen flex flex-col justify-center overflow-hidden">
+        
+        <div class="absolute inset-0 z-0">
+            <video src="banner.mov" 
+                   autoplay 
+                   loop 
+                   muted 
+                   playsinline 
+                   class="w-full h-full object-cover opacity-80"></video>
             
-            <div class="lg:pl-8 mt-12 lg:mt-0">
-              <div class="flex items-center gap-4 mb-6">
-                <div class="w-8 h-px bg-[#D30000]"></div>
-                <p class="text-[#D30000] uppercase tracking-[0.3em] text-[10px] font-semibold">À propos de moi</p>
-              </div>
-              
-              <h2 class="font-heading text-4xl lg:text-5xl text-white font-light tracking-wide mb-8">Sophie Manzerolle</h2>
-              
-              <p class="text-white/70 text-base md:text-lg font-light leading-relaxed mb-6">
-                Passionnée par l'immobilier, je mets mon expertise du marché de Shefford et ses environs, ainsi que la force du réseau Sutton, au service de vos projets. Chaque transaction est unique, et je m'engage à vous offrir un accompagnement rigoureux, discret et entièrement personnalisé.
-              </p>
-              
-              <p class="text-white/70 text-base md:text-lg font-light leading-relaxed mb-10">
-                Ma philosophie repose sur trois piliers : écoute attentive, transparence totale et disponibilité. Je crois fondamentalement que trouver la propriété parfaite va bien au-delà des murs — c'est la création d'un cadre de vie où s'écrira votre prochaine page d'histoire, au cœur de notre magnifique région.
-              </p>
-              
-              <blockquote class="relative border-l border-[#D30000] pl-8 py-2 mb-12">
-                <svg class="absolute -top-4 -left-4 w-10 h-10 text-[#D30000]/15" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-                </svg>
-                <p class="font-heading text-xl lg:text-2xl text-white italic font-light leading-relaxed relative z-10">
-                  "L'immobilier n'est pas qu'une question de mètres carrés, c'est l'art de connecter les gens à leur futur chez-soi."
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[#151515]/30 to-[#151515]"></div>
+        </div>
+
+        <div class="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-8 mt-20 flex flex-col md:flex-row items-center justify-between gap-12">
+            
+            <div class="flex-1 text-center md:text-left">
+                <h2 class="font-serif italic text-5xl md:text-7xl text-gray-200 mb-2">Courtier</h2>
+                
+                <h1 class="font-black text-[5rem] md:text-[7rem] lg:text-[9rem] leading-[0.85] tracking-tighter text-white uppercase mb-6">
+                    Immo<br>bilier
+                </h1>
+            </div>
+
+            <div class="w-full md:w-[400px] bg-white/5 backdrop-blur-2xl border border-white/20 p-8 rounded-[2rem] shadow-2xl flex flex-col gap-6 transform md:translate-y-12">
+                
+                <div class="flex justify-between items-start">
+                    <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center border border-white/10">
+                        <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
+                    </div>
+                    <span class="bg-white/10 border border-white/20 text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider backdrop-blur-md shadow-lg">
+                        À partir de 2%
+                    </span>
+                </div>
+
+                <p class="text-gray-300 text-base leading-relaxed">
+                    Profitez du programme <strong class="text-white font-bold">Complici-T</strong> offrant un taux de commission avantageux. Je vous accompagne avec dévouement à chaque étape, de notre première rencontre jusqu'à la signature finale de la transaction.
                 </p>
-              </blockquote>
-              
-              <a href="#" class="group inline-flex items-center gap-4 text-[11px] uppercase tracking-[0.2em] text-white hover:text-[#D30000] transition-colors">
-                <span class="border-b border-transparent group-hover:border-[#D30000] pb-1 transition-colors">Découvrir mon parcours</span>
-                <svg class="w-4 h-4 transform group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                </svg>
-              </a>
-            </div>
-            
-          </div>
-        </div>
-      </section>
-                
-      <section class="bg-stone-100 py-24 lg:py-32">
-        <div class="max-w-4xl mx-auto px-6 lg:px-12">
-          <div class="text-center mb-16">
-            <p class="text-[#D30000] uppercase tracking-[0.3em] text-sm mb-4">F.A.Q.</p>
-            <h2 class="font-heading text-4xl lg:text-5xl text-stone-900">Questions fréquentes</h2>
-          </div>
-          <div class="space-y-4 faq-container">
-            <div class="faq-item bg-white border border-stone-200">
-              <button class="faq-toggle w-full flex items-center justify-between p-6 text-left">
-                <span class="font-heading text-lg text-stone-900">Quels sont vos honoraires ?</span>
-                <svg class="faq-icon w-5 h-5 text-[#D30000] transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div class="faq-content hidden px-6 pb-6">
-                <p class="text-stone-600 leading-relaxed">Mes honoraires sont transparents et discutés dès notre premier rendez-vous. Ils varient selon le type de mandat et respectent les standards du Groupe Sutton.</p>
-              </div>
-            </div>
-            <div class="faq-item bg-white border border-stone-200">
-              <button class="faq-toggle w-full flex items-center justify-between p-6 text-left">
-                <span class="font-heading text-lg text-stone-900">Combien de temps pour vendre un bien à Shefford ?</span>
-                <svg class="faq-icon w-5 h-5 text-[#D30000] transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div class="faq-content hidden px-6 pb-6">
-                <p class="text-stone-600 leading-relaxed">Le marché de Shefford et de ses environs est dynamique. Grâce à ma stratégie de mise en marché Sutton et mon réseau d'acheteurs qualifiés, je travaille pour vendre votre propriété dans les meilleurs délais et conditions.</p>
-              </div>
-            </div>
-            <div class="faq-item bg-white border border-stone-200">
-              <button class="faq-toggle w-full flex items-center justify-between p-6 text-left">
-                <span class="font-heading text-lg text-stone-900">Comment se passe la première consultation ?</span>
-                <svg class="faq-icon w-5 h-5 text-[#D30000] transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div class="faq-content hidden px-6 pb-6">
-                <p class="text-stone-600 leading-relaxed">La première consultation est l'occasion d'évaluer vos besoins immobiliers sans engagement. Nous discutons de votre projet, de vos attentes et je vous explique l'avantage de faire affaire avec Sutton.</p>
-              </div>
-            </div>
-            <div class="faq-item bg-white border border-stone-200">
-              <button class="faq-toggle w-full flex items-center justify-between p-6 text-left">
-                <span class="font-heading text-lg text-stone-900">Quel est votre secteur d'intervention ?</span>
-                <svg class="faq-icon w-5 h-5 text-[#D30000] transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div class="faq-content hidden px-6 pb-6">
-                <p class="text-stone-600 leading-relaxed">Je suis spécialisée dans la région de Shefford et de ses environs immédiats. J'offre mon expertise sur tout ce magnifique territoire, soutenue par notre agence Sutton.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-                
-<section class="relative bg-stone-950 py-24 lg:py-32 font-body overflow-hidden">
-        
-        <div class="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80" alt="Bureau immobilier moderne" class="w-full h-full object-cover opacity-20 mix-blend-luminosity">
-          <div class="absolute inset-0 bg-stone-950/80"></div>
-        </div>
 
-        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
-          <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
-            
-            <div class="pt-8">
-              <div class="flex items-center gap-4 mb-6">
-                <div class="w-8 h-px bg-[#D30000]"></div>
-                <p class="text-[#D30000] uppercase tracking-[0.3em] text-[10px] font-semibold">Contact</p>
-              </div>
-              
-              <h2 class="font-heading text-4xl lg:text-5xl text-white font-light tracking-wide mb-8">Parlons de votre projet</h2>
-              <p class="text-white/70 text-base md:text-lg font-light leading-relaxed mb-16">
-                Prêt à concrétiser votre projet immobilier à Shefford ou dans les environs ? Contactez-moi pour une évaluation discrète et un accompagnement de confiance avec Sutton.
-              </p>
-              
-              <div class="space-y-10">
-                <div class="flex items-start gap-6 group cursor-pointer">
-                  <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center flex-shrink-0 group-hover:border-[#D30000]/50 group-hover:bg-[#D30000]/10 transition-all duration-300">
-                    <svg class="w-5 h-5 text-[#D30000]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                    </svg>
-                  </div>
-                  <div>
-                    <p class="text-white/50 text-[10px] uppercase tracking-widest mb-1">Téléphone direct</p>
-                    <p class="text-white text-lg font-light group-hover:text-[#D30000] transition-colors">819-XXX-XXXX</p>
-                  </div>
-                </div>
-                
-                <div class="flex items-start gap-6 group cursor-pointer">
-                  <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center flex-shrink-0 group-hover:border-[#D30000]/50 group-hover:bg-[#D30000]/10 transition-all duration-300">
-                    <svg class="w-5 h-5 text-[#D30000]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                    </svg>
-                  </div>
-                  <div>
-                    <p class="text-white/50 text-[10px] uppercase tracking-widest mb-1">Courriel</p>
-                    <p class="text-white text-lg font-light group-hover:text-[#D30000] transition-colors">smanzerolle@sutton.com</p>
-                  </div>
-                </div>
-                
-                <div class="flex items-start gap-6 group cursor-pointer">
-                  <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center flex-shrink-0 group-hover:border-[#D30000]/50 group-hover:bg-[#D30000]/10 transition-all duration-300">
-                    <svg class="w-5 h-5 text-[#D30000]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                    </svg>
-                  </div>
-                  <div>
-                    <p class="text-white/50 text-[10px] uppercase tracking-widest mb-1">Bureau d'attache</p>
-                    <p class="text-white text-lg font-light group-hover:text-[#D30000] transition-colors">Groupe Sutton</p>
-                  </div>
-                </div>
-              </div>
+                <a href="contact.html" class="inline-flex items-center gap-3 text-white font-bold group border-t border-white/10 pt-4 mt-2">
+                    Discutons de votre projet
+                    <svg class="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                </a>
             </div>
+
+        </div>
+    </header>
+
+<section id="services" class="relative py-24 bg-gradient-to-b from-[#151515] via-[#2a2a2a] to-[#1e1e1e] overflow-hidden">
+        
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-white/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-8">
+            
+            <div class="mb-16 md:mb-20 flex flex-col md:flex-row md:items-end justify-between gap-8">
+                <div>
+                    <h2 class="font-serif italic text-3xl md:text-5xl text-gray-400 mb-2">Mes services</h2>
+                    <h3 class="font-black text-5xl md:text-7xl text-white uppercase tracking-tighter leading-[0.9]">
+                        Approche<br>Sur Mesure
+                    </h3>
+                </div>
+                <div class="md:max-w-sm">
+                    <p class="text-gray-300 text-base leading-relaxed border-l border-white/30 pl-6">
+                        Que vous souhaitiez vendre au meilleur prix ou dénicher la perle rare, bénéficiez d'une stratégie immobilière d'élite.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+                
+                <div class="group relative bg-white/10 backdrop-blur-xl border border-white/20 p-4 rounded-[2rem] hover:bg-white/20 transition-all duration-500 hover:-translate-y-2 shadow-2xl flex flex-col">
+                    <div class="relative h-72 w-full shrink-0 overflow-hidden rounded-[1.5rem] mb-6">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1000&auto=format&fit=crop" alt="Achat de propriété" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60 group-hover:opacity-30 transition-opacity duration-500"></div>
+                    </div>
+                    <div class="px-4 pb-4 flex flex-col flex-grow">
+                        <h4 class="font-serif italic text-3xl text-white mb-3">Achat</h4>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-6">
+                            Accédez à des propriétés exclusives avant tout le monde. Un accompagnement rigoureux de la première visite jusqu'à la signature chez le notaire.
+                        </p>
+                        <a href="services.html" class="mt-auto w-fit inline-flex items-center gap-2 text-white font-bold text-sm group-hover:text-gray-200 transition-colors uppercase tracking-wider">
+                            Découvrir
+                            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="group relative bg-white/10 backdrop-blur-xl border border-white/20 p-4 rounded-[2rem] hover:bg-white/20 transition-all duration-500 hover:-translate-y-2 shadow-2xl flex flex-col">
+                    <div class="relative h-72 w-full shrink-0 overflow-hidden rounded-[1.5rem] mb-6">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1000&auto=format&fit=crop" alt="Vente de propriété" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60 group-hover:opacity-30 transition-opacity duration-500"></div>
+                    </div>
+                    <div class="px-4 pb-4 flex flex-col flex-grow">
+                        <h4 class="font-serif italic text-3xl text-white mb-3">Vente</h4>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-6">
+                            Mise en marché haut de gamme, photographies professionnelles et stratégie de visibilité ciblée pour vendre au meilleur prix.
+                        </p>
+                        <a href="services.html" class="mt-auto w-fit inline-flex items-center gap-2 text-white font-bold text-sm group-hover:text-gray-200 transition-colors uppercase tracking-wider">
+                            Découvrir
+                            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="group relative bg-white/10 backdrop-blur-xl border border-white/20 p-4 rounded-[2rem] hover:bg-white/20 transition-all duration-500 hover:-translate-y-2 shadow-2xl flex flex-col">
+                    <div class="relative h-72 w-full shrink-0 overflow-hidden rounded-[1.5rem] mb-6">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1000&auto=format&fit=crop" alt="Évaluation de marché" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60 group-hover:opacity-30 transition-opacity duration-500"></div>
+                    </div>
+                    <div class="px-4 pb-4 flex flex-col flex-grow">
+                        <h4 class="font-serif italic text-3xl text-white mb-3">Évaluation</h4>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-6">
+                            Obtenez l'heure juste sur la valeur de votre propriété grâce à une analyse comparative de marché approfondie et gratuite.
+                        </p>
+                        <a href="services.html" class="mt-auto w-fit inline-flex items-center gap-2 text-white font-bold text-sm group-hover:text-gray-200 transition-colors uppercase tracking-wider">
+                            Découvrir
+                            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="relative py-24 bg-[#1e1e1e] overflow-hidden">
+        
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-white/5 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-8 flex flex-col lg:flex-row items-center gap-16 md:gap-24">
+            
+            <div class="w-full lg:w-1/2 relative mt-8 md:mt-0">
+                <div class="relative rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl aspect-[4/5] md:aspect-auto md:h-[650px]">
+                    <img src="sabrina.png" 
+                         alt="Sabrina Lagassé - Courtier Immobilier" 
+                         class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#1e1e1e] via-transparent to-transparent opacity-80"></div>
+                </div>
+
+                <div class="absolute -bottom-6 -right-2 md:-right-8 bg-white/10 backdrop-blur-2xl border border-white/20 p-6 rounded-3xl shadow-[0_8px_32px_0_rgba(0,0,0,0.5)] flex items-center gap-5 transform hover:-translate-y-2 transition-transform duration-500">
+                    <div class="w-14 h-14 rounded-full bg-white text-black flex items-center justify-center font-black text-2xl">
+                        10
+                    </div>
+                    <div>
+                        <p class="text-white font-bold text-sm uppercase tracking-wider">Années</p>
+                        <p class="text-gray-300 text-sm italic font-serif">d'excellence</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full lg:w-1/2 flex flex-col justify-center">
+                <h2 class="font-serif italic text-3xl md:text-5xl text-gray-400 mb-2">À propos de moi</h2>
+                <h3 class="font-black text-5xl md:text-7xl text-white uppercase tracking-tighter leading-[0.9] mb-8">
+                    Votre<br>Alliée
+                </h3>
+                
+                <div class="space-y-6 text-gray-200 text-base md:text-lg leading-relaxed border-l-2 border-white/10 pl-6">
+                    <p>
+                        L'immobilier n'est pas qu'une question de briques et de mortier, c'est une question de <strong class="text-white font-bold">projets de vie</strong>. Mon approche repose sur l'écoute active, la transparence absolue et une connaissance chirurgicale du marché immobilier local.
+                    </p>
+                    <p>
+                        Que ce soit pour l'acquisition de votre première maison, la vente d'un condo de luxe ou un investissement stratégique, je m'assure que chaque transaction soit fluide, sécurisante et hautement profitable pour vous.
+                    </p>
+                </div>
+
+                <div class="mt-12 flex flex-col sm:flex-row items-start sm:items-center gap-8">
+                    <a href="contact.html" class="bg-white/5 hover:bg-white text-white hover:text-black border border-white/20 backdrop-blur-md px-8 py-4 rounded-full text-sm font-bold uppercase tracking-wider transition-all duration-300 shadow-lg inline-flex items-center gap-3">
+                        Rencontrons-nous
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                    </a>
+                    
+                    <div class="font-serif italic text-4xl text-gray-500 opacity-50 select-none">
+                        S. Lagassé
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="faq" class="relative py-24 bg-[#1e1e1e] overflow-hidden">
+        
+        <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-white/5 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-6 md:px-8">
+            
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="font-serif italic text-3xl md:text-5xl text-gray-400 mb-2">Vos questions</h2>
+                <h3 class="font-black text-5xl md:text-7xl text-white uppercase tracking-tighter leading-[0.9]">
+                    F.A.Q.
+                </h3>
+            </div>
+
+            <div class="space-y-4">
+                
+                <details class="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-[1.5rem] overflow-hidden transition-all duration-300">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-white hover:text-gray-200 transition-colors [&::-webkit-details-marker]:hidden">
+                        <span class="text-sm md:text-base tracking-wide">Quel est le délai moyen pour vendre une propriété dans la région ?</span>
+                        <span class="transition-transform duration-300 group-open:rotate-180 text-gray-400">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="text-gray-300 px-6 pb-6 text-sm md:text-base leading-relaxed border-t border-white/5 pt-4 mt-2">
+                        Le délai varie grandement selon le type de bien, le quartier et le marché actuel. En moyenne, une propriété bien évaluée et mise en marché avec notre stratégie exclusive trouve preneur entre 30 et 60 jours. Nous pourrons établir un échéancier précis lors de notre rencontre.
+                    </div>
+                </details>
+
+                <details class="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-[1.5rem] overflow-hidden transition-all duration-300">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-white hover:text-gray-200 transition-colors [&::-webkit-details-marker]:hidden">
+                        <span class="text-sm md:text-base tracking-wide">Offrez-vous une évaluation gratuite de ma maison ?</span>
+                        <span class="transition-transform duration-300 group-open:rotate-180 text-gray-400">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="text-gray-300 px-6 pb-6 text-sm md:text-base leading-relaxed border-t border-white/5 pt-4 mt-2">
+                        Absolument. L'évaluation de votre propriété est une étape cruciale et elle est offerte sans aucune obligation de votre part. Je me base sur des comparables récents et une analyse approfondie de votre secteur pour vous donner l'heure juste.
+                    </div>
+                </details>
+
+                <details class="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-[1.5rem] overflow-hidden transition-all duration-300">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-white hover:text-gray-200 transition-colors [&::-webkit-details-marker]:hidden">
+                        <span class="text-sm md:text-base tracking-wide">Dois-je faire des rénovations avant de vendre ?</span>
+                        <span class="transition-transform duration-300 group-open:rotate-180 text-gray-400">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="text-gray-300 px-6 pb-6 text-sm md:text-base leading-relaxed border-t border-white/5 pt-4 mt-2">
+                        Pas toujours ! Parfois, un simple rafraîchissement ("home staging", nouvelle peinture, désencombrement) suffit pour maximiser votre retour sur investissement. Lors de l'évaluation, je vous conseillerai spécifiquement sur les travaux rentables et ceux qu'il vaut mieux éviter.
+                    </div>
+                </details>
+
+            </div>
+
+            <div class="mt-16 text-center">
+                <p class="text-gray-300 mb-6 font-serif italic text-xl">Vous avez d'autres questions ?</p>
+                <a href="contact.html" class="inline-flex items-center gap-3 text-black bg-white px-8 py-4 rounded-full text-sm font-bold uppercase tracking-wider hover:bg-gray-200 transition-all duration-300 shadow-[0_0_30px_rgba(255,255,255,0.15)] hover:shadow-[0_0_40px_rgba(255,255,255,0.3)] hover:-translate-y-1">
+                    Contactez-moi
+                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="relative py-24 bg-[#1e1e1e] overflow-hidden">
+        
+        <div class="absolute top-1/3 right-0 w-[600px] h-[600px] bg-white/5 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24 items-center">
             
             <div>
-              <form class="bg-white/[0.03] backdrop-blur-md border border-white/10 p-10 md:p-14 rounded-2xl shadow-2xl">
-                <div class="space-y-8">
-                  <div class="relative">
-                    <input type="text" id="name" class="peer w-full bg-transparent border-b border-white/20 text-white py-3 px-1 focus:border-[#D30000] focus:outline-none transition-colors placeholder-transparent font-light" placeholder="Votre nom complet">
-                    <label for="name" class="absolute left-1 -top-3.5 text-white/50 text-[10px] uppercase tracking-widest transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:text-white/40 peer-placeholder-shown:top-3.5 peer-focus:-top-3.5 peer-focus:text-[10px] peer-focus:text-[#D30000]">Nom complet</label>
-                  </div>
-                  
-                  <div class="relative">
-                    <input type="email" id="email" class="peer w-full bg-transparent border-b border-white/20 text-white py-3 px-1 focus:border-[#D30000] focus:outline-none transition-colors placeholder-transparent font-light" placeholder="votre@email.com">
-                    <label for="email" class="absolute left-1 -top-3.5 text-white/50 text-[10px] uppercase tracking-widest transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:text-white/40 peer-placeholder-shown:top-3.5 peer-focus:-top-3.5 peer-focus:text-[10px] peer-focus:text-[#D30000]">Adresse courriel</label>
-                  </div>
-                  
-                  <div class="relative">
-                    <input type="tel" id="phone" class="peer w-full bg-transparent border-b border-white/20 text-white py-3 px-1 focus:border-[#D30000] focus:outline-none transition-colors placeholder-transparent font-light" placeholder="819 000 0000">
-                    <label for="phone" class="absolute left-1 -top-3.5 text-white/50 text-[10px] uppercase tracking-widest transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:text-white/40 peer-placeholder-shown:top-3.5 peer-focus:-top-3.5 peer-focus:text-[10px] peer-focus:text-[#D30000]">Numéro de téléphone</label>
-                  </div>
-                  
-                  <div class="relative pt-4">
-                    <textarea id="message" rows="4" class="peer w-full bg-transparent border-b border-white/20 text-white py-3 px-1 focus:border-[#D30000] focus:outline-none transition-colors resize-none placeholder-transparent font-light" placeholder="Décrivez votre projet..."></textarea>
-                    <label for="message" class="absolute left-1 -top-0.5 text-white/50 text-[10px] uppercase tracking-widest transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:text-white/40 peer-placeholder-shown:top-6 peer-focus:-top-0.5 peer-focus:text-[10px] peer-focus:text-[#D30000]">Votre projet</label>
-                  </div>
-                  
-                  <button type="submit" class="w-full bg-[#D30000] hover:bg-white text-white hover:text-[#D30000] py-4 rounded-full text-[11px] uppercase tracking-[0.2em] font-semibold transition-all duration-300 mt-6 shadow-[0_0_20px_rgba(211,0,0,0.3)] hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]">
-                    Envoyer ma demande
-                  </button>
-                </div>
-              </form>
-            </div>
-            
-          </div>
-        </div>
-      </section>
+                <h2 class="font-serif italic text-3xl md:text-5xl text-gray-400 mb-2">Contact</h2>
+                <h3 class="font-black text-5xl md:text-7xl text-white uppercase tracking-tighter leading-[0.9] mb-8">
+                    Parlons<br>Projet
+                </h3>
                 
-      <footer class="bg-stone-950 py-16">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">
-          <div class="flex flex-col lg:flex-row items-center justify-between gap-8 pb-12 border-b border-stone-800">
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 bg-[#D30000] flex items-center justify-center">
-                <svg class="w-6 h-6 text-white" fill="currentColor" viewbox="0 0 24 24">
-                  <path d="M12 3L2 12h3v9h6v-6h2v6h6v-9h3L12 3z"></path>
-                </svg>
-              </div>
-              <span class="text-xl font-heading font-bold tracking-wide text-white">Sophie Manzerolle | Sutton Shefford</span>
+                <p class="text-gray-300 text-base md:text-lg leading-relaxed mb-12 max-w-md">
+                    Prêt à concrétiser vos ambitions immobilières ? Laissez-moi vos coordonnées ou contactez-moi directement. Mon téléphone est toujours allumé pour mes clients.
+                </p>
+
+                <div class="space-y-6">
+                    <a href="tel:+18195551234" class="flex items-center gap-4 text-white group w-fit">
+                        <div class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-white/10 transition-colors">
+                            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider font-bold">Téléphone</p>
+                            <p class="text-lg font-serif italic">(819) 555-1234</p>
+                        </div>
+                    </a>
+
+                    <a href="mailto:contact@sabrinalagasse.com" class="flex items-center gap-4 text-white group w-fit">
+                        <div class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-white/10 transition-colors">
+                            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider font-bold">Courriel</p>
+                            <p class="text-lg font-serif italic">contact@sabrinalagasse.com</p>
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div class="flex items-center gap-6">
-              <a href="#" class="w-10 h-10 border border-stone-700 flex items-center justify-center text-stone-400 hover:border-[#D30000] hover:text-[#D30000] transition-colors">
-                <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
-                  <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
-                </svg>
-              </a>
-              <a href="#" class="w-10 h-10 border border-stone-700 flex items-center justify-center text-stone-400 hover:border-[#D30000] hover:text-[#D30000] transition-colors">
-                <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
-                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
-                </svg>
-              </a>
-              <a href="#" class="w-10 h-10 border border-stone-700 flex items-center justify-center text-stone-400 hover:border-[#D30000] hover:text-[#D30000] transition-colors">
-                <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
-                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
-                </svg>
-              </a>
+
+            <div class="bg-white/5 backdrop-blur-2xl border border-white/20 p-8 md:p-10 rounded-[2.5rem] shadow-[0_8px_32px_0_rgba(0,0,0,0.4)]">
+                
+                <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="space-y-5">
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div class="space-y-1">
+                            <label for="name" class="text-xs font-bold text-gray-400 uppercase tracking-wider pl-2">Nom complet</label>
+                            <input type="text" id="name" name="name" required placeholder="Jean Dupont" 
+                                   class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white placeholder-gray-500 focus:outline-none focus:border-white/40 focus:bg-white/10 transition-all duration-300">
+                        </div>
+                        <div class="space-y-1">
+                            <label for="phone" class="text-xs font-bold text-gray-400 uppercase tracking-wider pl-2">Téléphone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" 
+                                   class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white placeholder-gray-500 focus:outline-none focus:border-white/40 focus:bg-white/10 transition-all duration-300">
+                        </div>
+                    </div>
+
+                    <div class="space-y-1">
+                        <label for="email" class="text-xs font-bold text-gray-400 uppercase tracking-wider pl-2">Courriel</label>
+                        <input type="email" id="email" name="email" required placeholder="jean@exemple.com" 
+                               class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white placeholder-gray-500 focus:outline-none focus:border-white/40 focus:bg-white/10 transition-all duration-300">
+                    </div>
+
+                    <div class="space-y-1">
+                        <label for="message" class="text-xs font-bold text-gray-400 uppercase tracking-wider pl-2">Votre projet</label>
+                        <textarea id="message" name="message" required rows="4" placeholder="Dites-moi en plus sur ce que vous recherchez..." 
+                                  class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white placeholder-gray-500 focus:outline-none focus:border-white/40 focus:bg-white/10 transition-all duration-300 resize-none"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-white text-black font-black uppercase tracking-wider py-4 rounded-2xl mt-4 hover:bg-gray-200 hover:scale-[1.02] transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_30px_rgba(255,255,255,0.25)] flex justify-center items-center gap-2">
+                        Envoyer le message
+                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                    </button>
+                    
+                </form>
             </div>
-          </div>
-          <div class="pt-12 flex flex-col lg:flex-row items-center justify-between gap-4">
-            <p class="text-stone-500 text-sm">© 2026 Sophie Manzerolle. Tous droits réservés.</p>
-            <div class="flex items-center gap-8 text-sm text-stone-500">
-              <a href="#" class="hover:text-[#D30000] transition-colors">Mentions légales</a>
-              <a href="#" class="hover:text-[#D30000] transition-colors">Politique de confidentialité</a>
-            </div>
-          </div>
+
         </div>
-      </footer>
-    </div>
+    </section>
+
+    <footer class="relative bg-[#1e1e1e] pt-20 pb-10 border-t border-white/10 overflow-hidden">
+        
+        <div class="absolute bottom-0 right-1/2 translate-x-1/2 translate-y-1/2 w-[800px] h-[300px] bg-white/5 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-8 mb-16">
+                
+                <div class="md:col-span-5 lg:col-span-4 space-y-6">
+                    <a href="index.html" class="font-serif italic text-2xl font-semibold tracking-wide flex items-center gap-2 text-white">
+                        Sabrina Lagassé
+                    </a>
+                    <p class="text-gray-300 text-sm leading-relaxed pr-4">
+                        Votre partenaire d'excellence pour l'achat, la vente et l'évaluation de propriétés. L'immobilier repensé avec une approche sur mesure, transparente et dévouée.
+                    </p>
+                    
+                    <div class="flex gap-4 pt-2">
+                        <a href="#" aria-label="Instagram" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-white hover:text-black hover:-translate-y-1 transition-all duration-300">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.88z"/></svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-white hover:text-black hover:-translate-y-1 transition-all duration-300">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="md:col-span-3 lg:col-span-2 lg:col-start-7">
+                    <h4 class="text-white font-bold uppercase tracking-wider text-xs mb-6">Menu</h4>
+                    <ul class="space-y-4">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white text-sm transition-colors flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-white/30"></span> Accueil</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white text-sm transition-colors flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-white/30"></span> Services</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white text-sm transition-colors flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-white/30"></span> Blog</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white text-sm transition-colors flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-white/30"></span> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="md:col-span-4 lg:col-span-3">
+                    <h4 class="text-white font-bold uppercase tracking-wider text-xs mb-6">Coordonnées</h4>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-white/50 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                            <a href="tel:+18195551234" class="hover:text-white transition-colors">(819) 555-1234</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-white/50 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                            <a href="mailto:contact@sabrinalagasse.com" class="hover:text-white transition-colors">contact@sabrinalagasse.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500 font-medium tracking-wide">
+                <p>&copy; 2026 Sabrina Lagassé. Tous droits réservés.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white transition-colors">Politique de confidentialité</a>
+                    <a href="#" class="hover:text-white transition-colors">Conditions d'utilisation</a>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script type="text/javascript" src="js/global-18046.js?v=1771605979"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            const iconOpen = document.getElementById('icon-open');
+            const iconClose = document.getElementById('icon-close');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+            let isMenuOpen = false;
+
+            function toggleMenu() {
+                isMenuOpen = !isMenuOpen;
+                
+                if (isMenuOpen) {
+                    menu.classList.remove('opacity-0', 'pointer-events-none');
+                    menu.classList.add('opacity-100', 'pointer-events-auto');
+                    
+                    setTimeout(() => {
+                        mobileLinks.forEach(link => {
+                            link.classList.remove('translate-y-4', 'opacity-0');
+                            link.classList.add('translate-y-0', 'opacity-100');
+                        });
+                    }, 50);
+                } else {
+                    menu.classList.remove('opacity-100', 'pointer-events-auto');
+                    menu.classList.add('opacity-0', 'pointer-events-none');
+                    
+                    mobileLinks.forEach(link => {
+                        link.classList.remove('translate-y-0', 'opacity-100');
+                        link.classList.add('translate-y-4', 'opacity-0');
+                    });
+                }
+
+                iconOpen.classList.toggle('hidden');
+                iconClose.classList.toggle('hidden');
+                
+                document.body.style.overflow = isMenuOpen ? 'hidden' : '';
+            }
+
+            btn.addEventListener('click', toggleMenu);
+
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (isMenuOpen) toggleMenu();
+                });
+            });
+        });
+    </script>
 </body>
 </html>
