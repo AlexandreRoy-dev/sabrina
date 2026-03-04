@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Services | Sabrina Lagassé</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,600,700,800,900|Playfair+Display:400,500,600,700,800,900&amp;subset=latin">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"DM Sans"', 'sans-serif'],
+              serif: ['"Playfair Display"', 'serif'],
+            },
+            colors: {
+              brand: '#d0103a',
+            }
+          }
+        }
+      }
+    </script>
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-tailwind.png">
+</head>
+
+<body class="antialiased bg-[#1e1e1e] text-white font-sans">
+
+    <nav class="fixed w-full top-0 z-50 pt-6 px-4 md:px-8 transition-all duration-300">
+        <div class="max-w-7xl mx-auto bg-white/10 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] rounded-full px-6 py-4 flex justify-between items-center text-white relative z-50">
+            
+            <a href="index.html" class="font-serif italic text-2xl font-semibold tracking-wide flex items-center gap-2 group">
+                Sabrina Lagassé
+            </a>
+
+            <div class="hidden lg:flex space-x-8 text-sm font-medium tracking-wide">
+                <a href="index.html" class="hover:text-brand transition-colors">Accueil</a>
+                <a href="https://www.centris.ca/fr/courtier-immobilier~sabrina-lagasse~proprio-direct/h3466" target="_blank" rel="noopener noreferrer" class="hover:text-brand transition-colors">Propriétés</a>
+                <a href="services.html" class="text-brand transition-colors">Services</a>
+                <a href="blog.html" class="hover:text-brand transition-colors">Blog</a>
+                <a href="ressources.html" class="hover:text-brand transition-colors">Ressources</a>
+                <a href="about.html" class="hover:text-brand transition-colors">À propos</a>
+                <a href="faq.html" class="hover:text-brand transition-colors">FAQ</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <a href="tel:+18195551234" class="hidden sm:flex bg-white text-black px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand hover:text-white hover:scale-105 transition-all items-center gap-2">
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                    (819) 555-1234
+                </a>
+
+                <button id="mobile-menu-btn" class="lg:hidden p-1 text-white hover:text-brand focus:outline-none transition-colors" aria-label="Ouvrir le menu">
+                    <svg id="icon-open" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                    <svg id="icon-close" class="w-7 h-7 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="fixed inset-0 bg-[#1e1e1e]/95 backdrop-blur-3xl z-40 opacity-0 pointer-events-none transition-all duration-500 flex flex-col justify-center items-center">
+            <div class="flex flex-col items-center space-y-8 text-3xl font-serif italic">
+                <a href="index.html" class="mobile-link text-white hover:text-brand transition-colors transform translate-y-4 opacity-0 transition-all duration-300 delay-100">Accueil</a>
+                <a href="https://www.centris.ca/fr/courtier-immobilier~sabrina-lagasse~proprio-direct/h3466" target="_blank" rel="noopener noreferrer" class="mobile-link text-white hover:text-brand transition-colors transform translate-y-4 opacity-0 transition-all duration-300 delay-150">Propriétés</a>
+                <a href="services.html" class="mobile-link text-brand transition-colors transform translate-y-4 opacity-0 transition-all duration-300 delay-200">Services</a>
+                <a href="blog.html" class="mobile-link text-white hover:text-brand transition-colors transform translate-y-4 opacity-0 transition-all duration-300 delay-250">Blog</a>
+                <a href="ressources.html" class="mobile-link text-white hover:text-brand transition-colors transform translate-y-4 opacity-0 transition-all duration-300 delay-275">Ressources</a>
+                <a href="about.html" class="mobile-link text-white hover:text-brand transition-colors transform translate-y-4 opacity-0 transition-all duration-300 delay-300">À propos</a>
+                <a href="faq.html" class="mobile-link text-white hover:text-brand transition-colors transform translate-y-4 opacity-0 transition-all duration-300 delay-325">FAQ</a>
+                
+                <a href="tel:+18195551234" class="mobile-link mt-8 bg-brand text-white px-8 py-3 rounded-full text-lg font-sans font-bold not-italic hover:scale-105 transform translate-y-4 opacity-0 transition-all duration-300 delay-[400ms]">
+                    Appeler le (819) 555-1234
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2000&auto=format&fit=crop" alt="Immobilier" class="w-full h-full object-cover opacity-40">
+            <div class="absolute inset-0 bg-gradient-to-b from-[#1e1e1e] via-[#1e1e1e]/80 to-[#1e1e1e]"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-8 text-center">
+            <h2 class="font-serif italic text-3xl md:text-5xl text-brand mb-2">Ce que je vous offre</h2>
+            <h1 class="font-black text-5xl md:text-7xl lg:text-8xl text-white uppercase tracking-tighter leading-[0.9]">
+                Mes<br>Services
+            </h1>
+            <p class="mt-8 text-gray-300 text-lg max-w-2xl mx-auto">
+                Une stratégie immobilière d'élite, de l'achat à la vente en passant par l'évaluation. Chaque étape est pensée pour vous.
+            </p>
+        </div>
+    </header>
+
+    <section id="achat" class="relative py-24 bg-gradient-to-b from-[#1e1e1e] via-[#2a2a2a] to-[#1e1e1e] overflow-hidden">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand/5 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
+                <div class="relative h-80 lg:h-[450px] rounded-[2rem] overflow-hidden border border-white/20">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1000&auto=format&fit=crop" alt="Achat de propriété" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                </div>
+                <div>
+                    <span class="text-brand font-bold uppercase tracking-widest text-sm">Service 01</span>
+                    <h2 class="font-serif italic text-4xl md:text-5xl text-white mt-2 mb-6">Achat</h2>
+                    <p class="text-gray-300 text-base md:text-lg leading-relaxed mb-6">
+                        Accédez à des propriétés exclusives avant tout le monde. Je vous accompagne de la définition de vos critères jusqu'à la signature chez le notaire, en passant par les visites, les négociations et les inspections.
+                    </p>
+                    <ul class="space-y-3 text-gray-300 text-sm md:text-base mb-8">
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand shrink-0"></span>Recherche ciblée selon vos besoins et votre budget</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand shrink-0"></span>Accès aux annonces et exclusivités avant mise en marché</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand shrink-0"></span>Visites organisées et analyse comparative</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand shrink-0"></span>Négociation et suivi jusqu'à la clé en main</li>
+                    </ul>
+                    <a href="contact.html" class="inline-flex items-center gap-3 text-brand font-bold group">
+                        Démarrer mon projet d'achat
+                        <svg class="w-5 h-5 group-hover:translate-x-2 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-7 7m7-7H3" /></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-16">
+                <h3 class="font-black text-2xl md:text-3xl text-white uppercase tracking-tight mb-10">Comment se déroule votre achat</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-brand/30 transition-colors">
+                        <span class="inline-flex w-10 h-10 rounded-full bg-brand/20 text-brand font-black text-lg items-center justify-center mb-4">1</span>
+                        <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-2">Première rencontre</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">On définit ensemble vos critères (secteur, budget, type de bien), votre calendrier et vos priorités. Je vous explique le processus et les coûts.</p>
+                    </div>
+                    <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-brand/30 transition-colors">
+                        <span class="inline-flex w-10 h-10 rounded-full bg-brand/20 text-brand font-black text-lg items-center justify-center mb-4">2</span>
+                        <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-2">Recherche & visites</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">Je filtre les annonces et les exclusivités, j’organise les visites et je vous donne une analyse comparative pour chaque propriété qui vous intéresse.</p>
+                    </div>
+                    <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-brand/30 transition-colors">
+                        <span class="inline-flex w-10 h-10 rounded-full bg-brand/20 text-brand font-black text-lg items-center justify-center mb-4">3</span>
+                        <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-2">Offre & négociation</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">Rédaction de l’offre, stratégie de négociation et accompagnement pour les inspections et la condition financière si nécessaire.</p>
+                    </div>
+                    <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-brand/30 transition-colors">
+                        <span class="inline-flex w-10 h-10 rounded-full bg-brand/20 text-brand font-black text-lg items-center justify-center mb-4">4</span>
+                        <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-2">Signature & remise des clés</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">Suivi avec le notaire, vérification des documents et présence à la signature. Vous recevez vos clés en toute sérénité.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8">
+                    <h4 class="font-serif italic text-xl text-white mb-3">Pour qui ?</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Premier achat, déménagement, investissement ou achat de prestige — je m’adapte à votre profil et à vos objectifs.</p>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand"></span> Acheteurs première maison</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand"></span> Familles en agrandissement</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand"></span> Investisseurs (condos, plex)</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand"></span> Achat de chalet ou résidence secondaire</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8">
+                    <h4 class="font-serif italic text-xl text-white mb-3">Pourquoi m’engager ?</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Vous gagnez du temps, vous évitez les mauvaises surprises et vous négociez en position de force grâce à une analyse claire du marché et un suivi rigoureux de A à Z.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="vente" class="relative py-24 bg-[#1e1e1e] overflow-hidden">
+        <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
+                <div class="order-2 lg:order-1">
+                    <span class="text-brand font-bold uppercase tracking-widest text-sm">Service 02</span>
+                    <h2 class="font-serif italic text-4xl md:text-5xl text-white mt-2 mb-6">Vente</h2>
+                    <p class="text-gray-300 text-base md:text-lg leading-relaxed mb-6">
+                        Mise en marché haut de gamme, photographies professionnelles et stratégie de visibilité ciblée pour vendre au meilleur prix dans les meilleurs délais.
+                    </p>
+                    <div class="inline-flex items-center gap-4 bg-white/10 backdrop-blur-xl border border-brand/40 rounded-2xl px-6 py-4 mb-8 shadow-[0_0_24px_rgba(208,16,58,0.2)]">
+                        <span class="bg-brand text-white text-lg md:text-xl font-black px-5 py-2.5 rounded-full uppercase tracking-widest border border-brand/80">À partir de 2%</span>
+                        <div>
+                            <p class="text-white font-bold text-sm">Programme <span class="text-brand font-black tracking-wide">Complici-T</span></p>
+                            <p class="text-gray-400 text-xs">Taux de commission avantageux pour les vendeurs</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-gray-300 text-sm md:text-base mb-8">
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand shrink-0"></span>Évaluation gratuite et stratégie de prix</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand shrink-0"></span>Photos et visites virtuelles professionnelles</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand shrink-0"></span>Diffusion multi-plateformes et réseaux</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand shrink-0"></span>Accompagnement des visites et négociations</li>
+                    </ul>
+                    <a href="contact.html" class="inline-flex items-center gap-3 text-brand font-bold group">
+                        Préparer la vente de ma propriété
+                        <svg class="w-5 h-5 group-hover:translate-x-2 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-7 7m7-7H3" /></svg>
+                    </a>
+                </div>
+                <div class="order-1 lg:order-2 relative h-80 lg:h-[450px] rounded-[2rem] overflow-hidden border border-white/20">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1000&auto=format&fit=crop" alt="Vente de propriété" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                </div>
+            </div>
+
+            <div class="bg-white/5 border border-white/10 rounded-[2rem] p-6 md:p-10 mb-16">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                    <div>
+                        <h3 class="font-black text-xl md:text-2xl text-white uppercase tracking-tight mb-2">Vendez avec sérénité, payez moins</h3>
+                        <p class="text-gray-400 text-sm md:text-base">Avec le programme <strong class="text-brand">Complici-T</strong>, bénéficiez d’un taux de commission <strong class="text-white">à partir de 2%</strong> sur la vente. Vous gardez plus dans vos poches tout en profitant du même accompagnement de A à Z : évaluation, mise en marché, visites et négociation jusqu’à la signature.</p>
+                    </div>
+                    <div class="shrink-0">
+                        <div class="bg-brand text-white text-2xl md:text-3xl font-black px-8 py-4 rounded-2xl uppercase tracking-wider text-center shadow-[0_0_24px_rgba(208,16,58,0.4)]">À partir de 2%</div>
+                        <p class="text-gray-500 text-xs text-center mt-2">Commission vendeur</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-16">
+                <h3 class="font-black text-2xl md:text-3xl text-white uppercase tracking-tight mb-10">Les étapes de votre vente</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-brand/30 transition-colors">
+                        <span class="inline-flex w-10 h-10 rounded-full bg-brand/20 text-brand font-black text-lg items-center justify-center mb-4">1</span>
+                        <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-2">Évaluation gratuite</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">Visite de votre propriété, analyse des comparables et recommandations (prix, petits travaux, mise en valeur). Sans engagement.</p>
+                    </div>
+                    <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-brand/30 transition-colors">
+                        <span class="inline-flex w-10 h-10 rounded-full bg-brand/20 text-brand font-black text-lg items-center justify-center mb-4">2</span>
+                        <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-2">Préparation & photos</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">Conseils de staging, photographies professionnelles et visite virtuelle pour mettre votre bien en valeur et attirer les bons acheteurs.</p>
+                    </div>
+                    <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-brand/30 transition-colors">
+                        <span class="inline-flex w-10 h-10 rounded-full bg-brand/20 text-brand font-black text-lg items-center justify-center mb-4">3</span>
+                        <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-2">Mise en marché</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">Annonce percutante, diffusion sur les portails majeurs et sur mes réseaux. Organisation des visites et des portes ouvertes.</p>
+                    </div>
+                    <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-brand/30 transition-colors">
+                        <span class="inline-flex w-10 h-10 rounded-full bg-brand/20 text-brand font-black text-lg items-center justify-center mb-4">4</span>
+                        <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-2">Négociation & notaire</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">Gestion des offres, négociation au meilleur prix et suivi jusqu’à la signature chez le notaire. Vous n’avez qu’à signer.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8">
+                    <h4 class="font-serif italic text-xl text-white mb-3">Ce qui est inclus</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand"></span> Évaluation détaillée et gratuite</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand"></span> Photographies professionnelles</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand"></span> Visite virtuelle 3D / vidéo</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand"></span> Annonce optimisée et multi-plateformes</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand"></span> Accompagnement visites et offres</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand"></span> Suivi notarial jusqu’à la clé</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8">
+                    <h4 class="font-serif italic text-xl text-white mb-3">Complici-T en bref</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Un taux <strong class="text-brand">à partir de 2%</strong> signifie que vous maximisez le montant qui vous revient à la vente, sans renoncer à un service complet. Idéal pour les vendeurs qui veulent un accompagnement sérieux à un coût maîtrisé.</p>
+                    <a href="contact.html" class="inline-flex items-center gap-2 text-brand font-bold text-sm group">
+                        Obtenir une évaluation gratuite
+                        <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="evaluation" class="relative py-24 bg-gradient-to-b from-[#1e1e1e] via-[#2a2a2a] to-[#1e1e1e] overflow-hidden">
+        <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-brand/5 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
+                <div class="relative h-80 lg:h-[450px] rounded-[2rem] overflow-hidden border border-white/20">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1000&auto=format&fit=crop" alt="Évaluation de marché" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                </div>
+                <div>
+                    <span class="text-brand font-bold uppercase tracking-widest text-sm">Service 03</span>
+                    <h2 class="font-serif italic text-4xl md:text-5xl text-white mt-2 mb-6">Évaluation</h2>
+                    <p class="text-gray-300 text-base md:text-lg leading-relaxed mb-6">
+                        Obtenez l'heure juste sur la valeur de votre propriété grâce à une analyse comparative de marché approfondie. Sans engagement, pour vous aider à prendre les bonnes décisions.
+                    </p>
+                    <div class="inline-flex items-center gap-3 bg-white/5 border border-white/10 rounded-2xl px-5 py-3 mb-8">
+                        <svg class="w-8 h-8 text-brand shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        <div>
+                            <p class="text-white font-bold text-sm">100 % gratuite</p>
+                            <p class="text-gray-400 text-xs">Aucune obligation de vendre avec moi</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-gray-300 text-sm md:text-base mb-8">
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand shrink-0"></span>Analyse des comparables récents dans votre secteur</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand shrink-0"></span>Rapport d'évaluation détaillé et personnalisé</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand shrink-0"></span>Conseils pour maximiser la valeur perçue</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand shrink-0"></span>Offert sans frais ni obligation</li>
+                    </ul>
+                    <a href="contact.html" class="inline-flex items-center gap-3 text-brand font-bold group">
+                        Demander une évaluation gratuite
+                        <svg class="w-5 h-5 group-hover:translate-x-2 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-7 7m7-7H3" /></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-16">
+                <h3 class="font-black text-2xl md:text-3xl text-white uppercase tracking-tight mb-10">Contenu de l’évaluation</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-brand/30 transition-colors">
+                        <div class="w-12 h-12 rounded-xl bg-brand/20 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+                        </div>
+                        <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-2">Analyse de marché</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">Comparables récents (ventes similaires dans votre quartier), tendances du secteur et délai de vente moyen. Vous savez où vous vous situez.</p>
+                    </div>
+                    <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-brand/30 transition-colors">
+                        <div class="w-12 h-12 rounded-xl bg-brand/20 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                        </div>
+                        <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-2">Fourchette de prix</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">Une fourchette réaliste (min–max) pour vendre dans un délai raisonnable. Pas de surenchère : un prix qui attire les acheteurs sérieux et maximise votre retour.</p>
+                    </div>
+                    <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-brand/30 transition-colors">
+                        <div class="w-12 h-12 rounded-xl bg-brand/20 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+                        </div>
+                        <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-2">Recommandations</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">Conseils concrets : petits travaux rentables, mise en valeur, meilleure période pour mettre en marché. Tout pour tirer le meilleur parti de votre bien.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8">
+                    <h4 class="font-serif italic text-xl text-white mb-3">Comment ça se passe ?</h4>
+                    <ol class="space-y-3 text-gray-400 text-sm">
+                        <li class="flex gap-3"><span class="text-brand font-black shrink-0">1.</span> Vous me contactez et on fixe un rendez-vous pour visiter la propriété (à votre convenance).</li>
+                        <li class="flex gap-3"><span class="text-brand font-black shrink-0">2.</span> Je visite, je prends des notes et j’analyse les comparables dans les jours suivants.</li>
+                        <li class="flex gap-3"><span class="text-brand font-black shrink-0">3.</span> Je vous remet un rapport d’évaluation écrit avec fourchette de prix et recommandations.</li>
+                        <li class="flex gap-3"><span class="text-brand font-black shrink-0">4.</span> Vous décidez ensuite, sans aucune obligation : vendre maintenant, plus tard, ou simplement garder l’info.</li>
+                    </ol>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8">
+                    <h4 class="font-serif italic text-xl text-white mb-3">Pourquoi c’est gratuit ?</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">L’évaluation est une première étape naturelle. Elle vous permet de vous situer sur le marché en toute transparence. Si vous choisissez de vendre avec moi, on enchaîne sur la mise en marché. Sinon, vous repartez simplement avec une information précieuse — aucun frais, aucune obligation.</p>
+                    <a href="contact.html" class="inline-flex items-center gap-2 text-brand font-bold text-sm group">
+                        Réserver mon évaluation gratuite
+                        <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative py-24 bg-[#1e1e1e] overflow-hidden">
+        <div class="relative z-10 max-w-4xl mx-auto px-6 md:px-8 text-center">
+            <h2 class="font-serif italic text-3xl md:text-5xl text-brand mb-4">Prêt à avancer ?</h2>
+            <p class="text-gray-300 text-lg mb-10">
+                Chaque projet est unique. Parlons du vôtre.
+            </p>
+            <a href="contact.html" class="inline-flex items-center gap-3 bg-brand text-white px-8 py-4 rounded-full text-sm font-bold uppercase tracking-wider hover:bg-white hover:text-black transition-all duration-300 shadow-[0_0_20px_rgba(208,16,58,0.3)]">
+                Contactez-moi
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+            </a>
+        </div>
+    </section>
+
+    <footer class="relative bg-[#1e1e1e] pt-20 pb-10 border-t border-white/10 overflow-hidden">
+        <div class="absolute bottom-0 right-1/2 translate-x-1/2 translate-y-1/2 w-[800px] h-[300px] bg-brand/5 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-8 mb-16">
+                <div class="md:col-span-5 lg:col-span-4 space-y-6">
+                    <a href="index.html" class="font-serif italic text-2xl font-semibold tracking-wide flex items-center gap-2 text-white group">
+                        <span class="w-2 h-2 rounded-full bg-brand group-hover:scale-150 transition-transform duration-300"></span>
+                        Sabrina Lagassé
+                    </a>
+                    <p class="text-gray-300 text-sm leading-relaxed pr-4">
+                        Votre partenaire d'excellence pour l'achat, la vente et l'évaluation de propriétés. L'immobilier repensé avec une approche sur mesure, transparente et dévouée.
+                    </p>
+                    <div class="flex gap-4 pt-2">
+                        <a href="#" aria-label="Instagram" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-brand hover:border-brand hover:-translate-y-1 transition-all duration-300">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.88z"/></svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-brand hover:border-brand hover:-translate-y-1 transition-all duration-300">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:col-span-3 lg:col-span-2 lg:col-start-7">
+                    <h4 class="text-white font-bold uppercase tracking-wider text-xs mb-6">Menu</h4>
+                    <ul class="space-y-4">
+                        <li><a href="index.html" class="text-gray-400 hover:text-brand text-sm transition-colors flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-brand/50"></span> Accueil</a></li>
+                        <li><a href="https://www.centris.ca/fr/courtier-immobilier~sabrina-lagasse~proprio-direct/h3466" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-brand text-sm transition-colors flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-brand/50"></span> Propriétés</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-brand text-sm transition-colors flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-brand/50"></span> Services</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-brand text-sm transition-colors flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-brand/50"></span> Blog</a></li>
+                        <li><a href="ressources.html" class="text-gray-400 hover:text-brand text-sm transition-colors flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-brand/50"></span> Ressources</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-brand text-sm transition-colors flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-brand/50"></span> À propos</a></li>
+                        <li><a href="faq.html" class="text-gray-400 hover:text-brand text-sm transition-colors flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-brand/50"></span> FAQ</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-brand text-sm transition-colors flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-brand/50"></span> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-4 lg:col-span-3">
+                    <h4 class="text-white font-bold uppercase tracking-wider text-xs mb-6">Coordonnées</h4>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-brand shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                            <a href="tel:+18195551234" class="hover:text-brand transition-colors">(819) 555-1234</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-brand shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                            <a href="mailto:contact@sabrinalagasse.com" class="hover:text-brand transition-colors">contact@sabrinalagasse.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500 font-medium tracking-wide">
+                <p>&copy; 2026 Sabrina Lagassé. Tous droits réservés.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-brand transition-colors">Politique de confidentialité</a>
+                    <a href="#" class="hover:text-brand transition-colors">Conditions d'utilisation</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            const iconOpen = document.getElementById('icon-open');
+            const iconClose = document.getElementById('icon-close');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+            let isMenuOpen = false;
+
+            function toggleMenu() {
+                isMenuOpen = !isMenuOpen;
+                if (isMenuOpen) {
+                    menu.classList.remove('opacity-0', 'pointer-events-none');
+                    menu.classList.add('opacity-100', 'pointer-events-auto');
+                    setTimeout(() => {
+                        mobileLinks.forEach(link => {
+                            link.classList.remove('translate-y-4', 'opacity-0');
+                            link.classList.add('translate-y-0', 'opacity-100');
+                        });
+                    }, 50);
+                } else {
+                    menu.classList.remove('opacity-100', 'pointer-events-auto');
+                    menu.classList.add('opacity-0', 'pointer-events-none');
+                    mobileLinks.forEach(link => {
+                        link.classList.remove('translate-y-0', 'opacity-100');
+                        link.classList.add('translate-y-4', 'opacity-0');
+                    });
+                }
+                iconOpen.classList.toggle('hidden');
+                iconClose.classList.toggle('hidden');
+                document.body.style.overflow = isMenuOpen ? 'hidden' : '';
+            }
+
+            btn.addEventListener('click', toggleMenu);
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (isMenuOpen) toggleMenu();
+                });
+            });
+        });
+    </script>
+</body>
+</html>
