@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Outils Financiers - Sabrina Lagassé</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,600,700,800,900|Playfair+Display:400,500,600,700,800,900&amp;subset=latin">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"DM Sans"', 'sans-serif'],
+              serif: ['"Playfair Display"', 'serif'],
+            },
+            colors: {
+              brand: '#d0103a',
+            }
+          }
+        }
+      }
+    </script>
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-tailwind.png">
+</head>
+
+<body class="antialiased bg-[#1e1e1e] text-white font-sans">
+
+    <nav class="fixed w-full top-0 z-50 pt-6 px-4 md:px-8 transition-all duration-300">
+        <div class="max-w-7xl mx-auto bg-white/10 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] rounded-full px-6 py-4 flex justify-between items-center text-white relative z-50">
+            
+            <a href="index.html" class="font-serif italic text-2xl font-semibold tracking-wide flex items-center gap-2 group">
+                <span class="w-2 h-2 rounded-full bg-brand group-hover:scale-150 transition-transform duration-300"></span>
+                Sabrina Lagassé
+            </a>
+
+            <div class="hidden lg:flex space-x-8 text-sm font-medium tracking-wide">
+                <a href="index.html" class="hover:text-brand transition-colors">Accueil</a>
+                <a href="proprietes.html" class="hover:text-brand transition-colors">Propriétés</a>
+                <a href="services.html" class="hover:text-brand transition-colors">Services</a>
+                <a href="ressources.html" class="text-brand transition-colors">Outils</a>
+                <a href="index.html#faq" class="hover:text-brand transition-colors">FAQ</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <a href="tel:+18195551234" class="hidden sm:flex bg-white text-black px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand hover:text-white hover:scale-105 transition-all items-center gap-2">
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                    (819) 555-1234
+                </a>
+
+                <button id="mobile-menu-btn" class="lg:hidden p-1 text-white hover:text-brand focus:outline-none transition-colors" aria-label="Ouvrir le menu">
+                    <svg id="icon-open" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                    <svg id="icon-close" class="w-7 h-7 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="fixed inset-0 bg-[#1e1e1e]/95 backdrop-blur-3xl z-40 opacity-0 pointer-events-none transition-all duration-500 flex flex-col justify-center items-center">
+            <div class="flex flex-col items-center space-y-8 text-3xl font-serif italic">
+                <a href="index.html" class="mobile-link text-white hover:text-brand transition-colors transform translate-y-4 opacity-0 transition-all duration-300 delay-100">Accueil</a>
+                <a href="proprietes.html" class="mobile-link text-white hover:text-brand transition-colors transform translate-y-4 opacity-0 transition-all duration-300 delay-150">Propriétés</a>
+                <a href="services.html" class="mobile-link text-white hover:text-brand transition-colors transform translate-y-4 opacity-0 transition-all duration-300 delay-200">Services</a>
+                <a href="ressources.html" class="mobile-link text-brand transition-colors transform translate-y-4 opacity-0 transition-all duration-300 delay-250">Outils</a>
+                
+                <a href="tel:+18195551234" class="mobile-link mt-8 bg-brand text-white px-8 py-3 rounded-full text-lg font-sans font-bold not-italic hover:scale-105 transform translate-y-4 opacity-0 transition-all duration-300 delay-300">
+                    Appeler le (819) 555-1234
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-40 pb-16 relative overflow-hidden bg-gradient-to-b from-[#151515] to-[#1e1e1e]">
+        <div class="absolute top-0 right-1/4 w-[500px] h-[500px] bg-brand/5 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-8 text-center">
+            <h2 class="font-serif italic text-3xl md:text-5xl text-brand mb-4">Vos calculs</h2>
+            <h1 class="font-black text-5xl md:text-7xl text-white uppercase tracking-tighter leading-[0.9] mb-6">
+                Outils<br>Financiers
+            </h1>
+            <p class="text-gray-300 text-base md:text-lg max-w-2xl mx-auto">
+                Planifiez votre projet en toute simplicité. Ces outils vous donnent une estimation claire et instantanée pour vous guider vers la propriété idéale.
+            </p>
+        </div>
+    </header>
+
+    <section class="py-16 relative z-10 max-w-7xl mx-auto px-6 md:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            
+            <div class="bg-white/5 backdrop-blur-2xl border border-white/10 p-8 md:p-10 rounded-[2.5rem] shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] hover:border-white/20 transition-all duration-500 relative overflow-hidden group">
+                <div class="absolute -top-20 -right-20 w-40 h-40 bg-brand/20 blur-[50px] rounded-full pointer-events-none"></div>
+                
+                <h3 class="font-serif italic text-3xl text-white mb-8 border-b border-white/10 pb-4">1. Paiement hypothécaire</h3>
+                
+                <form class="space-y-6">
+                    <div class="space-y-1">
+                        <label class="text-xs font-bold text-gray-400 uppercase tracking-wider pl-2">Montant emprunté ($)</label>
+                        <input type="number" id="calc1-amount" value="350000" min="0" step="1000" 
+                               class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white font-bold text-lg focus:outline-none focus:border-brand/60 focus:bg-white/10 transition-all duration-300">
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-5">
+                        <div class="space-y-1">
+                            <label class="text-xs font-bold text-gray-400 uppercase tracking-wider pl-2">Taux d'intérêt (%)</label>
+                            <input type="number" id="calc1-rate" value="5.25" min="0" step="0.01" 
+                                   class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white font-bold text-lg focus:outline-none focus:border-brand/60 focus:bg-white/10 transition-all duration-300">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-xs font-bold text-gray-400 uppercase tracking-wider pl-2">Amortissement (Ans)</label>
+                            <input type="number" id="calc1-years" value="25" min="1" max="30" step="1" 
+                                   class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white font-bold text-lg focus:outline-none focus:border-brand/60 focus:bg-white/10 transition-all duration-300">
+                        </div>
+                    </div>
+                </form>
+
+                <div class="mt-8 bg-black/30 rounded-2xl p-6 border border-white/5">
+                    <p class="text-sm text-gray-400 mb-4 uppercase tracking-wider font-bold">Vos versements estimés</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-end">
+                            <span class="text-gray-300">Mensuel :</span>
+                            <span id="res1-monthly" class="text-2xl font-black text-brand">0 $</span>
+                        </div>
+                        <div class="w-full h-px bg-white/10"></div>
+                        <div class="flex justify-between items-end">
+                            <span class="text-gray-300">Aux 2 semaines :</span>
+                            <span id="res1-biweekly" class="text-xl font-bold text-white">0 $</span>
+                        </div>
+                        <div class="w-full h-px bg-white/10"></div>
+                        <div class="flex justify-between items-end">
+                            <span class="text-gray-300">Hebdomadaire :</span>
+                            <span id="res1-weekly" class="text-xl font-bold text-white">0 $</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white/5 backdrop-blur-2xl border border-white/10 p-8 md:p-10 rounded-[2.5rem] shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] hover:border-white/20 transition-all duration-500 relative overflow-hidden group">
+                <div class="absolute -top-20 -left-20 w-40 h-40 bg-brand/20 blur-[50px] rounded-full pointer-events-none"></div>
+                
+                <h3 class="font-serif italic text-3xl text-white mb-8 border-b border-white/10 pb-4">2. Pouvoir d'achat</h3>
+                
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div class="space-y-1">
+                            <label class="text-xs font-bold text-gray-400 uppercase tracking-wider pl-2">Votre budget ($)</label>
+                            <input type="number" id="calc2-budget" value="2000" min="0" step="100" 
+                                   class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white font-bold text-lg focus:outline-none focus:border-brand/60 focus:bg-white/10 transition-all duration-300">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-xs font-bold text-gray-400 uppercase tracking-wider pl-2">Fréquence</label>
+                            <div class="relative">
+                                <select id="calc2-freq" class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white font-bold text-lg appearance-none focus:outline-none focus:border-brand/60 focus:bg-white/10 transition-all duration-300 cursor-pointer">
+                                    <option value="12" class="text-black" selected>Mensuel</option>
+                                    <option value="26" class="text-black">Aux 2 semaines</option>
+                                    <option value="52" class="text-black">Hebdomadaire</option>
+                                </select>
+                                <div class="absolute inset-y-0 right-0 flex items-center px-5 pointer-events-none text-white">
+                                    <svg class="w-5 h-5 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-5">
+                        <div class="space-y-1">
+                            <label class="text-xs font-bold text-gray-400 uppercase tracking-wider pl-2">Taux d'intérêt (%)</label>
+                            <input type="number" id="calc2-rate" value="5.25" min="0" step="0.01" 
+                                   class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white font-bold text-lg focus:outline-none focus:border-brand/60 focus:bg-white/10 transition-all duration-300">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-xs font-bold text-gray-400 uppercase tracking-wider pl-2">Amortissement (Ans)</label>
+                            <input type="number" id="calc2-years" value="25" min="1" max="30" step="1" 
+                                   class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white font-bold text-lg focus:outline-none focus:border-brand/60 focus:bg-white/10 transition-all duration-300">
+                        </div>
+                    </div>
+                </form>
+
+                <div class="mt-8 bg-black/30 rounded-2xl p-6 border border-white/5 text-center">
+                    <p class="text-sm text-gray-400 mb-2 uppercase tracking-wider font-bold">Emprunt maximal estimé</p>
+                    <div id="res2-maxloan" class="text-4xl md:text-5xl font-black text-brand tracking-tight">0 $</div>
+                    <p class="text-xs text-gray-500 mt-3">*Exclut la mise de fond. Ce montant représente le prêt hypothécaire.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="relative bg-[#1e1e1e] pt-20 pb-10 border-t border-white/10 overflow-hidden mt-12">
+        <div class="absolute bottom-0 right-1/2 translate-x-1/2 translate-y-1/2 w-[800px] h-[300px] bg-brand/5 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-8 mb-16">
+                <div class="md:col-span-5 lg:col-span-4 space-y-6">
+                    <a href="index.html" class="font-serif italic text-2xl font-semibold tracking-wide flex items-center gap-2 text-white group">
+                        <span class="w-2 h-2 rounded-full bg-brand group-hover:scale-150 transition-transform duration-300"></span>
+                        Sabrina Lagassé
+                    </a>
+                    <p class="text-gray-300 text-sm leading-relaxed pr-4">
+                        Votre partenaire d'excellence pour l'achat, la vente et l'évaluation de propriétés. L'immobilier repensé avec une approche sur mesure, transparente et dévouée.
+                    </p>
+                </div>
+                <div class="md:col-span-3 lg:col-span-2 lg:col-start-7">
+                    <h4 class="text-white font-bold uppercase tracking-wider text-xs mb-6">Menu</h4>
+                    <ul class="space-y-4">
+                        <li><a href="index.html" class="text-gray-400 hover:text-brand text-sm transition-colors flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-brand/50"></span> Accueil</a></li>
+                        <li><a href="proprietes.html" class="text-gray-400 hover:text-brand text-sm transition-colors flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-brand/50"></span> Propriétés</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500 font-medium tracking-wide">
+                <p>&copy; 2026 Sabrina Lagassé. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // Formatage en devise canadienne (ex: 1 500 $)
+            const formatter = new Intl.NumberFormat('fr-CA', { style: 'currency', currency: 'CAD', maximumFractionDigits: 0 });
+
+            // --- CALCULATEUR 1 : Paiement ---
+            const c1Amount = document.getElementById('calc1-amount');
+            const c1Rate = document.getElementById('calc1-rate');
+            const c1Years = document.getElementById('calc1-years');
+            const res1Monthly = document.getElementById('res1-monthly');
+            const res1Biweekly = document.getElementById('res1-biweekly');
+            const res1Weekly = document.getElementById('res1-weekly');
+
+            function calculatePayments() {
+                const P = parseFloat(c1Amount.value) || 0;
+                const rAnnual = parseFloat(c1Rate.value) || 0;
+                const years = parseFloat(c1Years.value) || 0;
+
+                if (P <= 0 || years <= 0) {
+                    res1Monthly.textContent = formatter.format(0);
+                    res1Biweekly.textContent = formatter.format(0);
+                    res1Weekly.textContent = formatter.format(0);
+                    return;
+                }
+
+                // Fonction de calcul de base: PMT = P * (r * (1 + r)^n) / ((1 + r)^n - 1)
+                const calcPMT = (principal, annualRate, years, periodsPerYear) => {
+                    const r = (annualRate / 100) / periodsPerYear;
+                    const n = years * periodsPerYear;
+                    if (r === 0) return principal / n;
+                    return principal * (r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+                };
+
+                res1Monthly.textContent = formatter.format(calcPMT(P, rAnnual, years, 12));
+                res1Biweekly.textContent = formatter.format(calcPMT(P, rAnnual, years, 26));
+                res1Weekly.textContent = formatter.format(calcPMT(P, rAnnual, years, 52));
+            }
+
+            // --- CALCULATEUR 2 : Pouvoir d'achat ---
+            const c2Budget = document.getElementById('calc2-budget');
+            const c2Freq = document.getElementById('calc2-freq');
+            const c2Rate = document.getElementById('calc2-rate');
+            const c2Years = document.getElementById('calc2-years');
+            const res2MaxLoan = document.getElementById('res2-maxloan');
+
+            function calculateMaxLoan() {
+                const PMT = parseFloat(c2Budget.value) || 0;
+                const periodsPerYear = parseFloat(c2Freq.value) || 12;
+                const rAnnual = parseFloat(c2Rate.value) || 0;
+                const years = parseFloat(c2Years.value) || 0;
+
+                if (PMT <= 0 || years <= 0) {
+                    res2MaxLoan.textContent = formatter.format(0);
+                    return;
+                }
+
+                // Formule inversée: P = PMT * ((1 + r)^n - 1) / (r * (1 + r)^n)
+                const r = (rAnnual / 100) / periodsPerYear;
+                const n = years * periodsPerYear;
+                
+                let P = 0;
+                if (r === 0) {
+                    P = PMT * n;
+                } else {
+                    P = PMT * (Math.pow(1 + r, n) - 1) / (r * Math.pow(1 + r, n));
+                }
+
+                res2MaxLoan.textContent = formatter.format(P);
+            }
+
+            // Ajout des Event Listeners pour calculer en temps réel à chaque modification
+            [c1Amount, c1Rate, c1Years].forEach(input => input.addEventListener('input', calculatePayments));
+            [c2Budget, c2Freq, c2Rate, c2Years].forEach(input => input.addEventListener('input', calculateMaxLoan));
+
+            // Calcul initial au chargement de la page
+            calculatePayments();
+            calculateMaxLoan();
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            const iconOpen = document.getElementById('icon-open');
+            const iconClose = document.getElementById('icon-close');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+            let isMenuOpen = false;
+
+            if(btn) {
+                btn.addEventListener('click', () => {
+                    isMenuOpen = !isMenuOpen;
+                    if (isMenuOpen) {
+                        menu.classList.remove('opacity-0', 'pointer-events-none');
+                        menu.classList.add('opacity-100', 'pointer-events-auto');
+                        setTimeout(() => {
+                            mobileLinks.forEach(link => {
+                                link.classList.remove('translate-y-4', 'opacity-0');
+                                link.classList.add('translate-y-0', 'opacity-100');
+                            });
+                        }, 50);
+                    } else {
+                        menu.classList.remove('opacity-100', 'pointer-events-auto');
+                        menu.classList.add('opacity-0', 'pointer-events-none');
+                        mobileLinks.forEach(link => {
+                            link.classList.remove('translate-y-0', 'opacity-100');
+                            link.classList.add('translate-y-4', 'opacity-0');
+                        });
+                    }
+                    iconOpen.classList.toggle('hidden');
+                    iconClose.classList.toggle('hidden');
+                    document.body.style.overflow = isMenuOpen ? 'hidden' : '';
+                });
+            }
+        });
+    </script>
+</body>
+</html>

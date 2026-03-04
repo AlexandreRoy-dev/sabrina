@@ -17,6 +17,9 @@
             fontFamily: {
               sans: ['"DM Sans"', 'sans-serif'],
               serif: ['"Playfair Display"', 'serif'],
+            },
+            colors: {
+              brand: '#d0103a', // Define the brand color here for easier use!
             }
           }
         }
@@ -31,25 +34,27 @@
     <nav class="fixed w-full top-0 z-50 pt-6 px-4 md:px-8 transition-all duration-300">
         <div class="max-w-7xl mx-auto bg-white/10 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] rounded-full px-6 py-4 flex justify-between items-center text-white relative z-50">
             
-            <a href="index.html" class="font-serif italic text-2xl font-semibold tracking-wide flex items-center gap-2">
+            <a href="index.html" class="font-serif italic text-2xl font-semibold tracking-wide flex items-center gap-2 group">
+                
                 Sabrina Lagassé
             </a>
 
             <div class="hidden lg:flex space-x-8 text-sm font-medium tracking-wide">
-                <a href="index.html" class="hover:text-gray-300 transition-colors">Accueil</a>
-                <a href="proprietes.html" class="hover:text-gray-300 transition-colors">Propriétés</a>
-                <a href="services.html" class="hover:text-gray-300 transition-colors">Services</a>
-                <a href="blog.html" class="hover:text-gray-300 transition-colors">Blog</a>
-                <a href="index.html#faq" class="hover:text-gray-300 transition-colors">FAQ</a>
+                <a href="index.html" class="hover:text-brand transition-colors">Accueil</a>
+                <a href="proprietes.html" class="hover:text-brand transition-colors">Propriétés</a>
+                <a href="services.html" class="hover:text-brand transition-colors">Services</a>
+                <a href="blog.html" class="hover:text-brand transition-colors">Blog</a>
+                <a href="ressources.html" class="hover:text-brand transition-colors">Ressources</a>
+                <a href="index.html#faq" class="hover:text-brand transition-colors">FAQ</a>
             </div>
 
             <div class="flex items-center gap-4">
-                <a href="tel:+18195551234" class="hidden sm:flex bg-white text-black px-6 py-2.5 rounded-full text-sm font-bold hover:bg-gray-200 hover:scale-105 transition-all items-center gap-2">
+                <a href="tel:+18195551234" class="hidden sm:flex bg-white text-black px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand hover:text-white hover:scale-105 transition-all items-center gap-2">
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
                     (819) 555-1234
                 </a>
 
-                <button id="mobile-menu-btn" class="lg:hidden p-1 text-white hover:text-gray-300 focus:outline-none transition-colors" aria-label="Ouvrir le menu">
+                <button id="mobile-menu-btn" class="lg:hidden p-1 text-white hover:text-brand focus:outline-none transition-colors" aria-label="Ouvrir le menu">
                     <svg id="icon-open" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
                     <svg id="icon-close" class="w-7 h-7 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
                 </button>
@@ -58,20 +63,20 @@
 
         <div id="mobile-menu" class="fixed inset-0 bg-[#1e1e1e]/95 backdrop-blur-3xl z-40 opacity-0 pointer-events-none transition-all duration-500 flex flex-col justify-center items-center">
             <div class="flex flex-col items-center space-y-8 text-3xl font-serif italic">
-                <a href="index.html" class="mobile-link text-white hover:text-gray-400 transition-colors transform translate-y-4 opacity-0 transition-all duration-300 delay-100">Accueil</a>
-                <a href="proprietes.html" class="mobile-link text-white hover:text-gray-400 transition-colors transform translate-y-4 opacity-0 transition-all duration-300 delay-150">Propriétés</a>
-                <a href="services.html" class="mobile-link text-white hover:text-gray-400 transition-colors transform translate-y-4 opacity-0 transition-all duration-300 delay-200">Services</a>
-                <a href="blog.html" class="mobile-link text-white hover:text-gray-400 transition-colors transform translate-y-4 opacity-0 transition-all duration-300 delay-250">Blog</a>
-                <a href="index.html#faq" class="mobile-link text-white hover:text-gray-400 transition-colors transform translate-y-4 opacity-0 transition-all duration-300 delay-300">FAQ</a>
+                <a href="index.html" class="mobile-link text-white hover:text-brand transition-colors transform translate-y-4 opacity-0 transition-all duration-300 delay-100">Accueil</a>
+                <a href="proprietes.html" class="mobile-link text-white hover:text-brand transition-colors transform translate-y-4 opacity-0 transition-all duration-300 delay-150">Propriétés</a>
+                <a href="services.html" class="mobile-link text-white hover:text-brand transition-colors transform translate-y-4 opacity-0 transition-all duration-300 delay-200">Services</a>
+                <a href="blog.html" class="mobile-link text-white hover:text-brand transition-colors transform translate-y-4 opacity-0 transition-all duration-300 delay-250">Blog</a>
+                <a href="index.html#faq" class="mobile-link text-white hover:text-brand transition-colors transform translate-y-4 opacity-0 transition-all duration-300 delay-300">FAQ</a>
                 
-                <a href="tel:+18195551234" class="mobile-link mt-8 bg-white text-black px-8 py-3 rounded-full text-lg font-sans font-bold not-italic hover:scale-105 transform translate-y-4 opacity-0 transition-all duration-300 delay-[400ms]">
+                <a href="tel:+18195551234" class="mobile-link mt-8 bg-brand text-white px-8 py-3 rounded-full text-lg font-sans font-bold not-italic hover:scale-105 transform translate-y-4 opacity-0 transition-all duration-300 delay-[400ms]">
                     Appeler le (819) 555-1234
                 </a>
             </div>
         </div>
     </nav>
 
-<header class="relative w-full h-screen flex flex-col justify-center overflow-hidden">
+    <header class="relative w-full h-screen flex flex-col justify-center overflow-hidden">
         
         <div class="absolute inset-0 z-0">
             <video src="banner.mov" 
@@ -87,52 +92,53 @@
         <div class="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-8 mt-20 flex flex-col md:flex-row items-center justify-between gap-12">
             
             <div class="flex-1 text-center md:text-left">
-                <h2 class="font-serif italic text-5xl md:text-7xl text-gray-200 mb-2">Courtier</h2>
+                <h2 class="font-serif italic text-5xl md:text-7xl text-brand mb-2">Complice de</h2>
                 
                 <h1 class="font-black text-[5rem] md:text-[7rem] lg:text-[9rem] leading-[0.85] tracking-tighter text-white uppercase mb-6">
-                    Immo<br>bilier
+                    Votre<br>Projet
                 </h1>
             </div>
 
             <div class="w-full md:w-[400px] bg-white/5 backdrop-blur-2xl border border-white/20 p-8 rounded-[2rem] shadow-2xl flex flex-col gap-6 transform md:translate-y-12">
                 
-                <div class="flex justify-between items-start">
-                    <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center border border-white/10">
-                        <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
+                <div class="flex justify-between items-center mb-2">
+                    <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center border border-white/10 shrink-0">
+                        <svg class="w-6 h-6 " fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
                     </div>
-                    <span class="bg-white/10 border border-white/20 text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider backdrop-blur-md shadow-lg">
+                    
+                    <div class="bg-brand text-white text-sm md:text-base font-black px-5 py-2.5 rounded-full uppercase tracking-widest shadow-[0_0_20px_rgba(208,16,58,0.4)] border border-brand/80 transform hover:scale-105 transition-transform duration-300 cursor-default">
                         À partir de 2%
-                    </span>
+                    </div>
                 </div>
 
                 <p class="text-gray-300 text-base leading-relaxed">
-                    Profitez du programme <strong class="text-white font-bold">Complici-T</strong> offrant un taux de commission avantageux. Je vous accompagne avec dévouement à chaque étape, de notre première rencontre jusqu'à la signature finale de la transaction.
+                    Profitez du programme <strong class="text-brand font-black tracking-wide uppercase text-sm">Complici-T</strong> offrant un taux de commission avantageux. Je vous accompagne avec dévouement à chaque étape, de notre première rencontre jusqu'à la signature finale de la transaction.
                 </p>
 
-                <a href="contact.html" class="inline-flex items-center gap-3 text-white font-bold group border-t border-white/10 pt-4 mt-2">
+                <a href="contact.html" class="inline-flex items-center gap-3 text-white font-bold group border-t border-white/10 pt-5 mt-2">
                     Discutons de votre projet
-                    <svg class="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                    <svg class="w-5 h-5 group-hover:translate-x-2 group-hover:text-brand transition-all duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-7 7m7-7H3" /></svg>
                 </a>
             </div>
 
         </div>
     </header>
 
-<section id="services" class="relative py-24 bg-gradient-to-b from-[#151515] via-[#2a2a2a] to-[#1e1e1e] overflow-hidden">
+    <section id="services" class="relative py-24 bg-gradient-to-b from-[#151515] via-[#2a2a2a] to-[#1e1e1e] overflow-hidden">
         
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-white/10 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand/5 rounded-full blur-[100px] pointer-events-none"></div>
 
         <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-8">
             
             <div class="mb-16 md:mb-20 flex flex-col md:flex-row md:items-end justify-between gap-8">
                 <div>
-                    <h2 class="font-serif italic text-3xl md:text-5xl text-gray-400 mb-2">Mes services</h2>
+                    <h2 class="font-serif italic text-3xl md:text-5xl text-brand mb-2">Mes services</h2>
                     <h3 class="font-black text-5xl md:text-7xl text-white uppercase tracking-tighter leading-[0.9]">
                         Approche<br>Sur Mesure
                     </h3>
                 </div>
                 <div class="md:max-w-sm">
-                    <p class="text-gray-300 text-base leading-relaxed border-l border-white/30 pl-6">
+                    <p class="text-gray-300 text-base leading-relaxed border-l-2 border-brand/50 pl-6">
                         Que vous souhaitiez vendre au meilleur prix ou dénicher la perle rare, bénéficiez d'une stratégie immobilière d'élite.
                     </p>
                 </div>
@@ -140,7 +146,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
                 
-                <div class="group relative bg-white/10 backdrop-blur-xl border border-white/20 p-4 rounded-[2rem] hover:bg-white/20 transition-all duration-500 hover:-translate-y-2 shadow-2xl flex flex-col">
+                <div class="group relative bg-white/10 backdrop-blur-xl border border-white/20 p-4 rounded-[2rem] hover:bg-white/20 transition-all duration-500 hover:-translate-y-2 shadow-2xl flex flex-col hover:border-brand/50 hover:shadow-[0_10px_40px_rgba(208,16,58,0.15)]">
                     <div class="relative h-72 w-full shrink-0 overflow-hidden rounded-[1.5rem] mb-6">
                         <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1000&auto=format&fit=crop" alt="Achat de propriété" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60 group-hover:opacity-30 transition-opacity duration-500"></div>
@@ -150,14 +156,14 @@
                         <p class="text-gray-300 text-sm leading-relaxed mb-6">
                             Accédez à des propriétés exclusives avant tout le monde. Un accompagnement rigoureux de la première visite jusqu'à la signature chez le notaire.
                         </p>
-                        <a href="services.html" class="mt-auto w-fit inline-flex items-center gap-2 text-white font-bold text-sm group-hover:text-gray-200 transition-colors uppercase tracking-wider">
+                        <a href="services.html" class="mt-auto w-fit inline-flex items-center gap-2 text-brand font-bold text-sm group-hover:text-white transition-colors uppercase tracking-wider">
                             Découvrir
                             <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                         </a>
                     </div>
                 </div>
 
-                <div class="group relative bg-white/10 backdrop-blur-xl border border-white/20 p-4 rounded-[2rem] hover:bg-white/20 transition-all duration-500 hover:-translate-y-2 shadow-2xl flex flex-col">
+                <div class="group relative bg-white/10 backdrop-blur-xl border border-white/20 p-4 rounded-[2rem] hover:bg-white/20 transition-all duration-500 hover:-translate-y-2 shadow-2xl flex flex-col hover:border-brand/50 hover:shadow-[0_10px_40px_rgba(208,16,58,0.15)]">
                     <div class="relative h-72 w-full shrink-0 overflow-hidden rounded-[1.5rem] mb-6">
                         <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1000&auto=format&fit=crop" alt="Vente de propriété" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60 group-hover:opacity-30 transition-opacity duration-500"></div>
@@ -167,14 +173,14 @@
                         <p class="text-gray-300 text-sm leading-relaxed mb-6">
                             Mise en marché haut de gamme, photographies professionnelles et stratégie de visibilité ciblée pour vendre au meilleur prix.
                         </p>
-                        <a href="services.html" class="mt-auto w-fit inline-flex items-center gap-2 text-white font-bold text-sm group-hover:text-gray-200 transition-colors uppercase tracking-wider">
+                        <a href="services.html" class="mt-auto w-fit inline-flex items-center gap-2 text-brand font-bold text-sm group-hover:text-white transition-colors uppercase tracking-wider">
                             Découvrir
                             <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                         </a>
                     </div>
                 </div>
 
-                <div class="group relative bg-white/10 backdrop-blur-xl border border-white/20 p-4 rounded-[2rem] hover:bg-white/20 transition-all duration-500 hover:-translate-y-2 shadow-2xl flex flex-col">
+                <div class="group relative bg-white/10 backdrop-blur-xl border border-white/20 p-4 rounded-[2rem] hover:bg-white/20 transition-all duration-500 hover:-translate-y-2 shadow-2xl flex flex-col hover:border-brand/50 hover:shadow-[0_10px_40px_rgba(208,16,58,0.15)]">
                     <div class="relative h-72 w-full shrink-0 overflow-hidden rounded-[1.5rem] mb-6">
                         <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1000&auto=format&fit=crop" alt="Évaluation de marché" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60 group-hover:opacity-30 transition-opacity duration-500"></div>
@@ -184,7 +190,7 @@
                         <p class="text-gray-300 text-sm leading-relaxed mb-6">
                             Obtenez l'heure juste sur la valeur de votre propriété grâce à une analyse comparative de marché approfondie et gratuite.
                         </p>
-                        <a href="services.html" class="mt-auto w-fit inline-flex items-center gap-2 text-white font-bold text-sm group-hover:text-gray-200 transition-colors uppercase tracking-wider">
+                        <a href="services.html" class="mt-auto w-fit inline-flex items-center gap-2 text-brand font-bold text-sm group-hover:text-white transition-colors uppercase tracking-wider">
                             Découvrir
                             <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                         </a>
@@ -202,7 +208,7 @@
         <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-8 flex flex-col lg:flex-row items-center gap-16 md:gap-24">
             
             <div class="w-full lg:w-1/2 relative mt-8 md:mt-0">
-                <div class="relative rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl aspect-[4/5] md:aspect-auto md:h-[650px]">
+                <div class="relative rounded-[2rem] overflow-hidden border border-brand/20 shadow-2xl aspect-[4/5] md:aspect-auto md:h-[650px]">
                     <img src="sabrina.png" 
                          alt="Sabrina Lagassé - Courtier Immobilier" 
                          class="w-full h-full object-cover">
@@ -210,7 +216,7 @@
                 </div>
 
                 <div class="absolute -bottom-6 -right-2 md:-right-8 bg-white/10 backdrop-blur-2xl border border-white/20 p-6 rounded-3xl shadow-[0_8px_32px_0_rgba(0,0,0,0.5)] flex items-center gap-5 transform hover:-translate-y-2 transition-transform duration-500">
-                    <div class="w-14 h-14 rounded-full bg-white text-black flex items-center justify-center font-black text-2xl">
+                    <div class="w-14 h-14 rounded-full bg-brand text-white flex items-center justify-center font-black text-2xl shadow-lg">
                         10
                     </div>
                     <div>
@@ -221,14 +227,14 @@
             </div>
 
             <div class="w-full lg:w-1/2 flex flex-col justify-center">
-                <h2 class="font-serif italic text-3xl md:text-5xl text-gray-400 mb-2">À propos de moi</h2>
+                <h2 class="font-serif italic text-3xl md:text-5xl text-brand mb-2">À propos de moi</h2>
                 <h3 class="font-black text-5xl md:text-7xl text-white uppercase tracking-tighter leading-[0.9] mb-8">
                     Votre<br>Alliée
                 </h3>
                 
-                <div class="space-y-6 text-gray-200 text-base md:text-lg leading-relaxed border-l-2 border-white/10 pl-6">
+                <div class="space-y-6 text-gray-200 text-base md:text-lg leading-relaxed border-l-2 border-brand/50 pl-6">
                     <p>
-                        L'immobilier n'est pas qu'une question de briques et de mortier, c'est une question de <strong class="text-white font-bold">projets de vie</strong>. Mon approche repose sur l'écoute active, la transparence absolue et une connaissance chirurgicale du marché immobilier local.
+                        L'immobilier n'est pas qu'une question de briques et de mortier, c'est une question de <strong class="text-brand font-bold">projets de vie</strong>. Mon approche repose sur l'écoute active, la transparence absolue et une connaissance chirurgicale du marché immobilier local.
                     </p>
                     <p>
                         Que ce soit pour l'acquisition de votre première maison, la vente d'un condo de luxe ou un investissement stratégique, je m'assure que chaque transaction soit fluide, sécurisante et hautement profitable pour vous.
@@ -236,7 +242,7 @@
                 </div>
 
                 <div class="mt-12 flex flex-col sm:flex-row items-start sm:items-center gap-8">
-                    <a href="contact.html" class="bg-white/5 hover:bg-white text-white hover:text-black border border-white/20 backdrop-blur-md px-8 py-4 rounded-full text-sm font-bold uppercase tracking-wider transition-all duration-300 shadow-lg inline-flex items-center gap-3">
+                    <a href="contact.html" class="bg-brand text-white hover:bg-white hover:text-black px-8 py-4 rounded-full text-sm font-bold uppercase tracking-wider transition-all duration-300 shadow-[0_0_20px_rgba(208,16,58,0.3)] hover:shadow-lg inline-flex items-center gap-3">
                         Rencontrons-nous
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                     </a>
@@ -250,14 +256,101 @@
         </div>
     </section>
 
+
+<section id="cta-selection" class="relative py-32 overflow-hidden">
+        
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2000&auto=format&fit=crop" 
+                 alt="Intérieur de luxe" 
+                 class="w-full h-full object-cover opacity-60">
+            
+            <div class="absolute inset-0 bg-gradient-to-b from-[#1e1e1e] via-transparent to-[#1e1e1e]"></div>
+            
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-6 md:px-8 text-center flex flex-col items-center">
+            
+            <h2 class="font-serif italic text-3xl md:text-5xl text-brand mb-4">Accès Privilège</h2>
+            <h3 class="font-black text-4xl md:text-6xl lg:text-7xl text-white uppercase tracking-tighter leading-[0.9] mb-6">
+                Votre sélection<br>sur mesure
+            </h3>
+            
+            <p class="text-gray-200 text-base md:text-lg leading-relaxed mb-12 max-w-2xl drop-shadow-md">
+                Soyez les premiers informés. Confiez-moi vos critères et recevez directement des propriétés qui correspondent à vos attentes, incluant des exclusivités avant leur mise en marché officielle.
+            </p>
+
+            <div class="w-full max-w-3xl bg-white/10 backdrop-blur-2xl border border-white/20 p-6 md:p-10 rounded-[2.5rem] shadow-[0_8px_32px_0_rgba(0,0,0,0.5)]">
+                
+                <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="text-left flex flex-col gap-5">
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div class="space-y-1">
+                            <label class="text-xs font-bold text-gray-300 uppercase tracking-wider pl-2">Courriel</label>
+                            <input type="email" name="email" required placeholder="jean@exemple.com" 
+                                   class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white placeholder-gray-400 focus:outline-none focus:border-brand/60 focus:bg-white/10 transition-all duration-300">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-xs font-bold text-gray-300 uppercase tracking-wider pl-2">Téléphone</label>
+                            <input type="tel" name="phone" placeholder="(555) 555-5555" 
+                                   class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white placeholder-gray-400 focus:outline-none focus:border-brand/60 focus:bg-white/10 transition-all duration-300">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div class="space-y-1">
+                            <label class="text-xs font-bold text-gray-300 uppercase tracking-wider pl-2">Type de propriété</label>
+                            <div class="relative">
+                                <select name="type" required class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white appearance-none focus:outline-none focus:border-brand/60 focus:bg-white/10 transition-all duration-300 cursor-pointer">
+                                    <option value="" disabled selected class="text-gray-800">Sélectionnez...</option>
+                                    <option value="Maison unifamiliale" class="text-black">Maison unifamiliale</option>
+                                    <option value="Condo" class="text-black">Condo / Appartement</option>
+                                    <option value="Plex" class="text-black">Immeuble à revenus (Plex)</option>
+                                    <option value="Terrain" class="text-black">Terrain</option>
+                                </select>
+                                <div class="absolute inset-y-0 right-0 flex items-center px-5 pointer-events-none text-white">
+                                    <svg class="w-5 h-5 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-1">
+                            <label class="text-xs font-bold text-gray-300 uppercase tracking-wider pl-2">Budget approximatif</label>
+                            <div class="relative">
+                                <select name="budget" required class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white appearance-none focus:outline-none focus:border-brand/60 focus:bg-white/10 transition-all duration-300 cursor-pointer">
+                                    <option value="" disabled selected class="text-gray-800">Sélectionnez...</option>
+                                    <option value="Moins de 500k" class="text-black">Moins de 500 000 $</option>
+                                    <option value="500k - 750k" class="text-black">500 000 $ - 750 000 $</option>
+                                    <option value="750k - 1M" class="text-black">750 000 $ - 1 000 000 $</option>
+                                    <option value="Plus de 1M" class="text-black">1 000 000 $ et +</option>
+                                </select>
+                                <div class="absolute inset-y-0 right-0 flex items-center px-5 pointer-events-none text-white">
+                                    <svg class="w-5 h-5 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w-full mt-2 bg-brand text-white font-black uppercase tracking-wider py-4 rounded-2xl hover:bg-white hover:text-black hover:scale-[1.02] transition-all duration-300 shadow-[0_0_20px_rgba(208,16,58,0.4)] hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] flex justify-center items-center gap-2">
+                        Recevoir ma sélection
+                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                    </button>
+                    
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
     <section id="faq" class="relative py-24 bg-[#1e1e1e] overflow-hidden">
         
-        <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-white/5 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-brand/5 rounded-full blur-[100px] pointer-events-none"></div>
 
         <div class="relative z-10 max-w-4xl mx-auto px-6 md:px-8">
             
             <div class="text-center mb-16 md:mb-20">
-                <h2 class="font-serif italic text-3xl md:text-5xl text-gray-400 mb-2">Vos questions</h2>
+                <h2 class="font-serif italic text-3xl md:text-5xl text-brand mb-2">Vos questions</h2>
                 <h3 class="font-black text-5xl md:text-7xl text-white uppercase tracking-tighter leading-[0.9]">
                     F.A.Q.
                 </h3>
@@ -265,10 +358,10 @@
 
             <div class="space-y-4">
                 
-                <details class="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-[1.5rem] overflow-hidden transition-all duration-300">
-                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-white hover:text-gray-200 transition-colors [&::-webkit-details-marker]:hidden">
+                <details class="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-[1.5rem] overflow-hidden transition-all duration-300 hover:border-brand/30">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-white hover:text-brand transition-colors [&::-webkit-details-marker]:hidden">
                         <span class="text-sm md:text-base tracking-wide">Quel est le délai moyen pour vendre une propriété dans la région ?</span>
-                        <span class="transition-transform duration-300 group-open:rotate-180 text-gray-400">
+                        <span class="transition-transform duration-300 group-open:rotate-180 text-brand">
                             <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
                         </span>
                     </summary>
@@ -277,10 +370,10 @@
                     </div>
                 </details>
 
-                <details class="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-[1.5rem] overflow-hidden transition-all duration-300">
-                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-white hover:text-gray-200 transition-colors [&::-webkit-details-marker]:hidden">
+                <details class="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-[1.5rem] overflow-hidden transition-all duration-300 hover:border-brand/30">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-white hover:text-brand transition-colors [&::-webkit-details-marker]:hidden">
                         <span class="text-sm md:text-base tracking-wide">Offrez-vous une évaluation gratuite de ma maison ?</span>
-                        <span class="transition-transform duration-300 group-open:rotate-180 text-gray-400">
+                        <span class="transition-transform duration-300 group-open:rotate-180 text-brand">
                             <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
                         </span>
                     </summary>
@@ -289,10 +382,10 @@
                     </div>
                 </details>
 
-                <details class="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-[1.5rem] overflow-hidden transition-all duration-300">
-                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-white hover:text-gray-200 transition-colors [&::-webkit-details-marker]:hidden">
+                <details class="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-[1.5rem] overflow-hidden transition-all duration-300 hover:border-brand/30">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-white hover:text-brand transition-colors [&::-webkit-details-marker]:hidden">
                         <span class="text-sm md:text-base tracking-wide">Dois-je faire des rénovations avant de vendre ?</span>
-                        <span class="transition-transform duration-300 group-open:rotate-180 text-gray-400">
+                        <span class="transition-transform duration-300 group-open:rotate-180 text-brand">
                             <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
                         </span>
                     </summary>
@@ -305,7 +398,7 @@
 
             <div class="mt-16 text-center">
                 <p class="text-gray-300 mb-6 font-serif italic text-xl">Vous avez d'autres questions ?</p>
-                <a href="contact.html" class="inline-flex items-center gap-3 text-black bg-white px-8 py-4 rounded-full text-sm font-bold uppercase tracking-wider hover:bg-gray-200 transition-all duration-300 shadow-[0_0_30px_rgba(255,255,255,0.15)] hover:shadow-[0_0_40px_rgba(255,255,255,0.3)] hover:-translate-y-1">
+                <a href="contact.html" class="inline-flex items-center gap-3 text-white bg-brand px-8 py-4 rounded-full text-sm font-bold uppercase tracking-wider hover:bg-white hover:text-black transition-all duration-300 shadow-[0_0_20px_rgba(208,16,58,0.3)] hover:shadow-[0_0_40px_rgba(255,255,255,0.3)] hover:-translate-y-1">
                     Contactez-moi
                     <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
                 </a>
@@ -316,12 +409,12 @@
 
     <section id="contact" class="relative py-24 bg-[#1e1e1e] overflow-hidden">
         
-        <div class="absolute top-1/3 right-0 w-[600px] h-[600px] bg-white/5 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute top-1/3 right-0 w-[600px] h-[600px] bg-brand/5 rounded-full blur-[120px] pointer-events-none"></div>
 
         <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24 items-center">
             
             <div>
-                <h2 class="font-serif italic text-3xl md:text-5xl text-gray-400 mb-2">Contact</h2>
+                <h2 class="font-serif italic text-3xl md:text-5xl text-brand mb-2">Contact</h2>
                 <h3 class="font-black text-5xl md:text-7xl text-white uppercase tracking-tighter leading-[0.9] mb-8">
                     Parlons<br>Projet
                 </h3>
@@ -332,57 +425,58 @@
 
                 <div class="space-y-6">
                     <a href="tel:+18195551234" class="flex items-center gap-4 text-white group w-fit">
-                        <div class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-white/10 transition-colors">
+                        <div class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-brand group-hover:border-brand transition-colors">
                             <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
                         </div>
                         <div>
                             <p class="text-xs text-gray-400 uppercase tracking-wider font-bold">Téléphone</p>
-                            <p class="text-lg font-serif italic">(819) 555-1234</p>
+                            <p class="text-lg font-serif italic group-hover:text-brand transition-colors">(819) 555-1234</p>
                         </div>
                     </a>
 
                     <a href="mailto:contact@sabrinalagasse.com" class="flex items-center gap-4 text-white group w-fit">
-                        <div class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-white/10 transition-colors">
+                        <div class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-brand group-hover:border-brand transition-colors">
                             <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
                         </div>
                         <div>
                             <p class="text-xs text-gray-400 uppercase tracking-wider font-bold">Courriel</p>
-                            <p class="text-lg font-serif italic">contact@sabrinalagasse.com</p>
+                            <p class="text-lg font-serif italic group-hover:text-brand transition-colors">contact@sabrinalagasse.com</p>
                         </div>
                     </a>
                 </div>
             </div>
 
-            <div class="bg-white/5 backdrop-blur-2xl border border-white/20 p-8 md:p-10 rounded-[2.5rem] shadow-[0_8px_32px_0_rgba(0,0,0,0.4)]">
-                
-                <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="space-y-5">
+            <div class="bg-white/5 backdrop-blur-2xl border border-white/20 p-8 md:p-10 rounded-[2.5rem] shadow-[0_8px_32px_0_rgba(0,0,0,0.4)] relative">
+                <div class="absolute inset-0 rounded-[2.5rem] border border-brand opacity-0 hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+
+                <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="space-y-5 relative z-10">
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                         <div class="space-y-1">
                             <label for="name" class="text-xs font-bold text-gray-400 uppercase tracking-wider pl-2">Nom complet</label>
                             <input type="text" id="name" name="name" required placeholder="Jean Dupont" 
-                                   class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white placeholder-gray-500 focus:outline-none focus:border-white/40 focus:bg-white/10 transition-all duration-300">
+                                   class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white placeholder-gray-500 focus:outline-none focus:border-brand/60 focus:bg-white/10 transition-all duration-300">
                         </div>
                         <div class="space-y-1">
                             <label for="phone" class="text-xs font-bold text-gray-400 uppercase tracking-wider pl-2">Téléphone</label>
                             <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" 
-                                   class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white placeholder-gray-500 focus:outline-none focus:border-white/40 focus:bg-white/10 transition-all duration-300">
+                                   class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white placeholder-gray-500 focus:outline-none focus:border-brand/60 focus:bg-white/10 transition-all duration-300">
                         </div>
                     </div>
 
                     <div class="space-y-1">
                         <label for="email" class="text-xs font-bold text-gray-400 uppercase tracking-wider pl-2">Courriel</label>
                         <input type="email" id="email" name="email" required placeholder="jean@exemple.com" 
-                               class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white placeholder-gray-500 focus:outline-none focus:border-white/40 focus:bg-white/10 transition-all duration-300">
+                               class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white placeholder-gray-500 focus:outline-none focus:border-brand/60 focus:bg-white/10 transition-all duration-300">
                     </div>
 
                     <div class="space-y-1">
                         <label for="message" class="text-xs font-bold text-gray-400 uppercase tracking-wider pl-2">Votre projet</label>
                         <textarea id="message" name="message" required rows="4" placeholder="Dites-moi en plus sur ce que vous recherchez..." 
-                                  class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white placeholder-gray-500 focus:outline-none focus:border-white/40 focus:bg-white/10 transition-all duration-300 resize-none"></textarea>
+                                  class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white placeholder-gray-500 focus:outline-none focus:border-brand/60 focus:bg-white/10 transition-all duration-300 resize-none"></textarea>
                     </div>
 
-                    <button type="submit" class="w-full bg-white text-black font-black uppercase tracking-wider py-4 rounded-2xl mt-4 hover:bg-gray-200 hover:scale-[1.02] transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_30px_rgba(255,255,255,0.25)] flex justify-center items-center gap-2">
+                    <button type="submit" class="w-full bg-brand text-white font-black uppercase tracking-wider py-4 rounded-2xl mt-4 hover:bg-white hover:text-black hover:scale-[1.02] transition-all duration-300 shadow-[0_0_20px_rgba(208,16,58,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.25)] flex justify-center items-center gap-2">
                         Envoyer le message
                         <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                     </button>
@@ -395,13 +489,14 @@
 
     <footer class="relative bg-[#1e1e1e] pt-20 pb-10 border-t border-white/10 overflow-hidden">
         
-        <div class="absolute bottom-0 right-1/2 translate-x-1/2 translate-y-1/2 w-[800px] h-[300px] bg-white/5 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-0 right-1/2 translate-x-1/2 translate-y-1/2 w-[800px] h-[300px] bg-brand/5 rounded-full blur-[120px] pointer-events-none"></div>
 
         <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-8">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-8 mb-16">
                 
                 <div class="md:col-span-5 lg:col-span-4 space-y-6">
-                    <a href="index.html" class="font-serif italic text-2xl font-semibold tracking-wide flex items-center gap-2 text-white">
+                    <a href="index.html" class="font-serif italic text-2xl font-semibold tracking-wide flex items-center gap-2 text-white group">
+                        <span class="w-2 h-2 rounded-full bg-brand group-hover:scale-150 transition-transform duration-300"></span>
                         Sabrina Lagassé
                     </a>
                     <p class="text-gray-300 text-sm leading-relaxed pr-4">
@@ -409,10 +504,10 @@
                     </p>
                     
                     <div class="flex gap-4 pt-2">
-                        <a href="#" aria-label="Instagram" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-white hover:text-black hover:-translate-y-1 transition-all duration-300">
+                        <a href="#" aria-label="Instagram" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-brand hover:border-brand hover:-translate-y-1 transition-all duration-300">
                             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.88z"/></svg>
                         </a>
-                        <a href="#" aria-label="LinkedIn" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-white hover:text-black hover:-translate-y-1 transition-all duration-300">
+                        <a href="#" aria-label="LinkedIn" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-brand hover:border-brand hover:-translate-y-1 transition-all duration-300">
                             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
                         </a>
                     </div>
@@ -421,10 +516,10 @@
                 <div class="md:col-span-3 lg:col-span-2 lg:col-start-7">
                     <h4 class="text-white font-bold uppercase tracking-wider text-xs mb-6">Menu</h4>
                     <ul class="space-y-4">
-                        <li><a href="index.html" class="text-gray-400 hover:text-white text-sm transition-colors flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-white/30"></span> Accueil</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover:text-white text-sm transition-colors flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-white/30"></span> Services</a></li>
-                        <li><a href="blog.html" class="text-gray-400 hover:text-white text-sm transition-colors flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-white/30"></span> Blog</a></li>
-                        <li><a href="contact.html" class="text-gray-400 hover:text-white text-sm transition-colors flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-white/30"></span> Contact</a></li>
+                        <li><a href="index.html" class="text-gray-400 hover:text-brand text-sm transition-colors flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-brand/50"></span> Accueil</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-brand text-sm transition-colors flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-brand/50"></span> Services</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-brand text-sm transition-colors flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-brand/50"></span> Blog</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-brand text-sm transition-colors flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-brand/50"></span> Contact</a></li>
                     </ul>
                 </div>
 
@@ -433,12 +528,12 @@
                     <ul class="space-y-4 text-sm text-gray-400">
                         
                         <li class="flex items-center gap-3">
-                            <svg class="w-5 h-5 text-white/50 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
-                            <a href="tel:+18195551234" class="hover:text-white transition-colors">(819) 555-1234</a>
+                            <svg class="w-5 h-5 text-brand shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                            <a href="tel:+18195551234" class="hover:text-brand transition-colors">(819) 555-1234</a>
                         </li>
                         <li class="flex items-center gap-3">
-                            <svg class="w-5 h-5 text-white/50 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
-                            <a href="mailto:contact@sabrinalagasse.com" class="hover:text-white transition-colors">contact@sabrinalagasse.com</a>
+                            <svg class="w-5 h-5 text-brand shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                            <a href="mailto:contact@sabrinalagasse.com" class="hover:text-brand transition-colors">contact@sabrinalagasse.com</a>
                         </li>
                     </ul>
                 </div>
@@ -448,8 +543,8 @@
             <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500 font-medium tracking-wide">
                 <p>&copy; 2026 Sabrina Lagassé. Tous droits réservés.</p>
                 <div class="flex gap-6">
-                    <a href="#" class="hover:text-white transition-colors">Politique de confidentialité</a>
-                    <a href="#" class="hover:text-white transition-colors">Conditions d'utilisation</a>
+                    <a href="#" class="hover:text-brand transition-colors">Politique de confidentialité</a>
+                    <a href="#" class="hover:text-brand transition-colors">Conditions d'utilisation</a>
                 </div>
             </div>
         </div>
