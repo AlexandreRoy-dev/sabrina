@@ -1,0 +1,22 @@
+{
+  "generatedFrom": "scripts/update_map_pins.py",
+  "pinCount": 2,
+  "pins": [
+    {
+      "lat": 45.89549,
+      "lng": -73.16116,
+      "title": "Rue Papineau",
+      "area": "Saint-Roch-de-Richelieu",
+      "status": "vendu",
+      "uls": "27217810"
+    },
+    {
+      "lat": 45.9898,
+      "lng": -72.89809,
+      "title": "Rg du Bord-de-l'eau E.",
+      "area": "Yamaska",
+      "status": "vendu",
+      "uls": "15387028"
+    }
+  ]
+}
