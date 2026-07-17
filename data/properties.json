@@ -1,8 +1,154 @@
 {
   "baseUrl": "https://vendreavecsabrina.ca",
   "agentUrl": "https://propriodirect.com/sabrina-lagasse/",
-  "generatedAt": "2026-07-16T13:19:58.179141+00:00",
+  "generatedAt": "2026-07-17T13:05:14.552824+00:00",
   "listings": [
+    {
+      "uls": "20564170",
+      "country": "ca",
+      "province": "qc",
+      "city": "carignan",
+      "sector": "centre",
+      "street": "4504-ch-ste-therese",
+      "title": "4504, Ch. Ste-Thérèse - Carignan",
+      "shareTitle": "Maison à étages - 4504, Ch. Ste-Thérèse, Carignan",
+      "price": "879 000 $",
+      "address": "4504, Ch. Ste-Thérèse",
+      "cityLabel": "Carignan",
+      "propertyType": "Maison à étages",
+      "size": "",
+      "beds": "3",
+      "baths": "1",
+      "sold": false,
+      "isNew": true,
+      "description": "Superbe propriété à Carignan, un véritable coup de coeur! Offrez-vous le meilleur des deux mondes: la quiétude de la campagne, à seulement quelques minutes de la ville. Nichée sur un vaste terrain de plus de 37 000 pi², cette magnifique propriété vous charmera dès votre arrivée. Bordée par un champ, elle offre une intimité exceptionnelle et un cadre naturel des plus apaisants. Son garage double de 24 x 24 répondra parfaitement à vos besoins, que ce soit pour vos véhicules, vos projets ou votre espace de rangement. Les amoureux de la nature seront conquis par la végétation mature, l'immense terrain et les couchers de soleil spectaculaires.",
+      "proprioUrl": "https://propriodirect.com/monteregie/carignan/maison-a-etages-a-vendre/4504-ch-ste-therese-20564170/",
+      "centrisUrl": "https://www.centris.ca/fr/propriete~a-vendre/20564170",
+      "fallbackImage": "20564170.jpg",
+      "publicPath": "/ca/qc/carignan/centre/4504-ch-ste-therese/",
+      "postalCode": "J3L4A7",
+      "datePosted": "2026/07/16",
+      "yearBuilt": "2012",
+      "livingArea": "",
+      "floorLevel": "",
+      "condoFees": "",
+      "parking": "Au garage",
+      "highlights": {
+        "Année de construction": "2012",
+        "Garage": "Détaché"
+      },
+      "details": {
+        "Équipement disponible": "Installation aspirateur central, Adoucisseur d'eau, Borne de recharge - niveau 2, Échangeur d'air, Porte de garage électrique, Système d'alarme, Thermopompe centrale",
+        "Appareils en location": "Système d'alarme",
+        "Toiture": "Bardeaux d'asphalte",
+        "Zonage": "Résidentiel",
+        "Mode de chauffage": "Air soufflé",
+        "Vue": "Sur l'eau",
+        "Garage": "Détaché",
+        "Système d'égouts": "Système BIONEST",
+        "Stationnement (total)": "Au garage",
+        "Fenêtres": "PVC",
+        "Particularités": "Boisé",
+        "Approvisionnement en eau": "Puits artésien"
+      },
+      "inclusions": "Lave-vaisselle, réfrigérateur LG, micro-onde et poêle Frigidaire, plaque cuisson Frigidaire, congélateur vertical Frigidaire 20 pied cube, pompe à batterie, système d'alarme($$)toile de fenêtre, pôle, rideaux, banc comptoir, (4), miroir salle de bain, + salle d'eau, cabanon, aspirateur central(avec tuyau rétractable)+2 tuyaux supplémentaires, 2 ouvre porte garage 4 manettes + 1 clavier, foyer propane, 1 borne voiture électrique Grizly (peut se mettre près de la maison ou garage), sèche linge. Exclu Les biens des vendeurs, caméras, étagère et tablette de travail du garage, détecteur de radon, foyer extérieur, support tv (3) Station météo.",
+      "exclusions": "",
+      "rooms": [
+        {
+          "name": "Hall d'entrée/Vestibule",
+          "level": "1er niveau/RDC",
+          "dimensions": "6x8 P",
+          "flooring": "Céramique"
+        },
+        {
+          "name": "Salon",
+          "level": "1er niveau/RDC",
+          "dimensions": "11.2x12 P",
+          "flooring": "Bois"
+        },
+        {
+          "name": "Cuisine",
+          "level": "1er niveau/RDC",
+          "dimensions": "11.2x12.4 P",
+          "flooring": "Bois"
+        },
+        {
+          "name": "Salle à manger",
+          "level": "1er niveau/RDC",
+          "dimensions": "18.6x14 P",
+          "flooring": "Bois"
+        },
+        {
+          "name": "Salle d'eau",
+          "level": "1er niveau/RDC",
+          "dimensions": "10.6x10.6 P",
+          "flooring": "Céramique"
+        },
+        {
+          "name": "Chambre à coucher principale",
+          "level": "2ième étage",
+          "dimensions": "11.2x14 P",
+          "flooring": "Bois"
+        },
+        {
+          "name": "Penderie (Walk-in)",
+          "level": "2ième étage",
+          "dimensions": "7x6 P",
+          "flooring": "Bois"
+        },
+        {
+          "name": "Salle de bains",
+          "level": "2ième étage",
+          "dimensions": "11x12.10 P",
+          "flooring": "Céramique"
+        },
+        {
+          "name": "Chambre à coucher",
+          "level": "2ième étage",
+          "dimensions": "11x11 P",
+          "flooring": "Bois"
+        },
+        {
+          "name": "Chambre à coucher",
+          "level": "2ième étage",
+          "dimensions": "11x11 P",
+          "flooring": "Bois"
+        },
+        {
+          "name": "Salle familiale",
+          "level": "Sous-sol",
+          "dimensions": "3.0x10.6 P",
+          "flooring": "Plancher flottant"
+        },
+        {
+          "name": "Rangement",
+          "level": "Sous-sol",
+          "dimensions": "10.6x13 P",
+          "flooring": "Plancher flottant"
+        },
+        {
+          "name": "salle mécanique",
+          "level": "Sous-sol",
+          "dimensions": "8x6.6 P",
+          "flooring": "Béton"
+        },
+        {
+          "name": "Salle de bains",
+          "level": "Sous-sol",
+          "dimensions": "6x8 P",
+          "flooring": "Béton"
+        }
+      ],
+      "taxes": {
+        "Total taxes": "3,863 $",
+        "Taxes municipales": "3,338 $",
+        "Taxes scolaires": "525 $",
+        "Terrain": "155,200 $",
+        "Bâtiment": "609,700 $",
+        "Évaluation totale": "764,900 $"
+      },
+      "additionalInfo": "Bienvenue dans cette splendide propriété construite en 2012. Implantée sur un vaste terrain de plus de 37 000 pi², elle offre un équilibre parfait entre la tranquillité de la campagne et la proximité de tous les services. Dès votre arrivée, vous serez charmé par son ambiance chaleureuse, sa luminosité abondante et ses plafonds de 9 pieds qui procurent une agréable sensation d'espace. L'aire de vie principale, à la fois conviviale et élégante, comprend un salon et une salle à manger ouverts, rehaussés par un magnifique foyer au gaz, créant une atmosphère des plus accueillantes. La cuisine moderne saura plaire aux amateurs de gastronomie avec ses nombreuses armoires de qualité, son généreux espace de travail et son vaste comptoir, idéal pour cuisiner, recevoir famille et amis ou partager les repas du quotidien. Le rez-de-chaussée est complété par une salle d'eau fonctionnelle intégrant les installations laveuse-sécheuse. À l'étage, vous découvrirez trois chambres à coucher de belles dimensions. La chambre principale se distingue par son grand walk-in et son accès direct à une belle salle de bain, équipée d'une vaste douche en verre, d'un bain autoportant et d'un aménagement pensé pour le confort de toute la famille. Le sous-sol offre un potentiel remarquable. Les installations sont déjà prévues pour l'aménagement d'une salle de bain et l'espace permet facilement d'ajouter jusqu'à deux chambres supplémentaires selon vos besoins. Une entrée indépendante représente un avantage considérable, que ce soit pour un projet intergénérationnel, un bureau à domicile, un logement pour un membre de la famille ou un espace privé pour les adolescents. À l'extérieur, le coup de coeur est instantané. La grande terrasse vous invite à profiter pleinement de la belle saison, dans un environnement paisible où les couchers de soleil offrent un spectacle quotidien. Le terrain, bordé par un champ, procure une intimité appréciable et un décor naturel exceptionnel. Un garage double détaché de 24 x 24 pieds complète cette propriété et offre tout l'espace nécessaire pour vos véhicules, vos outils ou vos projets. Une propriété clé en main, soigneusement entretenue, offrant des espaces généreux, un immense potentiel et un environnement de vie exceptionnel. Une occasion rare à Carignan qui mérite assurément une visite."
+    },
     {
       "uls": "24694303",
       "country": "ca",
