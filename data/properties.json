@@ -1,7 +1,7 @@
 {
   "baseUrl": "https://vendreavecsabrina.ca",
   "agentUrl": "https://propriodirect.com/sabrina-lagasse/",
-  "generatedAt": "2026-07-17T13:05:14.552824+00:00",
+  "generatedAt": "2026-07-18T12:52:08.153578+00:00",
   "listings": [
     {
       "uls": "20564170",
@@ -57,7 +57,7 @@
         {
           "name": "Hall d'entrée/Vestibule",
           "level": "1er niveau/RDC",
-          "dimensions": "6x8 P",
+          "dimensions": "8x12 P",
           "flooring": "Céramique"
         },
         {
@@ -368,9 +368,9 @@
         }
       ],
       "taxes": {
-        "Total taxes": "726 $",
+        "Total taxes": "741 $",
         "Taxes municipales": "674 $",
-        "Taxes scolaires": "52 $",
+        "Taxes scolaires": "67 $",
         "Terrain": "58,400 $",
         "Bâtiment": "75,400 $",
         "Évaluation totale": "133,800 $"
