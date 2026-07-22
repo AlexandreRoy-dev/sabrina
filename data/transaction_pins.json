@@ -1,6 +1,6 @@
 {
   "generatedFrom": "scripts/update_map_pins.py",
-  "pinCount": 2,
+  "pinCount": 3,
   "pins": [
     {
       "lat": 45.89549,
@@ -17,6 +17,14 @@
       "area": "Yamaska",
       "status": "vendu",
       "uls": "15387028"
+    },
+    {
+      "lat": 45.55088,
+      "lng": -73.4483,
+      "title": "Rue des Crocus",
+      "area": "Parcours du Cerf",
+      "status": "vendu",
+      "uls": "24694303"
     }
   ]
 }
