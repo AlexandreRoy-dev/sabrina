@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-28T13:30:59.185722+00:00",
+  "generatedAt": "2026-07-29T13:46:38.530562+00:00",
   "agentUrl": "https://propriodirect.com/sabrina-lagasse/",
   "includeSold": true,
   "maxListings": 30,
@@ -99,16 +99,6 @@
       "ogShareImage": "assets/img/proprietes/24694303/og-share.jpg"
     },
     {
-      "uls": "10109435",
-      "photoCount": 1,
-      "photos": [
-        "01.jpg"
-      ],
-      "source": "proprio",
-      "publicPath": "/ca/qc/longueuil-le-vieux-longueuil/centre/1401z-rue-grant/",
-      "ogShareImage": "assets/img/proprietes/10109435/og-share.jpg"
-    },
-    {
       "uls": "27574056",
       "photoCount": 14,
       "photos": [
@@ -130,6 +120,16 @@
       "source": "centris",
       "publicPath": "/ca/qc/hinchinbrooke/centre/2160-ch-d-athelstan/",
       "ogShareImage": "assets/img/proprietes/27574056/og-share.jpg"
+    },
+    {
+      "uls": "10109435",
+      "photoCount": 1,
+      "photos": [
+        "01.jpg"
+      ],
+      "source": "proprio",
+      "publicPath": "/ca/qc/longueuil-le-vieux-longueuil/centre/1401z-rue-grant/",
+      "ogShareImage": "assets/img/proprietes/10109435/og-share.jpg"
     },
     {
       "uls": "27217810",
