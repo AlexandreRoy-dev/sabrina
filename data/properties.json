@@ -1,8 +1,132 @@
 {
   "baseUrl": "https://vendreavecsabrina.ca",
   "agentUrl": "https://propriodirect.com/sabrina-lagasse/",
-  "generatedAt": "2026-08-01T12:56:07.461779+00:00",
+  "generatedAt": "2026-08-02T12:58:58.114475+00:00",
   "listings": [
+    {
+      "uls": "27154952",
+      "country": "ca",
+      "province": "qc",
+      "city": "sorel-tracy",
+      "sector": "centre",
+      "street": "2604-rue-mandeville",
+      "title": "2604, Rue Mandeville - Sorel-Tracy (Tracy)",
+      "shareTitle": "Maison de plain-pied - 2604, Rue Mandeville, Sorel-Tracy (Tracy)",
+      "price": "379 000 $",
+      "address": "2604, Rue Mandeville",
+      "cityLabel": "Sorel-Tracy (Tracy)",
+      "propertyType": "Maison de plain-pied",
+      "size": "",
+      "beds": "2",
+      "baths": "1",
+      "sold": false,
+      "isNew": true,
+      "description": "Magnifique propriété situé situé à Sorel-Tracy! Elle saura vous charmer par son emplacement de choix et son environnement paisible, à quelques pas des services, des écoles et des espaces verts. Offrant une belle luminosité et un aménagement pratique, elle propose deux chambres à l'étage, une salle de bain complète avec bain podium et douche séparée ainsi qu'une aire de vie conviviale réunissant la cuisine et la salle à manger. Le sous-sol vous offre un vaste potentiel selon vos projets. À l'extérieur, profitez d'un terrain clôturé et intime avec terrasse, remise et espace détente avec foyer. Une maison idéale pour une famille. Faites-vites!",
+      "proprioUrl": "https://propriodirect.com/monteregie/sorel-tracy/maison-de-plain-pied-a-vendre/2604-rue-mandeville-27154952/",
+      "centrisUrl": "https://www.centris.ca/fr/propriete~a-vendre/27154952",
+      "fallbackImage": "27154952.jpg",
+      "publicPath": "/ca/qc/sorel-tracy/centre/2604-rue-mandeville/",
+      "postalCode": "J3R2L5",
+      "datePosted": "2026/08/01",
+      "yearBuilt": "2010",
+      "livingArea": "",
+      "floorLevel": "",
+      "condoFees": "",
+      "parking": "Abri d'auto",
+      "highlights": {
+        "Année de construction": "2010"
+      },
+      "details": {
+        "Équipement disponible": "Climatiseur central",
+        "Toiture": "Bardeaux d'asphalte",
+        "Zonage": "Résidentiel",
+        "Armoires": "Mélamine",
+        "Système d'égouts": "Municipal",
+        "Stationnement (total)": "Abri d'auto",
+        "Énergie pour le chauffage": "Électricité",
+        "Fenêtres": "PVC",
+        "Approvisionnement en eau": "Municipalité"
+      },
+      "inclusions": "Pôles, rideaux, lave-vaisselle, luminaire, cabanon, store, thermopompe, aspirateur central et accessoires. Exclu Les biens des vendeurs.",
+      "exclusions": "",
+      "rooms": [
+        {
+          "name": "Hall d'entrée/Vestibule",
+          "level": "1er niveau/RDC",
+          "dimensions": "3.3x5 P",
+          "flooring": "Céramique"
+        },
+        {
+          "name": "Salon",
+          "level": "1er niveau/RDC",
+          "dimensions": "10.11x12.11 P",
+          "flooring": "Bois"
+        },
+        {
+          "name": "Chambre à coucher",
+          "level": "1er niveau/RDC",
+          "dimensions": "10.3x14.8 P",
+          "flooring": "Bois"
+        },
+        {
+          "name": "Salle de bains",
+          "level": "1er niveau/RDC",
+          "dimensions": "7.4x14.8 P",
+          "flooring": "Céramique"
+        },
+        {
+          "name": "Chambre à coucher principale",
+          "level": "1er niveau/RDC",
+          "dimensions": "11.11x14.7 P",
+          "flooring": "Bois"
+        },
+        {
+          "name": "Cuisine",
+          "level": "1er niveau/RDC",
+          "dimensions": "10.8x9.10 P",
+          "flooring": "Céramique"
+        },
+        {
+          "name": "Salle à manger",
+          "level": "1er niveau/RDC",
+          "dimensions": "10.7x10.8 P",
+          "flooring": "Bois"
+        },
+        {
+          "name": "Rangement",
+          "level": "Sous-sol",
+          "dimensions": "6.11x9.11 P",
+          "flooring": "Plancher flottant"
+        },
+        {
+          "name": "Salle de lavage",
+          "level": "Sous-sol",
+          "dimensions": "5.9x8.5 P",
+          "flooring": "Céramique"
+        },
+        {
+          "name": "Atelier",
+          "level": "Sous-sol",
+          "dimensions": "8.1x15.11 P",
+          "flooring": "Béton"
+        },
+        {
+          "name": "Salle familiale",
+          "level": "Sous-sol",
+          "dimensions": "14.8x33.4 P",
+          "flooring": "Plancher flottant"
+        }
+      ],
+      "taxes": {
+        "Total taxes": "2,840 $",
+        "Taxes municipales": "2,668 $",
+        "Taxes scolaires": "172 $",
+        "Terrain": "97,500 $",
+        "Bâtiment": "226,200 $",
+        "Évaluation totale": "323,700 $"
+      },
+      "additionalInfo": "Découvrez cette propriété construite en 2010, située dans un secteur recherché de Sorel-Tracy, à proximité des écoles, des parcs et des principaux axes routiers, offrant un emplacement stratégique pour faciliter vos déplacements au quotidien. Cette maison soigneusement entretenue propose un espace de vie chaleureux et fonctionnel, idéale pour une petite famille souhaitant s'établir dans un environnement paisible. Elle vous offre deux grandes chambres à coucher à l'étage, une salle de bain complète avec bain podium et douche indépendante, ainsi qu'une belle cuisine ouverte sur la salle à manger, parfaite pour partager de beaux moments en famille ou recevoir vos proches. Le sous-sol saura répondre à vos besoins grâce à sa grande salle familiale, offrant la possibilité d'aménager des chambres supplémentaires ou de créer l'espace qui correspond à votre style de vie. Vous y trouverez également une grande pièce de rangement, un espace atelier ainsi qu'un coin pratique pour la laveuse et la sécheuse. À l'extérieur, profitez d'une cour clôturée, intime et soigneusement aménagée, comprenant une terrasse sur dalle de béton idéale pour vos repas estivaux, une grande remise pour maximiser le rangement ainsi qu'un espace foyer parfait pour agrémenter vos soirées en famille ou entre amis. Une propriété bien entretenue, dans un emplacement de choix, offrant confort, tranquillité et plusieurs possibilités d'aménagement selon vos besoins."
+    },
     {
       "uls": "20564170",
       "country": "ca",
@@ -38,7 +162,7 @@
         "Garage": "Détaché"
       },
       "details": {
-        "Équipement disponible": "Installation aspirateur central, Adoucisseur d'eau, Borne de recharge - niveau 2, Échangeur d'air, Porte de garage électrique, Système d'alarme, Thermopompe centrale",
+        "Équipement disponible": "Installation aspirateur central, Borne de recharge - niveau 2, Échangeur d'air, Porte de garage électrique, Système d'alarme, Thermopompe centrale",
         "Appareils en location": "Système d'alarme",
         "Toiture": "Bardeaux d'asphalte",
         "Zonage": "Résidentiel",
