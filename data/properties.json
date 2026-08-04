@@ -1,8 +1,101 @@
 {
   "baseUrl": "https://vendreavecsabrina.ca",
   "agentUrl": "https://propriodirect.com/sabrina-lagasse/",
-  "generatedAt": "2026-08-03T14:15:56.789124+00:00",
+  "generatedAt": "2026-08-04T13:47:54.166467+00:00",
   "listings": [
+    {
+      "uls": "9640526",
+      "country": "ca",
+      "province": "qc",
+      "city": "saint-hugues",
+      "sector": "centre",
+      "street": "2450-4e-rang",
+      "title": "2450, 4e Rang - Saint-Hugues",
+      "shareTitle": "Maison de plain-pied - 2450, 4e Rang, Saint-Hugues",
+      "price": "279 000 $",
+      "address": "2450, 4e Rang",
+      "cityLabel": "Saint-Hugues",
+      "propertyType": "Maison de plain-pied",
+      "size": "",
+      "beds": "2",
+      "baths": "1",
+      "sold": false,
+      "isNew": true,
+      "description": "Laissez-vous charmer par cette chaleureuse propriété située à Saint-Hugues, offrant un cadre de vie paisible au coeur de la nature. Vous y trouverez deux chambres à coucher, une cuisine fonctionnelle, une salle de bain pratique ainsi qu'un vaste terrain idéal pour profiter des beaux jours. Les amateurs de plein air apprécieront la proximité des sentiers de VTT ainsi que l'accès à la rivière, parfait pour les escapades en nature. Une belle occasion de devenir propriétaire à un prix abordable dans un environnement calme et accueillant.",
+      "proprioUrl": "https://propriodirect.com/monteregie/saint-hugues/maison-de-plain-pied-a-vendre/2450-4e-rang-9640526/",
+      "centrisUrl": "https://www.centris.ca/fr/propriete~a-vendre/9640526",
+      "fallbackImage": "9640526.jpg",
+      "publicPath": "/ca/qc/saint-hugues/centre/2450-4e-rang/",
+      "postalCode": "J0H1M0",
+      "datePosted": "2026/08/03",
+      "yearBuilt": "1971",
+      "livingArea": "",
+      "floorLevel": "",
+      "condoFees": "",
+      "parking": "",
+      "highlights": {
+        "Année de construction": "1971"
+      },
+      "details": {
+        "Toiture": "Tôle",
+        "Zonage": "Agricole, Résidentiel",
+        "Mode de chauffage": "Plinthes électriques",
+        "Énergie pour le chauffage": "Électricité",
+        "Fenêtres": "PVC",
+        "Approvisionnement en eau": "Puits artésien",
+        "Armoires": "Mélamine",
+        "Système d'égouts": "Champ d'épuration, Fosse septique"
+      },
+      "inclusions": "Lave-vaisselle, pôle, rideaux, climatiseur de fenêtre, tempo, laveuse, sécheuse, crochet et tablette murale avant et arrière, gazebo, luminaire, poêle, frigidaire. Exclu Les biens du vendeur.",
+      "exclusions": "",
+      "rooms": [
+        {
+          "name": "Salon",
+          "level": "1er niveau/RDC",
+          "dimensions": "14.7x14.10 P",
+          "flooring": "Plancher flottant"
+        },
+        {
+          "name": "Cuisine",
+          "level": "1er niveau/RDC",
+          "dimensions": "11.2x13.7 P",
+          "flooring": "Plancher flottant"
+        },
+        {
+          "name": "Chambre à coucher",
+          "level": "1er niveau/RDC",
+          "dimensions": "10.5x8.9 P",
+          "flooring": "Plancher flottant"
+        },
+        {
+          "name": "Chambre à coucher principale",
+          "level": "1er niveau/RDC",
+          "dimensions": "10.11x13.10 P",
+          "flooring": "Plancher flottant"
+        },
+        {
+          "name": "Salle de bains",
+          "level": "1er niveau/RDC",
+          "dimensions": "7.1x10.10 P",
+          "flooring": "Céramique"
+        },
+        {
+          "name": "Rangement",
+          "level": "1er niveau/RDC",
+          "dimensions": "2.10x6.1 P",
+          "flooring": "Plancher flottant"
+        }
+      ],
+      "taxes": {
+        "Total taxes": "1,285 $",
+        "Taxes municipales": "1,196 $",
+        "Taxes scolaires": "89 $",
+        "Terrain": "60,800 $",
+        "Bâtiment": "90,000 $",
+        "Évaluation totale": "150,800 $"
+      },
+      "additionalInfo": "Découvrez cette charmante petite propriété située à Saint-Hugues, idéale pour une personne seule, un couple ou comme résidence secondaire. Elle offre deux chambres à coucher confortables, une cuisine fonctionnelle ainsi qu'une salle de bain pratique, le tout dans un environnement chaleureux et accueillant. À l'extérieur, vous profiterez d'un grand terrain offrant de nombreuses possibilités : jardin, aire de détente, espace pour les enfants ou projets futurs. Les amateurs de plein air seront ravis de sa localisation. À proximité, une piste de VTT vous permettra de partir directement à l'aventure, tandis que la rivière accessible tout près est parfaite pour profiter de la nature ou simplement pour se détendre au bord de l'eau. Une belle opportunité pour ceux qui recherchent la tranquillité, un grand espace extérieur et un accès privilégié aux activités de plein air, tout en demeurant à Saint-Hugues."
+    },
     {
       "uls": "27154952",
       "country": "ca",
@@ -453,55 +546,6 @@
       "additionalInfo": "Vous rêvez de tranquillité et de grands espaces? Cette charmante propriété pourrait bien être celle que vous attendiez. Bordée par la rivière Châteauguay et entourée de champs offrant une magnifique vue panoramique, elle vous propose un environnement paisible, sans voisins à proximité. À l'intérieur, vous découvrirez une aire de vie ouverte regroupant la cuisine, la salle à manger et le salon, créant un espace convivial et chaleureux où il fait bon vivre. 2 Chambre à coucher possible en transformant le boudoir. Parfaite pour une personne seule, un couple ou une petite famille, cette propriété combine le calme de la campagne avec la proximité des services. Située à seulement quelques minutes de Huntingdon, vous pourrez profiter du meilleur des deux mondes."
     },
     {
-      "uls": "10109435",
-      "country": "ca",
-      "province": "qc",
-      "city": "longueuil-le-vieux-longueuil",
-      "sector": "centre",
-      "street": "1401z-rue-grant",
-      "title": "1401Z, Rue Grant - Longueuil (Centre)",
-      "shareTitle": "Terrain - 1401Z, Rue Grant, Longueuil (Centre)",
-      "price": "390 000 $",
-      "address": "1401Z, Rue Grant",
-      "cityLabel": "Longueuil (Centre)",
-      "propertyType": "Terrain",
-      "size": "",
-      "beds": "",
-      "baths": "",
-      "sold": false,
-      "isNew": false,
-      "description": "Terrain de plus de 3611.29 PC dans le secteur convoité de Longueuil. Zonage permettant la construction de multi logement pour investisseurs et promoteurs à la recherche d'un projet L'acheteur devra effectuer ses propres vérifications auprès de la municipalité pour valider la conformité de son projet.",
-      "proprioUrl": "https://propriodirect.com/monteregie/longueuil-le-vieux-longueuil/terrain-a-vendre/1401z-rue-grant-10109435/",
-      "centrisUrl": "https://www.centris.ca/fr/propriete~a-vendre/10109435",
-      "fallbackImage": "10109435.jpg",
-      "publicPath": "/ca/qc/longueuil-le-vieux-longueuil/centre/1401z-rue-grant/",
-      "postalCode": "J4J3V5",
-      "datePosted": "2026/06/11",
-      "yearBuilt": "",
-      "livingArea": "",
-      "floorLevel": "",
-      "condoFees": "",
-      "parking": "",
-      "highlights": {},
-      "details": {
-        "Zonage": "Résidentiel, Multifamilial",
-        "Approvisionnement en eau": "Municipalité",
-        "Système d'égouts": "Municipal"
-      },
-      "inclusions": "",
-      "exclusions": "",
-      "rooms": [],
-      "taxes": {
-        "Total taxes": "2,521 $",
-        "Taxes municipales": "2,298 $",
-        "Taxes scolaires": "223 $",
-        "Terrain": "177,800 $",
-        "Bâtiment": "145,300 $",
-        "Évaluation totale": "323,100 $"
-      },
-      "additionalInfo": "Terrain de plus de 3611.29 PC dans le secteur convoité de Longueuil. Zonage permettant la construction de multi logement pour investisseurs et promoteurs à la recherche d'un projet L'acheteur devra effectuer ses propres vérifications auprès de la municipalité pour valider la conformité de son projet."
-    },
-    {
       "uls": "27217810",
       "country": "ca",
       "province": "qc",
@@ -611,104 +655,6 @@
         "Évaluation totale": "381,500 $"
       },
       "additionalInfo": "Découvrez cette magnifique propriété moderne construite en 2021, offrant un cadre de vie à la fois élégant et fonctionnel. Dès votre entrée, vous serez charmé par la grande cuisine contemporaine, dotée d'un îlot central et d'un vaste espace de rangement grâce à ses nombreuses armoires. Le rez-de-chaussée propose une aire de vie lumineuse et ouverte regroupant le salon et la salle à manger, parfaite pour recevoir famille et amis. Une salle d'eau pratique complète ce niveau. À l'étage, vous trouverez trois chambres à coucher, dont une spacieuse chambre principale munie d'un walk-in. Une salle de bain complète avec bain podium et douche indépendante vient ajouter confort et fonctionnalité. Le sous-sol, partiellement aménagé, offre un excellent potentiel d'aménagement selon vos besoins. La plomberie est déjà en place pour l'ajout d'une salle de bain, vous laissant toute la liberté d'y aménager des chambres supplémentaires ou une grande salle familiale à votre image. À l'extérieur, profitez d'une belle cour clôturée, parfaite pour les enfants, les animaux ou vos moments de détente en toute intimité. La propriété se distingue également par sa luminosité exceptionnelle qui baigne chaque pièce de lumière naturelle. Une propriété clé en main avec de nombreuses possibilités, idéale pour concrétiser vos projets !"
-    },
-    {
-      "uls": "20007039",
-      "country": "ca",
-      "province": "qc",
-      "city": "longueuil-le-vieux-longueuil",
-      "sector": "centre",
-      "street": "1401-rue-grant",
-      "title": "1401, Rue Grant - Longueuil (Centre)",
-      "shareTitle": "Maison à étages - 1401, Rue Grant, Longueuil (Centre)",
-      "price": "390 000 $",
-      "address": "1401, Rue Grant",
-      "cityLabel": "Longueuil (Centre)",
-      "propertyType": "Maison à étages",
-      "size": "",
-      "beds": "1",
-      "baths": "1",
-      "sold": false,
-      "isNew": false,
-      "description": "Charmante propriété offrant une excellente opportunité pour premiers acheteurs ou investisseurs. Elle comprend actuellement une chambre à coucher, une cuisine conviviale et un salon lumineux créant une ambiance chaleureuse et accueillante. La mezzanine n'est actuellement pas aménagée et devra être complétée, offrant toutefois la possibilité d'y créer chambres à coucher supplémentaire,bureau ou autre. Profitez d'une agréable terrasse avec espace spa, idéale pour les moments de détente. Située dans un secteur recherché à proximité des commerces, des transports en commun et du Cégep, cette propriété combine confort et potentiel venez la voir!",
-      "proprioUrl": "https://propriodirect.com/monteregie/longueuil-le-vieux-longueuil/maison-a-etages-a-vendre/1401-rue-grant-20007039/",
-      "centrisUrl": "https://www.centris.ca/fr/propriete~a-vendre/20007039",
-      "fallbackImage": "20007039.jpg",
-      "publicPath": "/ca/qc/longueuil-le-vieux-longueuil/centre/1401-rue-grant/",
-      "postalCode": "J4J3V5",
-      "datePosted": "2026/05/19",
-      "yearBuilt": "1934",
-      "livingArea": "",
-      "floorLevel": "",
-      "condoFees": "",
-      "parking": "",
-      "highlights": {
-        "Année de construction": "1934"
-      },
-      "details": {
-        "Toiture": "Bardeaux d'asphalte",
-        "Zonage": "Résidentiel",
-        "Mode de chauffage": "Plinthes électriques",
-        "Fenêtres": "PVC",
-        "Approvisionnement en eau": "Municipalité",
-        "Armoires": "Mélamine",
-        "Système d'égouts": "Municipal"
-      },
-      "inclusions": "Store, luminaire, cabanon, spa, poêle et frigo Exclu Les biens du vendeur",
-      "exclusions": "",
-      "rooms": [
-        {
-          "name": "Hall d'entrée/Vestibule",
-          "level": "1er niveau/RDC",
-          "dimensions": "5.4x9.1 P",
-          "flooring": "Bois"
-        },
-        {
-          "name": "Salon",
-          "level": "1er niveau/RDC",
-          "dimensions": "15.2x9.7 P",
-          "flooring": "Bois"
-        },
-        {
-          "name": "Salle à manger",
-          "level": "1er niveau/RDC",
-          "dimensions": "4.11x9 P",
-          "flooring": "Bois"
-        },
-        {
-          "name": "Cuisine",
-          "level": "1er niveau/RDC",
-          "dimensions": "10.3x12.1 P",
-          "flooring": "Bois"
-        },
-        {
-          "name": "Chambre à coucher principale",
-          "level": "1er niveau/RDC",
-          "dimensions": "10.3x9.1 P",
-          "flooring": "Bois"
-        },
-        {
-          "name": "Salle de bains",
-          "level": "1er niveau/RDC",
-          "dimensions": "7.4x8.7 P",
-          "flooring": "Céramique"
-        },
-        {
-          "name": "Mezzanine",
-          "level": "2ième étage",
-          "dimensions": "29x9.4 P",
-          "flooring": "Linoléum"
-        }
-      ],
-      "taxes": {
-        "Total taxes": "2,521 $",
-        "Taxes municipales": "2,298 $",
-        "Taxes scolaires": "223 $",
-        "Terrain": "177,800 $",
-        "Bâtiment": "145,300 $",
-        "Évaluation totale": "323,100 $"
-      },
-      "additionalInfo": "Coquette maison offrant une belle opportunité pour premiers acheteurs! Elle propose une chambre à coucher, une cuisine conviviale ainsi qu'un salon lumineux et chaleureux. La mezzanine n'est actuellement pas aménagée et devra être complétée, offrant toutefois la possibilité d'y créer chambres supplémentaires, bureau selon vos besoins elle vous offre un excellent potentiel d'optimisation. Belle terrasse aménagée avec espace spa, idéale pour se détendre et profiter des beaux jours. Un espace parfait pour relaxer en toute tranquillité et recevoir famille et amis dans un cadre agréable. Située dans un secteur pratique et recherché, à proximité des commerces, des transports en commun et du Cégep Édouard-Montpetit, elle combine parfaitement confort, accessibilité et potentiel d'évolution. Faites- vites!"
     },
     {
       "uls": "10480457",
