@@ -1,7 +1,7 @@
 {
   "baseUrl": "https://vendreavecsabrina.ca",
   "agentUrl": "https://propriodirect.com/sabrina-lagasse/",
-  "generatedAt": "2026-08-06T13:42:56.837952+00:00",
+  "generatedAt": "2026-08-07T12:40:08.576505+00:00",
   "listings": [
     {
       "uls": "9640526",
@@ -38,7 +38,7 @@
       },
       "details": {
         "Toiture": "Tôle",
-        "Zonage": "Agricole, Résidentiel",
+        "Zonage": "Agricole",
         "Mode de chauffage": "Plinthes électriques",
         "Énergie pour le chauffage": "Électricité",
         "Fenêtres": "PVC",
@@ -252,7 +252,7 @@
       "parking": "Au garage",
       "highlights": {
         "Année de construction": "2012",
-        "Garage": "Détaché"
+        "Garage": "Détaché, Double largeur ou plus"
       },
       "details": {
         "Équipement disponible": "Installation aspirateur central, Borne de recharge - niveau 2, Échangeur d'air, Porte de garage électrique, Système d'alarme, Thermopompe centrale",
@@ -261,7 +261,7 @@
         "Zonage": "Résidentiel",
         "Mode de chauffage": "Air soufflé",
         "Vue": "Sur l'eau",
-        "Garage": "Détaché",
+        "Garage": "Détaché, Double largeur ou plus",
         "Système d'égouts": "Système BIONEST",
         "Stationnement (total)": "Au garage",
         "Fenêtres": "PVC",
