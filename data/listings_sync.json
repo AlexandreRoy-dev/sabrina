@@ -1,9 +1,12 @@
 {
-  "generatedAt": "2026-08-16T12:18:25.090999+00:00",
+  "generatedAt": "2026-08-17T12:22:16.908074+00:00",
   "agentUrl": "https://propriodirect.com/sabrina-lagasse/",
   "includeSold": true,
   "maxListings": 30,
-  "removedStale": [],
+  "removedStale": [
+    "/home/runner/work/sabrina/sabrina/assets/img/proprietes/27217810",
+    "/home/runner/work/sabrina/sabrina/assets/img/proprietes/27217810.jpg"
+  ],
   "listings": [
     {
       "uls": "9640526",
@@ -181,37 +184,6 @@
       "source": "centris",
       "publicPath": "/ca/qc/hinchinbrooke/centre/2160-ch-d-athelstan/",
       "ogShareImage": "assets/img/proprietes/27574056/og-share.jpg"
-    },
-    {
-      "uls": "27217810",
-      "photoCount": 22,
-      "photos": [
-        "01.jpg",
-        "02.jpg",
-        "03.jpg",
-        "04.jpg",
-        "05.jpg",
-        "06.jpg",
-        "07.jpg",
-        "08.jpg",
-        "09.jpg",
-        "10.jpg",
-        "11.jpg",
-        "12.jpg",
-        "13.jpg",
-        "14.jpg",
-        "15.jpg",
-        "16.jpg",
-        "17.jpg",
-        "18.jpg",
-        "19.jpg",
-        "20.jpg",
-        "21.jpg",
-        "22.jpg"
-      ],
-      "source": "proprio",
-      "publicPath": "/ca/qc/saint-roch-de-richelieu/centre/773-rue-papineau/",
-      "ogShareImage": "assets/img/proprietes/27217810/og-share.jpg"
     },
     {
       "uls": "10480457",
