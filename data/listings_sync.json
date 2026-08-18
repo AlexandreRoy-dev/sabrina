@@ -1,12 +1,9 @@
 {
-  "generatedAt": "2026-08-17T12:22:16.908074+00:00",
+  "generatedAt": "2026-08-18T12:24:17.532212+00:00",
   "agentUrl": "https://propriodirect.com/sabrina-lagasse/",
   "includeSold": true,
   "maxListings": 30,
-  "removedStale": [
-    "/home/runner/work/sabrina/sabrina/assets/img/proprietes/27217810",
-    "/home/runner/work/sabrina/sabrina/assets/img/proprietes/27217810.jpg"
-  ],
+  "removedStale": [],
   "listings": [
     {
       "uls": "9640526",
