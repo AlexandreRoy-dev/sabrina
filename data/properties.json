@@ -1,7 +1,7 @@
 {
   "baseUrl": "https://vendreavecsabrina.ca",
   "agentUrl": "https://propriodirect.com/sabrina-lagasse/",
-  "generatedAt": "2026-08-18T12:24:17.531376+00:00",
+  "generatedAt": "2026-08-19T12:23:32.742557+00:00",
   "listings": [
     {
       "uls": "9640526",
@@ -365,105 +365,6 @@
         "Évaluation totale": "764,900 $"
       },
       "additionalInfo": "Bienvenue dans cette splendide propriété construite en 2012. Implantée sur un vaste terrain de plus de 37 000 pi², elle offre un équilibre parfait entre la tranquillité de la campagne et la proximité de tous les services. Dès votre arrivée, vous serez charmé par son ambiance chaleureuse, sa luminosité abondante et ses plafonds de 9 pieds qui procurent une agréable sensation d'espace. L'aire de vie principale, à la fois conviviale et élégante, comprend un salon et une salle à manger ouverts, rehaussés par un magnifique foyer au gaz, créant une atmosphère des plus accueillantes. La cuisine moderne saura plaire aux amateurs de gastronomie avec ses nombreuses armoires de qualité, son généreux espace de travail et son vaste comptoir, idéal pour cuisiner, recevoir famille et amis ou partager les repas du quotidien. Le rez-de-chaussée est complété par une salle d'eau fonctionnelle intégrant les installations laveuse-sécheuse. À l'étage, vous découvrirez trois chambres à coucher de belles dimensions. La chambre principale se distingue par son grand walk-in et son accès direct à une belle salle de bain, équipée d'une vaste douche en verre, d'un bain autoportant et d'un aménagement pensé pour le confort de toute la famille. Le sous-sol offre un potentiel remarquable. Les installations sont déjà prévues pour l'aménagement d'une salle de bain et l'espace permet facilement d'ajouter jusqu'à deux chambres supplémentaires selon vos besoins. Une entrée indépendante représente un avantage considérable, que ce soit pour un projet intergénérationnel, un bureau à domicile, un logement pour un membre de la famille ou un espace privé pour les adolescents. À l'extérieur, le coup de coeur est instantané. La grande terrasse vous invite à profiter pleinement de la belle saison, dans un environnement paisible où les couchers de soleil offrent un spectacle quotidien. Le terrain, bordé par un champ, procure une intimité appréciable et un décor naturel exceptionnel. Un garage double détaché de 24 x 24 pieds complète cette propriété et offre tout l'espace nécessaire pour vos véhicules, vos outils ou vos projets. Une propriété clé en main, soigneusement entretenue, offrant des espaces généreux, un immense potentiel et un environnement de vie exceptionnel. Une occasion rare à Carignan qui mérite assurément une visite."
-    },
-    {
-      "uls": "24694303",
-      "country": "ca",
-      "province": "qc",
-      "city": "longueuil-le-vieux-longueuil",
-      "sector": "centre",
-      "street": "2253-rue-des-crocus",
-      "title": "2253, Rue des Crocus - Longueuil (Parcours du Cerf)",
-      "shareTitle": "Appartement - 2253, Rue des Crocus, Longueuil (Parcours du Cerf)",
-      "price": "",
-      "address": "2253, Rue des Crocus",
-      "cityLabel": "Longueuil (Parcours du Cerf)",
-      "propertyType": "Appartement",
-      "size": "552 pc",
-      "beds": "1",
-      "baths": "1",
-      "sold": true,
-      "isNew": false,
-      "description": "Superbe condo d'une chambre à coucher offrant un style moderne et une belle qualité de vie. Plusieurs améliorations ont été apportées au fil des années, permettant aux futurs propriétaires de s'y installer sans tracas. Vous apprécierez sa cuisine au goût du jour avec ses comptoirs modernes, sa salle de bain avec bain-douche ainsi que son aire de vie conviviale et fonctionnelle. À l'extérieur, profitez d'une agréable terrasse, d'un espace de rangement pratique et d'une borne de recharge pour véhicule électrique. Une propriété clé en main qui saura plaire aux acheteurs à la recherche de confort et de simplicité. Une visite vous convaincra!",
-      "proprioUrl": "https://propriodirect.com/monteregie/longueuil-le-vieux-longueuil/appartement-a-vendre/2253-rue-des-crocus-24694303/",
-      "centrisUrl": "https://www.centris.ca/fr/propriete~a-vendre/24694303",
-      "fallbackImage": "24694303.jpg",
-      "publicPath": "/ca/qc/longueuil-le-vieux-longueuil/centre/2253-rue-des-crocus/",
-      "postalCode": "J4N0E6",
-      "datePosted": "2026/06/15",
-      "yearBuilt": "2011",
-      "livingArea": "552 pc",
-      "floorLevel": "Terrasse - (Demi sous-sol)",
-      "condoFees": "189 $ / mois",
-      "parking": "Extérieur",
-      "highlights": {
-        "Année de construction": "2011",
-        "Superficie habitable": "552 pc",
-        "Niveau": "Terrasse - (Demi sous-sol)",
-        "Frais de copropriété": "189 $ / mois",
-        "Stationnement (total)": "Extérieur"
-      },
-      "details": {
-        "Équipement disponible": "Borne de recharge - niveau 2, Climatiseur mural, Échangeur d'air",
-        "Toiture": "Bardeaux d'asphalte",
-        "Zonage": "Résidentiel",
-        "Mode de chauffage": "Plinthes électriques",
-        "Armoires": "Mélamine",
-        "Système d'égouts": "Municipal",
-        "Stationnement (total)": "Extérieur",
-        "Énergie pour le chauffage": "Électricité",
-        "Fenêtres": "PVC",
-        "Approvisionnement en eau": "Municipalité"
-      },
-      "inclusions": "Luminaire, bac à fleur surélevé, bac de compost, climatiseur, ventilateur de la chambre à coucher, borne électrique, chauffe-eau, store, échangeur d'air. Exclu Les biens du vendeur.",
-      "exclusions": "",
-      "rooms": [
-        {
-          "name": "Salle à manger",
-          "level": "Sous-sol",
-          "dimensions": "8.10x14.11 P",
-          "flooring": "Plancher flottant"
-        },
-        {
-          "name": "Salon",
-          "level": "Sous-sol",
-          "dimensions": "12.4x10.5 P",
-          "flooring": "Plancher flottant"
-        },
-        {
-          "name": "Cuisine",
-          "level": "Sous-sol",
-          "dimensions": "10.5x7.11 P",
-          "flooring": "Céramique"
-        },
-        {
-          "name": "Chambre à coucher principale",
-          "level": "Sous-sol",
-          "dimensions": "12.5x9.5 P",
-          "flooring": "Plancher flottant"
-        },
-        {
-          "name": "Salle de bains",
-          "level": "Sous-sol",
-          "dimensions": "9.2x4.10 P",
-          "flooring": "Céramique"
-        },
-        {
-          "name": "Rangement",
-          "level": "Rez-de-jardin",
-          "dimensions": "2.10x5.11 P",
-          "flooring": "Céramique"
-        }
-      ],
-      "taxes": {
-        "Total taxes": "1,644 $",
-        "Taxes municipales": "1,527 $",
-        "Taxes scolaires": "117 $",
-        "Terrain": "58,900 $",
-        "Bâtiment": "172,967 $",
-        "Évaluation totale": "231,867 $"
-      },
-      "additionalInfo": "Laissez-vous charmer par ce superbe condo d'une chambre à coucher, entièrement aménagé avec soin et offrant un style moderne et actuel. Il propose un espace de vie chaleureux, fonctionnel et lumineux où il ne vous reste qu'à déposer vos meubles. La cuisine moderne saura vous plaire avec ses armoires au design contemporain et ses élégants comptoirs, offrant à la fois style et fonctionnalité. L'aire de vie à concept ouvert crée un environnement convivial, parfait pour recevoir ou profiter de votre quotidien. La salle de bain présente un style actuel et épuré. Elle est équipée d'un bain-douche offrant à la fois confort et fonctionnalité. À l'extérieur, profitez d'une belle terrasse idéale pour vos moments de détente ainsi que d'un espace de rangement extérieur pratique pour répondre à vos besoins. Un autre avantage appréciable : une borne de recharge pour véhicule électrique est déjà installée à même votre propre stationnement, offrant un confort supplémentaire aux propriétaires soucieux de l'environnement. Une propriété clé en main qui combine confort, modernité et commodités dans un secteur recherché. Une visite vous convaincra !"
     },
     {
       "uls": "27574056",
