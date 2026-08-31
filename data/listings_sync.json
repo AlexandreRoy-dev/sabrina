@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T15:42:12.193079+00:00",
+  "generatedAt": "2026-08-31T18:25:33.709028+00:00",
   "agentUrl": "https://propriodirect.com/sabrina-lagasse/",
   "includeSold": true,
   "maxListings": 30,
@@ -26,7 +26,7 @@
         "15.jpg",
         "16.jpg"
       ],
-      "source": "centris",
+      "source": "proprio",
       "publicPath": "/ca/qc/saint-hugues/centre/2450-4e-rang/",
       "ogShareImage": "assets/img/proprietes/9640526/og-share.jpg"
     },
@@ -68,7 +68,7 @@
     },
     {
       "uls": "20564170",
-      "photoCount": 55,
+      "photoCount": 58,
       "photos": [
         "01.jpg",
         "02.jpg",
@@ -124,7 +124,10 @@
         "52.jpg",
         "53.jpg",
         "54.jpg",
-        "55.jpg"
+        "55.jpg",
+        "56.jpg",
+        "57.jpg",
+        "58.jpg"
       ],
       "source": "centris",
       "publicPath": "/ca/qc/carignan/centre/4504-ch-ste-therese/",
