@@ -1,35 +1,13 @@
 {
-  "generatedAt": "2026-08-31T18:25:33.709028+00:00",
+  "generatedAt": "2026-09-01T15:45:55.389503+00:00",
   "agentUrl": "https://propriodirect.com/sabrina-lagasse/",
   "includeSold": true,
   "maxListings": 30,
-  "removedStale": [],
+  "removedStale": [
+    "/home/runner/work/sabrina/sabrina/assets/img/proprietes/9640526",
+    "/home/runner/work/sabrina/sabrina/assets/img/proprietes/9640526.jpg"
+  ],
   "listings": [
-    {
-      "uls": "9640526",
-      "photoCount": 16,
-      "photos": [
-        "01.jpg",
-        "02.jpg",
-        "03.jpg",
-        "04.jpg",
-        "05.jpg",
-        "06.jpg",
-        "07.jpg",
-        "08.jpg",
-        "09.jpg",
-        "10.jpg",
-        "11.jpg",
-        "12.jpg",
-        "13.jpg",
-        "14.jpg",
-        "15.jpg",
-        "16.jpg"
-      ],
-      "source": "proprio",
-      "publicPath": "/ca/qc/saint-hugues/centre/2450-4e-rang/",
-      "ogShareImage": "assets/img/proprietes/9640526/og-share.jpg"
-    },
     {
       "uls": "27154952",
       "photoCount": 27,
