@@ -436,7 +436,7 @@ MAP_SECTION_HTML = """
             <h2 class="font-serif italic text-3xl md:text-4xl text-brand mb-2">Transactions</h2>
             <h3 class="font-black text-4xl md:text-5xl text-white uppercase tracking-tighter leading-[0.9] mb-6">Réussies</h3>
             <p class="text-gray-300 text-base leading-relaxed mb-8">
-              Explorez mes transactions à travers la Montérégie et les environs. Chaque point représente un projet accompli (noms de rues seulement).
+              Explorez mes transactions à travers la Montérégie et les environs. Chaque point représente un projet accompli.
             </p>
             <a href="proprietes.html" class="inline-flex items-center gap-2 bg-brand text-white px-6 py-3 rounded-full text-sm font-bold uppercase tracking-wider hover:bg-white hover:text-black transition-all">
               Voir mes propriétés
