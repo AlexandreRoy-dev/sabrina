@@ -7,24 +7,21 @@
       "lng": -73.16116,
       "title": "Rue Papineau",
       "area": "Saint-Roch-de-Richelieu",
-      "status": "vendu",
-      "uls": "27217810"
+      "status": "vendu"
     },
     {
       "lat": 45.9898,
       "lng": -72.89809,
       "title": "Rg du Bord-de-l'eau E.",
       "area": "Yamaska",
-      "status": "vendu",
-      "uls": "15387028"
+      "status": "vendu"
     },
     {
       "lat": 45.55088,
       "lng": -73.4483,
       "title": "Rue des Crocus",
       "area": "Parcours du Cerf",
-      "status": "vendu",
-      "uls": "24694303"
+      "status": "vendu"
     }
   ]
 }
