@@ -1,6 +1,5 @@
 {
-  "generatedFrom": "scripts/update_map_pins.py",
-  "pinCount": 3,
+  "comment": "Append-only seed of completed transactions. update_map_pins.py always merges this file and never deletes these pins.",
   "pins": [
     {
       "lat": 45.89549,

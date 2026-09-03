@@ -20,6 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "index.html"
 PROPERTIES = ROOT / "data" / "properties.json"
 PINS_OUT = ROOT / "data" / "transaction_pins.json"
+HISTORICAL_SEED = ROOT / "data" / "historical_transaction_pins.json"
 CACHE_PATH = ROOT / "data" / "geocode_cache.json"
 USER_AGENT = "SabrinaLagasseSiteMapPins/1.0 (vendreavecsabrina.ca)"
 
@@ -331,12 +332,20 @@ def pin_key(pin: dict) -> tuple[str, str]:
     return (pin.get("title") or "").strip().lower(), (pin.get("area") or "").strip().lower()
 
 
-def build_pins(session: requests.Session, cache: dict, *, regeocode: bool = False) -> list[dict]:
+def load_pin_sources() -> list[dict]:
+    """Merge seed + current JSON + leftover index.html pins. Seed wins last-write on coords? No: first seen wins, later sources fill gaps."""
     existing: list[dict] = []
+    if HISTORICAL_SEED.exists():
+        existing.extend(load_json(HISTORICAL_SEED, {}).get("pins") or [])
     if PINS_OUT.exists():
-        existing = load_json(PINS_OUT, {}).get("pins") or []
-    if not existing and INDEX.exists():
-        existing = extract_index_pins(INDEX.read_text(encoding="utf-8"))
+        existing.extend(load_json(PINS_OUT, {}).get("pins") or [])
+    if INDEX.exists():
+        existing.extend(extract_index_pins(INDEX.read_text(encoding="utf-8")))
+    return existing
+
+
+def build_pins(session: requests.Session, cache: dict, *, regeocode: bool = False) -> list[dict]:
+    existing = load_pin_sources()
 
     pins: list[dict] = []
     seen: set[tuple[str, str]] = set()
@@ -382,8 +391,17 @@ def build_pins(session: requests.Session, cache: dict, *, regeocode: bool = Fals
             continue
         key = (title.lower(), area.lower())
 
+        if key in seen and not regeocode:
+            for existing_pin in pins:
+                if pin_key(existing_pin) == key:
+                    existing_pin["status"] = "vendu"
+                    if listing.get("uls"):
+                        existing_pin["uls"] = listing.get("uls")
+                    break
+            continue
+
         print(f"Geocoding sold: {title} ({area})...")
-        coords = geocode(session, cache, title, area, force=True)
+        coords = geocode(session, cache, title, area, force=regeocode)
         if not coords:
             print(f"  FAIL: could not geocode {title} / {area}")
             continue
@@ -537,6 +555,37 @@ def run(*, regeocode: bool = False) -> int:
         "pins": pins,
     }
     save_json(PINS_OUT, payload)
+    seed_pins = []
+    seen_seed: set[tuple[str, str]] = set()
+    if HISTORICAL_SEED.exists():
+        for raw in load_json(HISTORICAL_SEED, {}).get("pins") or []:
+            key = pin_key(raw)
+            if key in seen_seed:
+                continue
+            seen_seed.add(key)
+            seed_pins.append(raw)
+    for pin in pins:
+        key = pin_key(pin)
+        if key in seen_seed:
+            continue
+        seen_seed.add(key)
+        seed_pins.append(
+            {
+                "lat": pin["lat"],
+                "lng": pin["lng"],
+                "title": pin["title"],
+                "area": pin.get("area") or "",
+                "status": pin.get("status") or "transaction",
+                **({"uls": pin["uls"]} if pin.get("uls") else {}),
+            }
+        )
+    save_json(
+        HISTORICAL_SEED,
+        {
+            "comment": "Append-only seed of completed transactions. update_map_pins.py always merges this file and never deletes these pins.",
+            "pins": seed_pins,
+        },
+    )
     print(f"Wrote {PINS_OUT} ({len(pins)} pins)")
     write_index_loader(len(pins))
     return 0

@@ -1036,6 +1036,29 @@ def main() -> int:
 
     enriched = [enrich_listing(item) for item in discovered]
 
+    # Keep sold / former listings so the map and property pages are not wiped
+    # when they drop off the live Proprio Direct agent page.
+    existing_listings = []
+    properties_path = ROOT / "data" / "properties.json"
+    if properties_path.exists():
+        try:
+            existing_listings = json.loads(
+                properties_path.read_text(encoding="utf-8")
+            ).get("listings") or []
+        except (OSError, json.JSONDecodeError):
+            existing_listings = []
+    discovered_uls = {item["uls"] for item in enriched}
+    for old in existing_listings:
+        uls = str(old.get("uls") or "")
+        if not uls or uls in discovered_uls:
+            continue
+        kept = dict(old)
+        if not kept.get("sold"):
+            kept["sold"] = True
+            kept["price"] = ""
+        enriched.append(kept)
+        print(f" - {uls} [KEPT] {kept.get('address')} ({'SOLD' if kept.get('sold') else 'FORMER'})")
+
     # Pull full Proprio Direct details (rooms, taxes, inclusions, etc.)
     for item in enriched:
         print(f"Fetching details {item['uls']}...")
