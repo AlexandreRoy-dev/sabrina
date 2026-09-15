@@ -1,8 +1,105 @@
 {
   "baseUrl": "https://vendreavecsabrina.ca",
   "agentUrl": "https://propriodirect.com/sabrina-lagasse/",
-  "generatedAt": "2026-09-14T17:14:21.901638+00:00",
+  "generatedAt": "2026-09-15T15:54:19.748519+00:00",
   "listings": [
+    {
+      "uls": "24830070",
+      "country": "ca",
+      "province": "qc",
+      "city": "sorel-tracy",
+      "sector": "centre",
+      "street": "51-rue-de-la-comtesse",
+      "title": "51, Rue de la Comtesse - Sorel-Tracy (Sorel)",
+      "shareTitle": "Maison à étages - 51, Rue de la Comtesse, Sorel-Tracy (Sorel)",
+      "price": "359 000 $",
+      "address": "51, Rue de la Comtesse",
+      "cityLabel": "Sorel-Tracy (Sorel)",
+      "propertyType": "Maison à étages",
+      "size": "",
+      "beds": "3",
+      "baths": "1",
+      "sold": false,
+      "isNew": true,
+      "description": "Charmant jumelé offrant un cadre de vie chaleureux et agréable, idéal pour une famille, un couple ou un premier acheteur à la recherche d'une propriété bien entretenue par son propriétaire actuel. Cette propriété combine confort, fonctionnalité et espaces adaptés à la vie quotidienne. Située dans un quartier recherché, cette propriété bénéficie d'un emplacement pratique à proximité des écoles, des services, des commerces et de nombreuses commodités. Son environnement saura plaire autant aux jeunes familles qu'aux acheteurs à la recherche d'un milieu de vie paisible et convivial.",
+      "proprioUrl": "https://propriodirect.com/monteregie/sorel-tracy/maison-a-etages-a-vendre/51-rue-de-la-comtesse-24830070/",
+      "centrisUrl": "https://www.centris.ca/fr/propriete~a-vendre/24830070",
+      "fallbackImage": "24830070.jpg",
+      "publicPath": "/ca/qc/sorel-tracy/centre/51-rue-de-la-comtesse/",
+      "postalCode": "J3P4W9",
+      "datePosted": "2026/09/15",
+      "yearBuilt": "1938",
+      "livingArea": "",
+      "floorLevel": "",
+      "condoFees": "",
+      "parking": "",
+      "highlights": {
+        "Année de construction": "1938"
+      },
+      "details": {
+        "Toiture": "Bardeaux d'asphalte",
+        "Mode de chauffage": "Plinthes électriques",
+        "Énergie pour le chauffage": "Électricité",
+        "Approvisionnement en eau": "Municipalité",
+        "Armoires": "Bois",
+        "Système d'égouts": "Municipal"
+      },
+      "inclusions": "Poêle, luminaire, pôle, rideaux, toiles de fenêtre (salon, chambres à coucher, porte arrière, thermopompe, cabanon. Exclu Les biens du vendeur.",
+      "exclusions": "",
+      "rooms": [
+        {
+          "name": "Salon",
+          "level": "1er niveau/RDC",
+          "dimensions": "15.7x11.4 P",
+          "flooring": "Bois"
+        },
+        {
+          "name": "Salle à manger",
+          "level": "1er niveau/RDC",
+          "dimensions": "11.1x11.4 P",
+          "flooring": "Bois"
+        },
+        {
+          "name": "Cuisine",
+          "level": "1er niveau/RDC",
+          "dimensions": "11.6x9.9 P",
+          "flooring": "Céramique"
+        },
+        {
+          "name": "Salle de bains",
+          "level": "2ième étage",
+          "dimensions": "8.3x6.1 P",
+          "flooring": "Céramique"
+        },
+        {
+          "name": "Chambre à coucher",
+          "level": "2ième étage",
+          "dimensions": "11.8x8.4 P",
+          "flooring": "Bois"
+        },
+        {
+          "name": "Chambre à coucher",
+          "level": "2ième étage",
+          "dimensions": "11.8x11.9 P",
+          "flooring": "Bois"
+        },
+        {
+          "name": "Chambre à coucher principale",
+          "level": "2ième étage",
+          "dimensions": "11x15.5 P",
+          "flooring": "Bois"
+        }
+      ],
+      "taxes": {
+        "Total taxes": "2,161 $",
+        "Taxes municipales": "2,036 $",
+        "Taxes scolaires": "125 $",
+        "Terrain": "57,200 $",
+        "Bâtiment": "167,500 $",
+        "Évaluation totale": "224,700 $"
+      },
+      "additionalInfo": "Dès l'entrée, découvrez un rez-de-chaussée lumineux et chaleureux. La salle à manger s'ouvre harmonieusement sur une cuisine fonctionnelle, pensée pour répondre aux besoins du quotidien. À l'étage, trois chambres à coucher de bonnes dimensions ainsi qu'une salle de bain complètent l'espace de vie. Le sous-sol offre un beau potentiel d'aménagement pour y créer une grande salle familiale, une chambre additionnelle ou tout autre espace selon vos besoins. À l'extérieur, profitez d'une cour offrant tout l'espace nécessaire pour vos moments de détente. La terrasse deviendra rapidement l'endroit idéal pour vos soupers entre amis ou en famille, tandis que le cabanon ajoute un rangement pratique. Cette propriété de type jumelé combine confort, luminosité et beau potentiel d'aménagement. Une belle occasion à découvrir, alors faites vite!"
+    },
     {
       "uls": "27154952",
       "country": "ca",
