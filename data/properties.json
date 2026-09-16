@@ -1,7 +1,7 @@
 {
   "baseUrl": "https://vendreavecsabrina.ca",
   "agentUrl": "https://propriodirect.com/sabrina-lagasse/",
-  "generatedAt": "2026-09-15T15:54:19.748519+00:00",
+  "generatedAt": "2026-09-16T15:45:50.409346+00:00",
   "listings": [
     {
       "uls": "24830070",
@@ -379,7 +379,7 @@
       "street": "2160-ch-d-athelstan",
       "title": "2160, Ch. d'Athelstan - Hinchinbrooke",
       "shareTitle": "Maison de plain-pied - 2160, Ch. d'Athelstan, Hinchinbrooke",
-      "price": "259 000 $",
+      "price": "239 000 $",
       "address": "2160, Ch. d'Athelstan",
       "cityLabel": "Hinchinbrooke",
       "propertyType": "Maison de plain-pied",
@@ -388,7 +388,7 @@
       "baths": "1",
       "sold": false,
       "isNew": false,
-      "description": "Que vous soyez à la recherche d'une résidence principale ou d'un chalet pour décrocher du quotidien, cette propriété saura répondre à vos besoins. Parfaite pour un couple ou une petite famille, elle offre un cadre de vie simple, chaleureux et apaisant. Un endroit où il est facile de se sentir en vacances, tout en profitant du confort de la maison. Il ne reste qu'à vous y installer et profiter de tout ce que cet environnement exceptionnel a à offrir.",
+      "description": "Que vous soyez à la recherche d'une résidence principale ou d'un chalet pour décrocher du quotidien, cette propriété saura répondre à vos besoins. Parfaite pour un couple ou une personne seule elle offre un cadre de vie simple, chaleureux et apaisant. Un endroit où il est facile de se sentir en vacances, tout en profitant du confort de la maison. Il ne reste qu'à vous y installer et profiter de tout ce que cet environnement exceptionnel à offrir.",
       "proprioUrl": "https://propriodirect.com/monteregie/hinchinbrooke/maison-de-plain-pied-a-vendre/2160-ch-d-athelstan-27574056/",
       "centrisUrl": "https://www.centris.ca/fr/propriete~a-vendre/27574056",
       "fallbackImage": "27574056.jpg",
@@ -404,15 +404,17 @@
         "Année de construction": "1994"
       },
       "details": {
+        "Équipement disponible": "Thermopompe murale",
         "Toiture": "Bardeaux d'asphalte",
         "Zonage": "Résidentiel",
         "Particularités": "Bordé à l'eau",
+        "Mode de chauffage": "Plinthes électriques",
         "Énergie pour le chauffage": "Électricité",
         "Approvisionnement en eau": "Puits artésien",
         "Armoires": "Bois",
         "Système d'égouts": "Fosse septique"
       },
-      "inclusions": "Tous les meubles meublant, tracteur décoratif, tracteur à gazon, luminaire, store, rideaux. Exclu Les biens personnels du vendeur.",
+      "inclusions": "Tous les meubles meublant, tracteur décoratif, tracteur à gazon, luminaire, store, rideaux, thermopompe murale. Exclu Les biens personnels du vendeur.",
       "exclusions": "",
       "rooms": [
         {
@@ -448,7 +450,7 @@
         "Bâtiment": "75,400 $",
         "Évaluation totale": "133,800 $"
       },
-      "additionalInfo": "Vous rêvez de tranquillité et de grands espaces? Cette charmante propriété pourrait bien être celle que vous attendiez. Bordée par la rivière Châteauguay et entourée de champs offrant une magnifique vue panoramique, elle vous propose un environnement paisible, sans voisins à proximité. À l'intérieur, vous découvrirez une aire de vie ouverte regroupant la cuisine, la salle à manger et le salon, créant un espace convivial et chaleureux où il fait bon vivre. 2 Chambre à coucher possible en transformant le boudoir. Parfaite pour une personne seule, un couple ou une petite famille, cette propriété combine le calme de la campagne avec la proximité des services. Située à seulement quelques minutes de Huntingdon, vous pourrez profiter du meilleur des deux mondes."
+      "additionalInfo": "Vous rêvez de tranquillité, tout en demeurant à proximité du poste frontalier? Cette charmante propriété pourrait bien être celle que vous attendiez. Bordée par la rivière Châteauguay et entourée de champs offrant une magnifique vue panoramique, elle vous propose un environnement paisible, sans voisins à proximité. À l'intérieur, vous découvrirez une aire de vie ouverte regroupant la cuisine, la salle à manger et le salon, créant un espace convivial et chaleureux où il fait bon vivre. La propriété offre également la possibilité d'aménager une deuxième chambre à coucher en transformant le boudoir, selon vos besoins. À proximité du lac Saint-François, les amateurs de plein air pourront profiter de nombreuses activités, telles que la pêche, les sports nautiques, le kayak, le canot, la planche à pagaie et les promenades au bord de l'eau. La région offre également de beaux endroits pour la randonnée, l'observation de la faune et la découverte de paysages naturels. Parfaite pour une personne seule, un couple ou ceux qui recherchent un pied-à-terre à la campagne, cette propriété combine le calme de la nature avec la proximité des services. Située à seulement quelques minutes de Huntingdon, elle vous permettra de profiter du meilleur des deux mondes."
     },
     {
       "uls": "10480457",
