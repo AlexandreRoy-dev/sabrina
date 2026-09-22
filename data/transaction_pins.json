@@ -1,6 +1,6 @@
 {
   "generatedFrom": "scripts/update_map_pins.py",
-  "pinCount": 3,
+  "pinCount": 4,
   "pins": [
     {
       "lat": 45.89549,
@@ -22,6 +22,14 @@
       "title": "Rue des Crocus",
       "area": "Parcours du Cerf",
       "status": "vendu"
+    },
+    {
+      "lat": 46.02669,
+      "lng": -73.15451,
+      "title": "Rue Mandeville",
+      "area": "Tracy",
+      "status": "vendu",
+      "uls": "27154952"
     }
   ]
 }

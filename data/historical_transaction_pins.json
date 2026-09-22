@@ -24,6 +24,14 @@
       "area": "Parcours du Cerf",
       "status": "vendu",
       "uls": "24694303"
+    },
+    {
+      "lat": 46.02669,
+      "lng": -73.15451,
+      "title": "Rue Mandeville",
+      "area": "Tracy",
+      "status": "vendu",
+      "uls": "27154952"
     }
   ]
 }
