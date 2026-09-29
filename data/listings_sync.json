@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T18:57:55.339296+00:00",
+  "generatedAt": "2026-09-29T17:15:22.826643+00:00",
   "agentUrl": "https://propriodirect.com/sabrina-lagasse/",
   "includeSold": true,
   "maxListings": 30,
@@ -80,7 +80,7 @@
     },
     {
       "uls": "20564170",
-      "photoCount": 58,
+      "photoCount": 60,
       "photos": [
         "01.jpg",
         "02.jpg",
@@ -139,7 +139,9 @@
         "55.jpg",
         "56.jpg",
         "57.jpg",
-        "58.jpg"
+        "58.jpg",
+        "59.jpg",
+        "60.jpg"
       ],
       "source": "centris",
       "publicPath": "/ca/qc/carignan/centre/4504-ch-ste-therese/",
