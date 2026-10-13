@@ -1,6 +1,6 @@
 {
   "generatedFrom": "scripts/update_map_pins.py",
-  "pinCount": 4,
+  "pinCount": 5,
   "pins": [
     {
       "lat": 45.89549,
@@ -30,6 +30,14 @@
       "area": "Tracy",
       "status": "vendu",
       "uls": "27154952"
+    },
+    {
+      "lat": 46.04127,
+      "lng": -73.1265,
+      "title": "Rue McCarthy",
+      "area": "Saint-Joseph-de-Sorel",
+      "status": "vendu",
+      "uls": "10480457"
     }
   ]
 }

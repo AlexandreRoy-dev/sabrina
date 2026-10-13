@@ -1,7 +1,7 @@
 {
   "baseUrl": "https://vendreavecsabrina.ca",
   "agentUrl": "https://propriodirect.com/sabrina-lagasse/",
-  "generatedAt": "2026-10-12T20:35:20.020947+00:00",
+  "generatedAt": "2026-10-13T18:40:13.077036+00:00",
   "listings": [
     {
       "uls": "24830070",
@@ -461,14 +461,14 @@
       "street": "222-224-rue-mccarthy",
       "title": "222-224, Rue McCarthy - Saint-Joseph-de-Sorel",
       "shareTitle": "Duplex - 222-224, Rue McCarthy, Saint-Joseph-de-Sorel",
-      "price": "149 989 $",
+      "price": "",
       "address": "222-224, Rue McCarthy",
       "cityLabel": "Saint-Joseph-de-Sorel",
       "propertyType": "Duplex",
       "size": "",
       "beds": "1",
       "baths": "1",
-      "sold": false,
+      "sold": true,
       "isNew": false,
       "description": "Opportunité pour rénovateurs ou investisseurs ! Duplex offrant un fort potentiel de mise en valeur, implanté sur un beau terrain et situé dans un secteur pratique à proximité des services. Des travaux de rénovation sont à prévoir, ce qui en fait une occasion idéale pour concrétiser un projet et maximiser le potentiel de revenu ou de revente. Parfait pour bricoleur, rénovateur ou investisseur averti souhaitant optimiser la valeur de la propriété. Une belle chance de devenir propriétaire et de créer un projet à votre image. À voir !",
       "proprioUrl": "https://propriodirect.com/monteregie/saint-joseph-de-sorel/duplex-a-vendre/222-224-rue-mccarthy-10480457/",
