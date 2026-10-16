@@ -1,12 +1,9 @@
 {
   "uls": "10480457",
-  "photos": [
-    "01.jpg",
-    "02.jpg"
-  ],
-  "ogShare": "og-share.jpg",
-  "count": 2,
+  "photos": [],
+  "ogShare": null,
+  "count": 0,
   "publicPath": "/ca/qc/saint-joseph-de-sorel/centre/222-224-rue-mccarthy/",
   "source": "proprio",
-  "ogImageUrl": "https://vendreavecsabrina.ca/assets/img/proprietes/10480457/og-share.jpg"
+  "ogImageUrl": null
 }

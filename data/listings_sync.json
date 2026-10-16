@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T15:58:31.557637+00:00",
+  "generatedAt": "2026-10-16T15:45:52.689926+00:00",
   "agentUrl": "https://propriodirect.com/sabrina-lagasse/",
   "includeSold": true,
   "maxListings": 30,
@@ -172,14 +172,11 @@
     },
     {
       "uls": "10480457",
-      "photoCount": 2,
-      "photos": [
-        "01.jpg",
-        "02.jpg"
-      ],
+      "photoCount": 0,
+      "photos": [],
       "source": "proprio",
       "publicPath": "/ca/qc/saint-joseph-de-sorel/centre/222-224-rue-mccarthy/",
-      "ogShareImage": "assets/img/proprietes/10480457/og-share.jpg"
+      "ogShareImage": null
     }
   ]
 }
