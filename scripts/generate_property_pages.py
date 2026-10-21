@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import json
 import re
+from datetime import date
 from html import escape
 from pathlib import Path
 
@@ -14,6 +15,90 @@ CENTRIS_AGENT_URL = (
     "https://www.centris.ca/fr/courtier-immobilier~sabrina-lagasse~proprio-direct/h3466"
 )
 PROPRIO_AGENT_URL = "https://propriodirect.com/sabrina-lagasse"
+OG_SHARE_IMAGE = f"{BASE_URL}/social.jpg"
+
+# Public facts only. The about page says she holds an OACIQ permit, but the
+# number is not published. There is no office address. Instagram and LinkedIn
+# point at "#".
+# TODO(Alexandre): add the OACIQ permit number, the office address, and the
+# real Instagram and LinkedIn URLs once they are confirmed.
+AGENT_LD = {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "@id": f"{BASE_URL}/#sabrina-lagasse",
+    "name": "Sabrina Lagassé",
+    "url": f"{BASE_URL}/",
+    "image": f"{BASE_URL}/sabrina.jpg",
+    "telephone": "+1-514-796-3979",
+    "email": "sabrina.lagasse@hotmail.com",
+    "jobTitle": "Courtière immobilière",
+    "description": (
+        "Courtière immobilière en Montérégie. Achat, vente et évaluation "
+        "de propriétés. Programme Complici-T à partir de 2 %. Plus de 7 ans "
+        "d'expérience."
+    ),
+    "areaServed": [
+        "Montérégie",
+        "Laval",
+        "Rive-Sud",
+        "Laurentides",
+        "Longueuil",
+        "Grande région de Montréal",
+    ],
+    "knowsLanguage": "fr-CA",
+    "worksFor": {
+        "@type": "Organization",
+        "name": "Proprio Direct",
+        "url": PROPRIO_AGENT_URL,
+    },
+    "sameAs": [PROPRIO_AGENT_URL, CENTRIS_AGENT_URL],
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services immobiliers",
+        "itemListElement": [
+            {
+                "@type": "Offer",
+                "itemOffered": {"@type": "Service", "name": "Achat immobilier"},
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Vente immobilière",
+                    "description": "Programme Complici-T, commission à partir de 2 %.",
+                },
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Évaluation immobilière gratuite",
+                },
+            },
+        ],
+    },
+}
+
+STATIC_SITEMAP_PATHS = [
+    "/",
+    "/proprietes.html",
+    "/services.html",
+    "/about.html",
+    "/blog.html",
+    "/blog-preparer-maison-vente.html",
+    "/blog-premier-achat-checklist.html",
+    "/blog-quand-vendre.html",
+    "/ressources.html",
+    "/faq.html",
+    "/contact.html",
+    "/politique-confidentialite.html",
+]
+
+
+def agent_json_ld() -> str:
+    payload = json.dumps(AGENT_LD, ensure_ascii=False, indent=2)
+    indented = "\n".join(("  " + line) if line else line for line in payload.splitlines())
+    return f'  <script type="application/ld+json">\n{indented}\n  </script>'
 
 
 def load_registry() -> dict:
@@ -70,11 +155,11 @@ def site_chrome(active: str, depth: int = 0) -> tuple[str, str]:
 
     header = f"""<nav class="fixed w-full top-0 z-50 pt-6 px-4 md:px-8 transition-all duration-300">
         <div class="max-w-7xl mx-auto bg-white/10 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] rounded-full px-6 py-4 flex justify-between items-center text-white relative z-50">
-            <a href="{p}index.html" class="font-serif italic text-2xl font-semibold tracking-wide flex items-center gap-2 group">
+            <a href="/" class="font-serif italic text-2xl font-semibold tracking-wide flex items-center gap-2 group">
                 Sabrina Lagassé
             </a>
             <div class="hidden lg:flex space-x-8 text-sm font-medium tracking-wide">
-                <a href="{p}index.html" class="{nav_cls['accueil']}">Accueil</a>
+                <a href="/" class="{nav_cls['accueil']}">Accueil</a>
                 <a href="{p}proprietes.html" class="{nav_cls['proprietes']}">Propriétés</a>
                 <a href="{p}services.html" class="{nav_cls['services']}">Services</a>
                 <a href="{p}blog.html" class="{nav_cls['blog']}">Blog</a>
@@ -95,7 +180,7 @@ def site_chrome(active: str, depth: int = 0) -> tuple[str, str]:
         </div>
         <div id="mobile-menu" class="fixed inset-0 bg-[#1e1e1e]/95 backdrop-blur-3xl z-40 opacity-0 pointer-events-none transition-all duration-500 flex flex-col justify-center items-center">
             <div class="flex flex-col items-center space-y-8 text-3xl font-serif italic">
-                <a href="{p}index.html" class="{mobile_cls['accueil']} {delays['accueil']}">Accueil</a>
+                <a href="/" class="{mobile_cls['accueil']} {delays['accueil']}">Accueil</a>
                 <a href="{p}proprietes.html" class="{mobile_cls['proprietes']} {delays['proprietes']}">Propriétés</a>
                 <a href="{p}services.html" class="{mobile_cls['services']} {delays['services']}">Services</a>
                 <a href="{p}blog.html" class="{mobile_cls['blog']} {delays['blog']}">Blog</a>
@@ -114,7 +199,7 @@ def site_chrome(active: str, depth: int = 0) -> tuple[str, str]:
         <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-8">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-8 mb-16">
                 <div class="md:col-span-5 lg:col-span-4 space-y-6">
-                    <a href="{p}index.html" class="font-serif italic text-2xl font-semibold tracking-wide flex items-center gap-2 text-white group">
+                    <a href="/" class="font-serif italic text-2xl font-semibold tracking-wide flex items-center gap-2 text-white group">
                         <span class="w-2 h-2 rounded-full bg-brand group-hover:scale-150 transition-transform duration-300"></span>
                         Sabrina Lagassé
                     </a>
@@ -133,7 +218,7 @@ def site_chrome(active: str, depth: int = 0) -> tuple[str, str]:
                 <div class="md:col-span-3 lg:col-span-2 lg:col-start-7">
                     <h4 class="text-white font-bold uppercase tracking-wider text-xs mb-6">Menu</h4>
                     <ul class="space-y-4">
-                        <li><a href="{p}index.html" class="text-gray-400 hover:text-brand text-sm transition-colors flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-brand/50"></span> Accueil</a></li>
+                        <li><a href="/" class="text-gray-400 hover:text-brand text-sm transition-colors flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-brand/50"></span> Accueil</a></li>
                         <li><a href="{p}proprietes.html" class="text-gray-400 hover:text-brand text-sm transition-colors flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-brand/50"></span> Propriétés</a></li>
                         <li><a href="{p}services.html" class="text-gray-400 hover:text-brand text-sm transition-colors flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-brand/50"></span> Services</a></li>
                         <li><a href="{p}blog.html" class="text-gray-400 hover:text-brand text-sm transition-colors flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-brand/50"></span> Blog</a></li>
@@ -237,7 +322,7 @@ def head_block(
 ) -> str:
     p = asset_prefix(depth)
     return f"""<!DOCTYPE html>
-<html lang="fr">
+<html lang="fr-CA">
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -276,11 +361,13 @@ def head_block(
   <meta property="og:url" content="{escape(canonical)}">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_CA">
+  <meta property="og:site_name" content="Sabrina Lagassé">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{escape(title)}">
   <meta name="twitter:description" content="{escape(description)}">
   <meta name="twitter:image" content="{escape(og_image)}">
   <meta name="twitter:image:alt" content="{escape(title)}">
+{agent_json_ld()}
 {extra}
 </head>"""
 
@@ -349,7 +436,7 @@ def generate_listings_page(registry: dict) -> None:
         "Découvrez les propriétés en vigueur de Sabrina Lagassé, courtière immobilière "
         "Proprio Direct."
     )
-    og_image = f"{BASE_URL}/social.png"
+    og_image = OG_SHARE_IMAGE
     if ordered:
         og_image = (
             f"{BASE_URL}/assets/img/proprietes/{ordered[0]['uls']}/og-share.jpg"
@@ -724,6 +811,49 @@ def update_nav_links() -> None:
             print(f"updated Propriétés links in {path.name}")
 
 
+def write_robots_and_sitemap(registry: dict) -> None:
+    """Root robots.txt and sitemap.xml. GitHub Pages serves the repo root."""
+    robots = (
+        "User-agent: *\n"
+        "Allow: /\n"
+        "\n"
+        "# Template, source and data folders are not public pages.\n"
+        "Disallow: /src/\n"
+        "Disallow: /public/\n"
+        "Disallow: /scripts/\n"
+        "Disallow: /data/\n"
+        "\n"
+        f"Sitemap: {BASE_URL}/sitemap.xml\n"
+    )
+    (ROOT / "robots.txt").write_text(robots, encoding="utf-8")
+
+    locs: list[str] = []
+    seen: set[str] = set()
+    for path in STATIC_SITEMAP_PATHS:
+        locs.append(BASE_URL + path)
+        seen.add(path)
+    for listing in registry.get("listings", []):
+        path = public_path(listing)
+        if path not in seen:
+            locs.append(BASE_URL + path)
+            seen.add(path)
+
+    today = date.today().isoformat()
+    lines = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    ]
+    for loc in locs:
+        lines.append("  <url>")
+        lines.append(f"    <loc>{escape(loc)}</loc>")
+        lines.append(f"    <lastmod>{today}</lastmod>")
+        lines.append("  </url>")
+    lines.append("</urlset>")
+    lines.append("")
+    (ROOT / "sitemap.xml").write_text("\n".join(lines), encoding="utf-8")
+    print(f"wrote robots.txt and sitemap.xml ({len(locs)} urls)")
+
+
 def generate_all() -> None:
     registry = load_registry()
     generate_listings_page(registry)
@@ -731,6 +861,7 @@ def generate_all() -> None:
         generate_detail_page(listing)
     prune_stale_detail_pages(registry)
     update_nav_links()
+    write_robots_and_sitemap(registry)
 
 
 if __name__ == "__main__":

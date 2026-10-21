@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Template, source and data folders are not public pages.
+Disallow: /src/
+Disallow: /public/
+Disallow: /scripts/
+Disallow: /data/
+
+Sitemap: https://vendreavecsabrina.ca/sitemap.xml
