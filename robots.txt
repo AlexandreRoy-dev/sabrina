@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Le modele Shuffle, les scripts et les donnees ne sont pas des pages du site.
+# Disallow n'empeche pas le navigateur de charger /data/ pour la carte.
+Disallow: /src/
+Disallow: /public/
+Disallow: /scripts/
+Disallow: /data/
+
+Sitemap: https://vendreavecsabrina.ca/sitemap.xml
